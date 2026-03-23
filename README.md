@@ -2,7 +2,7 @@
 
 A research-backed guide to restoring northern hardwood forest on the Pocono Plateau (~2,000ft elevation, Zone 6a).
 
-**[https://jackreichert.github.io/trees/](https://jackreichert.github.io/trees/)**
+**[https://jackreichert.github.io/pocono-plateau-reforestation-plan/](https://jackreichert.github.io/pocono-plateau-reforestation-plan/)**
 
 The live guide includes:
 - **Interactive Planner** — Calculate species mix by tree count or acreage

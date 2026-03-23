@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forest Restoration Planner — Interactive Tool</title>
+<meta name="description" content="Enter your total trees and select a plan. The planner calculates species counts by ecological group with weighted redistribution.">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">🌳 <span>Pocono Forest</span> Restoration</a>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="plans.html">The Plans</a></li>
+      <li><a href="species.html">Species Guide</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="management.html">Before You Plant</a></li>
+      <li><a href="planting.html">Planting Guide</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero hero-sm">
+  <div class="hero-bg" style="background:linear-gradient(135deg, var(--green-900), var(--green-700))"></div>
+  <div class="container hero-content" style="padding:2.5rem 0">
+    <p class="section-label" style="color:var(--green-200)">Interactive Tool</p>
+    <h1 style="font-size:clamp(1.75rem,3vw,2.5rem)">Forest Restoration Planner</h1>
+    <p style="max-width:560px">Enter your total trees, select a plan, and the planner calculates an ecologically balanced species breakdown. Override any species and the rest redistribute proportionally.</p>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+
+    <!-- How it works callout -->
+    <div class="callout callout-green mb-4 no-print">
+      <div class="callout-title">How the Planner Works</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:.75rem">
+        <div><strong>1. Choose an approach</strong> — <em>Full Mix</em> plants a complete diverse mix across all layers, scaled to your tree count. <em>Management-First</em> shifts weights toward species that won't arrive in time (hickories, conifers) and auto-zeros species that will come naturally with deer management.</div>
+        <div><strong>2. Set your total</strong> — Enter how many trees you want to plant. Full Mix scales to any number; Management-First suggests 150 (5 acres) or 250 (10 acres).</div>
+        <div><strong>3. Override anything</strong> — Type a number in the yellow "Override" column. The other species in that group redistribute proportionally to compensate.</div>
+        <div><strong>4. Export or print</strong> — Download your species list as a CSV or print for ordering.</div>
+      </div>
+    </div>
+
+    <!-- Full Mix notice -->
+    <div class="plan-d-notice" id="plan-fm-notice" style="background:#EFF6FF;border-color:#BFDBFE;color:#1E40AF">
+      <strong>Full Mix</strong> — Every ecological layer is represented. Enter your total trees and the planner scales everything automatically. For multi-year plantings, order in thirds (~120 trees/year) and <strong>diversify every year</strong> — don't save understory and conifers for later. Weight oaks and hickories a little heavier in Year 1, but each year's order should stand alone as a complete planting. <a href="plans.html#full-mix" style="color:#1E40AF">Full approach details →</a>
+    </div>
+
+    <!-- Management-First notice -->
+    <div class="plan-d-notice" id="plan-mf-notice">
+      <strong>Management-First</strong> is active. Group weights have shifted to emphasize hickories and conifers — the species that won't arrive in time without planting (slow dispersal, no nearby seed source, or specific germination requirements). Oaks (0%) should be direct-seeded from nearby legacy trees at no cost. Serviceberry, hop-hornbeam, and chestnut oak are auto-zeroed — they arrive naturally within 3–7 years of deer management. Save your budget for what won't come on its own. <a href="plans.html#management-first">Full approach details →</a>
+    </div>
+
+    <!-- Main planner -->
+    <div class="planner-wrap">
+
+      <!-- Controls -->
+      <div class="planner-controls">
+        <div class="planner-input-group">
+          <label for="plan-select">Plan</label>
+          <select id="plan-select" class="planner-input">
+            <option value="FM" selected>Full Mix — All layers, any scale</option>
+            <option value="MF">Management-First — Buy only what won't arrive in time</option>
+          </select>
+        </div>
+        <div class="planner-input-group">
+          <label for="total-trees-input">Total Trees to Plant</label>
+          <input id="total-trees-input" class="planner-input" type="number" min="1" max="2000" value="60" placeholder="60">
+        </div>
+        <div class="planner-input-group">
+          <label for="shrub-total-input">Total Shrubs (separate)</label>
+          <input id="shrub-total-input" class="planner-input" type="number" min="0" max="500" value="39" placeholder="39">
+        </div>
+      </div>
+
+      <!-- Status bar -->
+      <div class="planner-status">
+        <div>
+          <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-light)">Planned Total</div>
+          <div id="planner-status-text" class="planner-total-display">—</div>
+        </div>
+        <div style="display:flex;gap:.75rem;align-items:center">
+          <button id="planner-reset" class="btn btn-ghost btn-sm">↺ Reset overrides</button>
+          <button id="planner-export" class="btn btn-ghost btn-sm">⬇ Export CSV</button>
+        </div>
+      </div>
+
+      <!-- Column headers -->
+      <div style="padding:.5rem 2rem;background:var(--green-50);border-bottom:1px solid var(--border)">
+        <div class="planner-col-headers" style="display:grid;grid-template-columns:1fr 80px 90px 80px;gap:1rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text-light)">
+          <div>Species</div>
+          <div style="text-align:center">Default</div>
+          <div class="no-print" style="text-align:center">Your Count</div>
+          <div style="text-align:center">Actual</div>
+        </div>
+      </div>
+
+      <!-- Groups render target -->
+      <div class="planner-body">
+        <div id="planner-groups"></div>
+
+        <!-- Shrub section -->
+        <div class="planner-group mt-3">
+          <div class="planner-group-header" style="background:var(--green-700)">
+            <div>
+              <div class="planner-group-name">Shrubs <span style="font-size:.75rem;font-weight:400;opacity:.7">— separate count, not included in tree total</span></div>
+              <div style="font-size:.75rem;color:rgba(255,255,255,.6);margin-top:.1rem">Research shows diverse shrubs increase total forest biomass by 50%+ — plant alongside every plan.</div>
+            </div>
+            <div style="text-align:right">
+              <div class="planner-group-pct" style="font-size:.8rem">Target</div>
+              <div id="shrub-total-actual" class="planner-group-total">—</div>
+            </div>
+          </div>
+          <div class="planner-species-row" style="background:var(--green-50);font-size:.75rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.05em">
+            <div>Shrub Species</div><div style="text-align:center">Default</div><div style="text-align:center">Override</div><div style="text-align:center">Count</div>
+          </div>
+          <div id="shrub-section-body"></div>
+        </div>
+
+        <!-- Notes -->
+        <div class="planner-shrub-note mt-3">
+          <strong>Protection note:</strong> Yellow cells = plastic tube (oaks, hickories, cherry, walnut). Blue = wire cage (sugar maple, hemlock, birch, spruce, serviceberry, dogwood). <em>PSU 2024 research: plastic tubes reach 30°F above ambient — damaging to cool-adapted species.</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reference table -->
+    <div class="mt-4">
+      <h3 class="mb-3">Group Allocation by Approach</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Ecological Group</th>
+              <th>Full Mix</th>
+              <th style="background:#92400E">Management-First</th>
+              <th>Management-First Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Gap-Filling Canopy Oaks</td><td>22%</td><td style="background:#FEF3C7;font-weight:700">0%</td><td>Direct seed acorns from legacy trees — free and locally adapted</td></tr>
+            <tr><td>Moist-Slope Canopy</td><td>15%</td><td style="background:#D1FAE5;font-weight:700">25%</td><td>Sugar maple, yellow birch, basswood — won't establish without help</td></tr>
+            <tr><td>Ridge &amp; Dry-Slope</td><td>15%</td><td style="background:#D1FAE5;font-weight:700">35%</td><td>Hickory-dominant; chestnut oak auto-zeroed (arrives naturally)</td></tr>
+            <tr><td>Pioneers / Fast-Fill</td><td>8%</td><td style="background:#FEF3C7;font-weight:700">0%</td><td>Arrive naturally via clonal spread, seed, and deer management</td></tr>
+            <tr><td>Conifers</td><td>12%</td><td style="background:#D1FAE5;font-weight:700">28%</td><td>No natural seed source at 2,000ft — must be planted</td></tr>
+            <tr><td>Understory</td><td>15%</td><td style="background:#FEF3C7;font-weight:700">7%</td><td>Pagoda dogwood only; serviceberry + hop-hornbeam arrive naturally</td></tr>
+            <tr><td>Fruiting / Flowering</td><td>8%</td><td style="background:#FEF3C7;font-weight:700">0%</td><td>Skip — budget goes to hickory and conifers first</td></tr>
+            <tr><td>Notable Specialty</td><td>5%</td><td>5%</td><td>Same in both approaches</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="justify-content:center;gap:2rem">
+      <a href="index.html">Home</a>
+      <a href="plans.html">The Plans</a>
+      <a href="species.html">Species Guide</a>
+      <a href="management.html">Before You Plant</a>
+      <a href="research.html">Research</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>

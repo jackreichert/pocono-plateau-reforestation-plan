@@ -98,12 +98,16 @@ const GROUPS = [
     stdPct: 8, mfPct: 0,
     mfNote: 'For Management-First: skip fruiting trees — budget goes to hickory and conifers first. Add in later years.',
     species: [
-      { name: 'Native Sweet Crabapple', key: 'native_crabapple', weight: 45, protection: 'tube',
+      { name: 'Native Sweet Crabapple', key: 'native_crabapple', weight: 35, protection: 'tube',
         note: 'Rose-scented May bloom. 287 Lepidoptera species. Winter bird food.' },
-      { name: 'American Chestnut (TACF)', key: 'american_chestnut', weight: 35, protection: 'tube',
+      { name: 'American Chestnut (TACF)', key: 'american_chestnut', weight: 25, protection: 'tube',
         note: 'Backcross hybrid. Contact PA-NJ TACF chapter (patacf.org) for seedlings.' },
-      { name: 'Fire-Resistant Pear', key: 'fire_resistant_pear', weight: 20, protection: 'tube', flex: true,
-        note: 'Moonglow, Harrow Sweet, or Luscious cultivars. Absorbs if Chestnut stock limited.' },
+      { name: 'American Plum', key: 'american_plum', weight: 20, protection: 'tube', caution: true,
+        note: '⚠️ Same genus as black cherry — monitor for black knot. Bears, foxes, turkeys, birds. Forest edges only.' },
+      { name: 'Black Walnut', key: 'black_walnut', weight: 12, protection: 'tube', caution: true,
+        note: '⚠️ Moist fertile coves only — allelopathic; suppresses nearby plants. 1–3 per cluster max. Most valuable native nut tree.' },
+      { name: 'Fire-Resistant Pear', key: 'fire_resistant_pear', weight: 8, protection: 'tube', flex: true,
+        note: 'Moonglow, Harrow Sweet, or Luscious. DJ-confirmed at this elevation. Absorbs if Chestnut stock limited.' },
     ]
   },
   {
@@ -138,6 +142,7 @@ let state = {
   totalTrees: 60,
   shrubTotal: 39,
   plan: 'FM',
+  acres: null,
   groupOverrides: {},  // groupId → custom pct (null = use default)
   speciesOverrides: {}, // "groupId:speciesIdx" → value (null = auto)
 };
@@ -375,6 +380,9 @@ function renderPlanner() {
 
   // Shrubs
   renderShrubs();
+
+  // Site layout guide
+  renderLayoutGuide();
 }
 
 function renderShrubs() {
@@ -397,6 +405,96 @@ function renderShrubs() {
 
   const totalEl = document.getElementById('shrub-total-actual');
   if (totalEl) totalEl.textContent = getTotalShrubsActual();
+}
+
+// ── Site layout guide ──────────────────────────────────────────────────────
+function renderLayoutGuide() {
+  const el = document.getElementById('layout-guide');
+  if (!el) return;
+
+  const trees = state.totalTrees;
+  const acres = state.acres && state.acres > 0 ? state.acres : null;
+  const clustersRec = Math.max(1, Math.round(trees / 17));
+  const treesPerCluster = Math.round(trees / clustersRec);
+
+  let headline, body;
+  if (trees <= 15) {
+    headline = '1 cluster &mdash; site test scale';
+    body = 'Plant as a single tight cluster in your best gap — the largest opening without a nearby seed tree. One afternoon. This is a site test: learn deer pressure and drainage before scaling up. Keep every species from the full mix represented at this scale, not a selection of easy ones.';
+  } else if (trees <= 30) {
+    headline = `${clustersRec} cluster${clustersRec > 1 ? 's' : ''} &mdash; 15&ndash;20 trees each`;
+    body = 'Research shows clusters below a ~65&times;65ft footprint (roughly 15&ndash;20 trees) produce significantly weaker wildlife outcomes. Keep these trees concentrated &mdash; resist distributing them evenly across your property.';
+  } else if (trees <= 100) {
+    headline = `${clustersRec} clusters &mdash; ~${treesPerCluster} trees each`;
+    body = 'Space clusters 100&ndash;200ft apart to create connected habitat islands that seed-dispersing birds move between. Plant all ecological layers in every cluster &mdash; don&rsquo;t defer conifers or understory to a later cluster.';
+  } else {
+    const perYear = Math.round(trees / 3);
+    headline = `${clustersRec} clusters &mdash; ~${treesPerCluster} trees each`;
+    body = `At this scale, consider phasing over 2&ndash;3 years (~${perYear} trees/year). Each year&rsquo;s order should cover all ecological layers &mdash; weight canopy heavier in Year 1, but don&rsquo;t defer conifers or understory to later years.`;
+  }
+
+  const statsHtml = [
+    `<div><span style="color:var(--text-light);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em">Clusters</span><div style="font-weight:700;font-size:1.1rem;color:var(--green-800)">${clustersRec}</div></div>`,
+    `<div><span style="color:var(--text-light);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em">Per cluster</span><div style="font-weight:700;font-size:1.1rem;color:var(--green-800)">~${treesPerCluster} trees</div></div>`,
+  ];
+
+  let acreageHtml = '';
+  let placementHtml = '';
+
+  if (acres) {
+    const clusterSqFt = clustersRec * 65 * 65;
+    const totalSqFt   = acres * 43560;
+    const coveragePct = Math.max(1, Math.round(clusterSqFt / totalSqFt * 100));
+    const perAcre     = Math.round(trees / acres);
+
+    statsHtml.push(
+      `<div><span style="color:var(--text-light);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em">Trees / acre</span><div style="font-weight:700;font-size:1.1rem;color:var(--green-800)">${perAcre}</div></div>`,
+      `<div><span style="color:var(--text-light);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em">Cluster coverage</span><div style="font-weight:700;font-size:1.1rem;color:var(--green-800)">~${coveragePct}%</div></div>`
+    );
+
+    const treesPerAcreNum = trees / acres;
+    if (treesPerAcreNum < 20 && acres > 1 && clustersRec < acres) {
+      acreageHtml = `<div style="margin-top:.75rem;padding:.75rem 1rem;background:#FEF3C7;border-radius:8px;font-size:.875rem;border-left:3px solid #D97706">
+        <strong>Concentrate first.</strong> At ${perAcre} trees/acre across ${acres} acres, spreading evenly would leave thin scatter with no nucleation effect. Focus into ${clustersRec} tight cluster${clustersRec > 1 ? 's' : ''} in your best gaps &mdash; establish those fully, then expand. Corbin 2016 achieved 59% forest cover on a 14.8-acre site by planting clusters on less than 3% of the land; the birds did the rest.
+      </div>`;
+    } else if (coveragePct <= 5) {
+      acreageHtml = `<div style="margin-top:.75rem;padding:.75rem 1rem;background:var(--green-50);border-radius:8px;font-size:.875rem;border-left:3px solid var(--green-600)">
+        <strong>Nucleation in range.</strong> Your clusters cover ~${coveragePct}% of your ${acres} acres &mdash; within the proven nucleation threshold. Corbin et al. (2016) achieved 59% total forest cover across a 14.8-acre site using clusters on less than 3% of the land. Concentrate, and the forest builds outward.
+      </div>`;
+    } else {
+      acreageHtml = `<div style="margin-top:.75rem;padding:.75rem 1rem;background:var(--green-50);border-radius:8px;font-size:.875rem;border-left:3px solid var(--green-600)">
+        <strong>Good density.</strong> Your clusters would cover ~${coveragePct}% of your ${acres} acres &mdash; substantial enough to drive fast establishment and connected wildlife corridors across the property.
+      </div>`;
+    }
+
+    placementHtml = `<div style="margin-top:.75rem">
+      <div style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-light);margin-bottom:.4rem">Cluster placement priorities</div>
+      <ol style="margin-left:1.25rem;font-size:.875rem;line-height:2;color:var(--text-mid)">
+        <li><strong>Largest open gaps</strong> without a nearby seed tree &mdash; without a cluster here, these stay open for decades</li>
+        <li><strong>Around your released legacy oaks and hickories</strong> &mdash; amplifies crop tree release work immediately</li>
+        <li><strong>North-slope transitions</strong> where beech was dominant &mdash; sugar maple, yellow birch, hemlock</li>
+        <li><strong>Ridge tops</strong> &mdash; hickory-dominant clusters; hardest species to establish naturally</li>
+        <li><strong>Ravine edges</strong> &mdash; hemlock, balsam fir; lose decades of establishment without planting here</li>
+      </ol>
+    </div>`;
+  }
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+      <div>
+        <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-light)">Site Layout</div>
+        <div style="font-size:1.05rem;font-weight:700;color:var(--green-800);margin-top:.2rem">${headline}</div>
+      </div>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap">${statsHtml.join('')}</div>
+    </div>
+    <p style="font-size:.9rem;color:var(--text-mid)">${body}</p>
+    ${acreageHtml}
+    ${placementHtml}
+    <div style="margin-top:.75rem;font-size:.8rem">
+      <a href="plans.html#full-mix" style="color:var(--green-700)">How to plan clusters &rarr;</a>
+      <span style="color:var(--border);margin:0 .5rem">|</span>
+      <a href="research.html" style="color:var(--green-700)">Nucleation research &rarr;</a>
+    </div>`;
 }
 
 // ── Build shrub section (static HTML + dynamic values) ───────────────────
@@ -476,6 +574,16 @@ function initPlanner() {
     shrubInput.addEventListener('input', () => {
       state.shrubTotal = Math.max(0, parseInt(shrubInput.value) || 0);
       renderShrubs();
+    });
+  }
+
+  // Acres input
+  const acresInput = document.getElementById('acres-input');
+  if (acresInput) {
+    acresInput.addEventListener('input', () => {
+      const v = parseFloat(acresInput.value);
+      state.acres = isNaN(v) || v <= 0 ? null : v;
+      renderLayoutGuide();
     });
   }
 

@@ -285,7 +285,7 @@ tr:hover td { background: var(--green-100); }
 }
 .planner-controls {
   background: var(--green-800); padding: 2rem;
-  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1.5rem;
   align-items: end;
 }
 .planner-input-group label {
@@ -399,6 +399,12 @@ tr:hover td { background: var(--green-100); }
   margin: .5rem 0;
 }
 .citation-link  { font-size: .8rem; font-family: var(--mono); }
+.citation-summary {
+  font-size: .875rem; color: var(--text-mid); margin: .5rem 0 .6rem;
+  padding: .5rem .75rem;
+  background: var(--green-50); border-radius: 6px;
+  line-height: 1.6;
+}
 
 /* ── Comparison table highlight ─────────────────────────────────────────── */
 .highlight-col { background: #FFFEF0; }

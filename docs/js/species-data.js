@@ -40,6 +40,7 @@ const PHOTOS = {
   // Fruiting / specialty
   native_crabapple:  {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Crab_apple_flower_4004.jpg/960px-Crab_apple_flower_4004.jpg",credit:"Chris Light",license:"CC BY-SA 4.0"},
   american_chestnut: {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Castanea_dentata.jpg/960px-Castanea_dentata.jpg",credit:"Jean-Pol Grandmont",license:"CC BY 3.0"},
+  american_plum:     {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Prunus_americana_3.jpg/960px-Prunus_americana_3.jpg",credit:"Karl Thomas Moore",license:"CC BY-SA 3.0"},
   // New species
   black_oak:              {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Forest_Road_-_Black_Oak_%28Quercus_velutina%29_leaves_-_Flickr_-_Jay_Sturner_%281%29.jpg/960px-Forest_Road_-_Black_Oak_%28Quercus_velutina%29_leaves_-_Flickr_-_Jay_Sturner_%281%29.jpg",credit:"Jay Sturner",license:"CC BY 2.0"},
   gray_birch:             {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Betula_populifolia_leaves.jpg/960px-Betula_populifolia_leaves.jpg",credit:"Richtid",license:"CC BY-SA 3.0"},
@@ -299,6 +300,12 @@ const SPECIES = [
     refs:[{label:"TACF",url:"https://www.tacf.org/"},{label:"PA-NJ Chapter",url:"https://patacf.org/"}]
   },
   {
+    key:"american_plum", name:"American Plum", latin:"Prunus americana",
+    layer:"fruiting", protection:"tube", plans:["B","C"],
+    summary:"Native edge and old-field fruit tree with outstanding wildlife value. Plums consumed by bears, deer, foxes, turkeys, and dozens of bird species in summer. White flowers in April provide early nectar. Spreads slowly by root suckers to form a small colony.",
+    notes:"⚠️ Same genus as black cherry — susceptible to black knot fungus. Survey your site for existing black knot infection before ordering. Plant at forest edges and path edges only — not deep interior gaps. Monitor yearly and prune any infected branches immediately.",
+    refs:[{label:"USFS FEIS",url:"https://www.fs.usda.gov/database/feis/plants/tree/pruame/all.html"}]
+  },
     key:"pennsylvania_hawthorn", name:"Pennsylvania Hawthorn", latin:"Crataegus pennsylvanica",
     layer:"shrub", protection:"none", plans:["B","C"],
     summary:"One of the best native shrubs for wildlife in the entire eastern forest. Hosts 159 Lepidoptera species. Dense thorny branching provides the best nesting cover available — robins, catbirds, and thrushes specifically seek it out. White flowers in May, red berries persisting into January.",

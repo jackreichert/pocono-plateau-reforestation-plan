@@ -383,6 +383,9 @@ function renderPlanner() {
 
   // Site layout guide
   renderLayoutGuide();
+
+  // Cost estimate
+  renderCostEstimate();
 }
 
 function renderShrubs() {
@@ -494,6 +497,69 @@ function renderLayoutGuide() {
       <a href="plans.html#full-mix" style="color:var(--green-700)">How to plan clusters &rarr;</a>
       <span style="color:var(--border);margin:0 .5rem">|</span>
       <a href="research.html" style="color:var(--green-700)">Nucleation research &rarr;</a>
+    </div>`;
+}
+
+// ── Cost estimate ────────────────────────────────────────────────────────
+function renderCostEstimate() {
+  const el = document.getElementById('cost-estimate');
+  if (!el) return;
+
+  const totalTrees  = getTotalActual();
+  const totalShrubs = getTotalShrubsActual();
+
+  // Count tube vs cage trees from actual species allocation
+  let tubeCount = 0, cageCount = 0;
+  GROUPS.forEach(g => {
+    g.species.forEach((sp, i) => {
+      const count = getSpeciesActual(g, i);
+      if (count === 0) return;
+      if (sp.protection === 'cage') cageCount += count;
+      else tubeCount += count;
+    });
+  });
+
+  // Seedling price range — bare root (Wayne CD / conservation district low)
+  // to container stock (Go Native, Chief River mid-qty high)
+  const seedlingLow  = totalTrees <= 25 ? 3.00 : totalTrees <= 100 ? 1.80 : totalTrees <= 300 ? 1.45 : 1.20;
+  const seedlingHigh = totalTrees <= 25 ? 8.00 : totalTrees <= 100 ? 5.00 : totalTrees <= 300 ? 3.50 : 2.50;
+
+  const treesCostLow  = totalTrees  * seedlingLow;
+  const treesCostHigh = totalTrees  * seedlingHigh;
+
+  // Protection: tube $2–$4.50 each (bulk to retail with stake)
+  // cage $3.50–$7 each (DIY hardware cloth to pre-made)
+  const protLow  = tubeCount * 2.00 + cageCount * 3.50;
+  const protHigh = tubeCount * 4.50 + cageCount * 7.00;
+
+  // Shrubs $1.50–$3.50 bare root
+  const shrubLow  = totalShrubs * 1.50;
+  const shrubHigh = totalShrubs * 3.50;
+
+  const totalLow  = treesCostLow  + protLow  + shrubLow;
+  const totalHigh = treesCostHigh + protHigh + shrubHigh;
+
+  const fmt   = n => '$' + Math.round(n).toLocaleString();
+  const range = (lo, hi) => `<strong>${fmt(lo)}</strong> <span style="color:var(--text-light)">– ${fmt(hi)}</span>`;
+
+  const row = (label, sub, lo, hi) => `
+    <div style="display:flex;justify-content:space-between;align-items:baseline;padding:.45rem 0;border-bottom:1px solid var(--border);font-size:.875rem">
+      <div><span style="color:var(--text-mid)">${label}</span> <span style="font-size:.75rem;color:var(--text-light)">${sub}</span></div>
+      <div style="text-align:right;white-space:nowrap">${range(lo, hi)}</div>
+    </div>`;
+
+  el.innerHTML = `
+    <div style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-light);margin-bottom:.6rem">Rough Cost Estimate</div>
+    ${row(`${totalTrees} tree seedlings`, 'bare root (conservation district) → container stock', treesCostLow, treesCostHigh)}
+    ${tubeCount ? row(`${tubeCount} plastic tubes`, 'bulk → retail + stake', tubeCount * 2.00, tubeCount * 4.50) : ''}
+    ${cageCount ? row(`${cageCount} wire cages`, 'DIY hardware cloth → pre-made + stake', cageCount * 3.50, cageCount * 7.00) : ''}
+    ${totalShrubs ? row(`${totalShrubs} shrubs`, 'bare root (conservation district) → nursery', shrubLow, shrubHigh) : ''}
+    <div style="display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0 .1rem;font-size:.95rem;font-weight:700;color:var(--green-800)">
+      <div>Total range</div>
+      <div>${range(totalLow, totalHigh)}</div>
+    </div>
+    <div style="font-size:.75rem;color:var(--text-light);margin-top:.5rem;line-height:1.6">
+      Wayne Conservation District seedlings are the low end — roughly $1–3/tree for most species. Tubes: bulk orders (100+) run ~$2 each; retail ~$4. Wire cages: DIY from hardware cloth + rebar stake ~$3.50; pre-made ~$7. EQIP cost-share can reimburse 50–75% of eligible planting and protection costs.
     </div>`;
 }
 

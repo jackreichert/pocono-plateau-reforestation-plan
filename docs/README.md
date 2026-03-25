@@ -18,7 +18,7 @@ docs/
   plans.html          — The four plans (A, B, C, D)
   species.html        — Species guide with photos
   planner.html        — Interactive planner tool
-  management.html     — Before you plant (C-D-L, DMAP, crop tree release)
+  management.html     — Before you plant (C-D-L, invasives, tree protection, crop tree release)
   research.html       — Research references and local contacts
   css/main.css        — Design system
   js/main.js          — Navigation, tabs, modal

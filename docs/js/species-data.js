@@ -306,6 +306,7 @@ const SPECIES = [
     notes:"⚠️ Same genus as black cherry — susceptible to black knot fungus. Survey your site for existing black knot infection before ordering. Plant at forest edges and path edges only — not deep interior gaps. Monitor yearly and prune any infected branches immediately.",
     refs:[{label:"USFS FEIS",url:"https://www.fs.usda.gov/database/feis/plants/tree/pruame/all.html"}]
   },
+  {
     key:"pennsylvania_hawthorn", name:"Pennsylvania Hawthorn", latin:"Crataegus pennsylvanica",
     layer:"shrub", protection:"none", plans:["B","C"],
     summary:"One of the best native shrubs for wildlife in the entire eastern forest. Hosts 159 Lepidoptera species. Dense thorny branching provides the best nesting cover available — robins, catbirds, and thrushes specifically seek it out. White flowers in May, red berries persisting into January.",

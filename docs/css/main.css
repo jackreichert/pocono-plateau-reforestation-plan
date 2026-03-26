@@ -131,9 +131,11 @@ em { font-style: italic; }
   background-size: cover; background-position: center;
   opacity: 1;
 }
-.hero-content { position: relative; z-index: 1; padding: 5rem 0; }
+.hero-content { position: relative; z-index: 1; padding: 5rem 1.5rem; }
+.hero-sm .hero-content { padding: 2.5rem 1.5rem; }
 .hero h1 { color: #fff; margin-bottom: 1.5rem; max-width: 720px; }
 .hero p   { color: rgba(255,255,255,.85); font-size: 1.15rem; max-width: 640px; margin-bottom: 2rem; }
+.hero .section-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .hero-sm  { min-height: 280px; }
 
 /* ── Buttons ─────────────────────────────────────────────────────────────── */
@@ -443,34 +445,93 @@ tr:hover td { background: var(--green-100); }
 
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .grid-4    { grid-template-columns: repeat(2, 1fr); }
+  .grid-4      { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .planner-controls { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
+  .section    { padding: 3rem 0; }
+  .section-sm { padding: 2rem 0; }
+
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+
   .nav-links {
     display: none; flex-direction: column; position: absolute;
     top: var(--nav-h); left: 0; right: 0;
-    background: var(--green-900); padding: 1.5rem;
-    gap: 1rem; border-top: 1px solid rgba(255,255,255,.1);
+    background: var(--green-900); padding: 1.25rem 1.5rem;
+    gap: .875rem; border-top: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 8px 24px rgba(0,0,0,.3);
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
-  .planner-controls { grid-template-columns: 1fr; }
-  .planner-species-row { grid-template-columns: 1fr 70px 80px; }
+
+  .hero { min-height: 420px; }
+  .hero-content { padding: 2.5rem 1.5rem; }
+  .hero-sm .hero-content { padding: 2rem 1.5rem; }
+  .hero h1 { margin-bottom: 1rem; }
+  .hero p  { font-size: 1rem; margin-bottom: 1.5rem; }
+  .hero-sm { min-height: 200px; }
+
+  .planner-controls { grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1.25rem; }
+  /* Plan selector spans full width since it's the most important control */
+  .planner-controls .planner-input-group:first-child { grid-column: 1 / -1; }
+  .planner-species-row { grid-template-columns: 1fr 72px 76px; gap: .5rem; }
   .planner-default { display: none; }
-  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .planner-body { padding: 1.25rem; }
+
+  .modal-img, .modal-img-placeholder { height: 200px; }
+  .modal-body { padding: 1.25rem; }
+  .modal-overlay { padding: .75rem; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .footer-bottom { flex-direction: column; gap: .75rem; text-align: center; }
-  .hero-content { padding: 3rem 0; }
+
+  .tabs { gap: .25rem; flex-wrap: wrap; }
+  .tab-btn { padding: .5rem .875rem; font-size: .85rem; }
 }
 
 @media (max-width: 480px) {
-  .container { padding: 0 1rem; }
-  .planner-body { padding: 1rem; }
+  .container  { padding: 0 1rem; }
+  .section    { padding: 2.5rem 0; }
+  .section-sm { padding: 1.5rem 0; }
+
+  .hero { min-height: auto; }
+  .hero-sm { min-height: 140px; }
+  .hero-content { padding: 2rem 1rem; }
+  .hero-sm .hero-content { padding: 1.5rem 1rem; }
+  .hero p { font-size: .95rem; line-height: 1.55; margin-bottom: 1.25rem; }
+  /* Stack CTA buttons full-width on small screens */
+  .hero .flex.gap-2 { flex-direction: column; gap: .75rem; }
+  .hero .flex.gap-2 .btn { width: 100%; text-align: center; }
+
+  .planner-controls { grid-template-columns: 1fr; padding: 1rem; gap: .875rem; }
+  .planner-controls .planner-input-group:first-child { grid-column: unset; }
+  .planner-body { padding: .875rem; }
   .planner-group-header { padding: .75rem 1rem; }
-  .planner-species-row { padding: .6rem 1rem; }
+  /* Stack species rows: name full-width, then override + actual side by side */
+  .planner-species-row {
+    grid-template-columns: 1fr 76px;
+    padding: .65rem 1rem;
+  }
+  /* Move the count (actual) alongside override, hide default */
+  .planner-default { display: none; }
+
+  .modal-img, .modal-img-placeholder { height: 160px; }
+  .modal-body { padding: 1rem; }
+
+  h1 { font-size: clamp(1.6rem, 7vw, 2.25rem); }
+
+  .btn { padding: .65rem 1.25rem; font-size: .9rem; }
+  .btn-sm { padding: .45rem 1rem; font-size: .8rem; }
+
+  /* Plan cards: tighten headers on small screens */
+  .plan-card-header { padding: 1.25rem; }
+  .plan-letter { font-size: 2.25rem; }
+  .plan-card-body { padding: 1.25rem; }
+
+  /* Callouts: smaller padding */
+  .callout { padding: 1rem 1.1rem; }
 }
 
 /* ── Utility ─────────────────────────────────────────────────────────────── */

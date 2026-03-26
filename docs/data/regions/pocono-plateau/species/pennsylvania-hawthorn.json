@@ -1,0 +1,19 @@
+{
+  "key": "pennsylvania_hawthorn",
+  "name": "Pennsylvania Hawthorn",
+  "latin": "Crataegus pennsylvanica",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "One of the best native shrubs for wildlife in the entire eastern forest. Hosts 159 Lepidoptera species. Dense thorny branching provides the best nesting cover available — robins, catbirds, and thrushes specifically seek it out. White flowers in May, red berries persisting into January.",
+  "notes": "Native to this state. The thorns that make it impenetrable for predators are the feature, not a bug. Plant at forest edges and gap margins.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Crataegus_monogyna_003.JPG/960px-Crataegus_monogyna_003.JPG",
+    "credit": "H. Zell",
+    "license": "CC BY-SA 3.0"
+  }
+}

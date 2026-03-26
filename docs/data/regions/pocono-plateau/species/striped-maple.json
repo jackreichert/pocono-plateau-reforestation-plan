@@ -1,0 +1,18 @@
+{
+  "key": "striped_maple",
+  "name": "Striped Maple / Moosewood",
+  "latin": "Acer pensylvanicum",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "C"
+  ],
+  "summary": "A true northern hardwood forest companion — native to NEPA at this exact elevation. The distinctive white-striped green bark is recognizable year-round. Clear yellow fall color.",
+  "notes": "Small understory tree to 15–20ft. Highly shade tolerant. Often browsed by deer — wire cage essential.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Acer_pensylvanicum_%28Moosewood%2C_Striped_Maple%2C_Snake-bark_Maple%29_%2838246389231%29.jpg/960px-Acer_pensylvanicum_%28Moosewood%2C_Striped_Maple%2C_Snake-bark_Maple%29_%2838246389231%29.jpg",
+    "credit": "Plant Image Library",
+    "license": "CC BY-SA 2.0"
+  }
+}

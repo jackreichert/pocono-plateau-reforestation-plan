@@ -1,0 +1,18 @@
+{
+  "key": "fire_resistant_pear",
+  "name": "Fire-Resistant Pear",
+  "latin": "Pyrus communis",
+  "layer": "fruiting",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "Use fire-blight-resistant cultivars: Moonglow, Harrow Sweet, or Luscious. Locally confirmed to do well at this elevation. Late-summer fruit consumed by deer, bear, raccoon, and birds.",
+  "notes": "Specify a resistant cultivar when ordering — not all pears are equal for fire blight tolerance. Plant at forest edges and in open gaps with good air circulation.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Starr-130304-1935-Pyrus_communis-fruit_and_leaves-Montrose_Crater_Rd_Kula-Maui_%2825206313775%29.jpg/960px-Starr-130304-1935-Pyrus_communis-fruit_and_leaves-Montrose_Crater_Rd_Kula-Maui_%2825206313775%29.jpg",
+    "credit": "Forest and Kim Starr",
+    "license": "CC BY 3.0"
+  }
+}

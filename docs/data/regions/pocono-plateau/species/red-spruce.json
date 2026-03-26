@@ -1,0 +1,25 @@
+{
+  "key": "red_spruce",
+  "name": "Red Spruce",
+  "latin": "Picea rubens",
+  "layer": "conifer",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Native to this elevation in the Pocono Plateau. Long-lived, ecologically irreplaceable for the boreal species guild. No natural seed source nearby — must be planted. Part of a major multi-state restoration initiative (CASRI).",
+  "notes": "⚠️ Plant on NORTH-FACING slopes and cool ravines only — at 2,000ft you are at the lower fringe of its climate range. Wire cage. Local forester advises planting conservatively.",
+  "refs": [
+    {
+      "label": "CASRI",
+      "url": "https://restoreredspruce.org/"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Picea_rubens_Bear_Rock_WV.jpg/960px-Picea_rubens_Bear_Rock_WV.jpg",
+    "credit": "Forest Wander",
+    "license": "CC BY-SA 2.0"
+  }
+}

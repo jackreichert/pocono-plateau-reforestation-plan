@@ -1,0 +1,30 @@
+{
+  "key": "shagbark_hickory",
+  "name": "Shagbark Hickory",
+  "latin": "Carya ovata",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Pre-settlement dominant species that modern restoration almost entirely forgets. The shaggy peeling bark plates are the primary roosting habitat for Indiana bats and several other threatened bat species. Takes 50–70 years from seedling to bat-roosting size — plant now.",
+  "notes": "USFWS requires 16 trees >11\" DBH per acre for bat colony habitat. Plant on south-facing upland slopes. Hard mast for bears, squirrels, turkeys.",
+  "refs": [
+    {
+      "label": "USFWS Bat Guidelines",
+      "url": "https://www.fws.gov/sites/default/files/documents/INFO%20Forest%20Management%20Guidelines%2023%20May%202019.pdf"
+    },
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/carya/ovata.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shagbark_hickory_spring_leaf_cluster.jpg/960px-Shagbark_hickory_spring_leaf_cluster.jpg",
+    "credit": "Dcrjsr",
+    "license": "CC BY 3.0"
+  }
+}

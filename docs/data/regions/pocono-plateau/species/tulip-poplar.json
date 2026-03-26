@@ -1,0 +1,18 @@
+{
+  "key": "tulip_poplar",
+  "name": "Tulip Poplar",
+  "latin": "Liriodendron tulipifera",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "The tallest native tree in eastern North America — grows 3 feet per year and reaches 100+ feet with a straight, clean trunk. Spectacular orange-green tulip-shaped flowers in May. At the northern fringe of its range at 2,000ft — south-facing, sheltered, lower slopes only.",
+  "notes": "Skip for exposed or north-facing sites. Best in moist, fertile coves on southern aspects. Provides exceptional wildlife value — hummingbirds and bees work the flowers heavily.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Liriodendron_tulipifera_PAN_leaf.JPG/960px-Liriodendron_tulipifera_PAN_leaf.JPG",
+    "credit": "Crusier",
+    "license": "CC BY-SA 3.0"
+  }
+}

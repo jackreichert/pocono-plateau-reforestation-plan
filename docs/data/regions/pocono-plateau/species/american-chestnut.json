@@ -1,0 +1,27 @@
+{
+  "key": "american_chestnut",
+  "name": "American Chestnut (TACF)",
+  "latin": "Castanea dentata",
+  "layer": "fruiting",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "Restored from near-extinction. The American chestnut once fed an entire eastern forest ecosystem. TACF backcross hybrids have intermediate blight resistance and can survive to reproductive age. Planting them is both ecological restoration and an act of historical reconnection.",
+  "notes": "TACF backcross hybrids only — not straight-species stock. Contact PA-NJ TACF Chapter (patacf.org) for seedling availability.",
+  "refs": [
+    {
+      "label": "TACF",
+      "url": "https://www.tacf.org/"
+    },
+    {
+      "label": "PA-NJ Chapter",
+      "url": "https://patacf.org/"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Castanea_dentata.jpg/960px-Castanea_dentata.jpg",
+    "credit": "Jean-Pol Grandmont",
+    "license": "CC BY 3.0"
+  }
+}

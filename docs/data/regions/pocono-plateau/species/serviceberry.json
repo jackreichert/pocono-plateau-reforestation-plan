@@ -1,0 +1,25 @@
+{
+  "key": "serviceberry",
+  "name": "Allegheny Serviceberry",
+  "latin": "Amelanchier laevis",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C"
+  ],
+  "summary": "The first tree in your forest to bloom — white flowers in late March or early April, before the leaves emerge. The berries ripen in June and are consumed by virtually every forest bird species within days.",
+  "notes": "For Plan D: arrives naturally within 3–7 years of deer management. Save your budget. For Plans A–C: excellent investment, shade-tolerant, no serious disease issues.",
+  "refs": [
+    {
+      "label": "Wildflower.org",
+      "url": "https://www.wildflower.org/plants/result.php?id_plant=amla"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Alleghany_Serviceberry_%28Amelanchier_laevis%29_-_Guelph%2C_Ontario_01.jpg/960px-Alleghany_Serviceberry_%28Amelanchier_laevis%29_-_Guelph%2C_Ontario_01.jpg",
+    "credit": "Ryan Hodnett",
+    "license": "CC BY-SA 4.0"
+  }
+}

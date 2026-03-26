@@ -1,0 +1,24 @@
+{
+  "key": "mountain_ash",
+  "name": "American Mountain Ash",
+  "latin": "Sorbus americana",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "C",
+    "D"
+  ],
+  "summary": "Native to rocky north-facing slopes at your exact elevation — 1,800–2,500ft in the Pocono Plateau. Clusters of white flowers turn into bright orange-red berries by fall. Critical food for migrating robins, thrushes, waxwings, and grouse.",
+  "notes": "Almost never planted in restoration work despite being ecologically native here. Source from Go Native Tree Farm (Lancaster, PA) or Cold Stream Farm.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/tree/sorame/all.html"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/American_Ash_%28Sorbus_americana%29_Fruit_%2812786%29-Relic38.JPG/960px-American_Ash_%28Sorbus_americana%29_Fruit_%2812786%29-Relic38.JPG",
+    "credit": "Darren Swim",
+    "license": "CC BY-SA 3.0"
+  }
+}

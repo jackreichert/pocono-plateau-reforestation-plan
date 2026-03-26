@@ -1,0 +1,24 @@
+{
+  "key": "basswood",
+  "name": "Basswood / American Linden",
+  "latin": "Tilia americana",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "C",
+    "D"
+  ],
+  "summary": "The single most important tree for native bees and pollinators in eastern North America. The June bloom is intensely fragrant and can be heard from a distance as thousands of bees work the flowers.",
+  "notes": "Best on moist, productive north-facing coves. Regenerates poorly in disturbed upland without active planting — worth buying for this reason.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/tilia/americana.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tilia_americana_-_American_Basswood.jpg/960px-Tilia_americana_-_American_Basswood.jpg",
+    "credit": "Fritzflohrreynolds",
+    "license": "CC BY-SA 3.0"
+  }
+}

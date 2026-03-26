@@ -1,0 +1,23 @@
+{
+  "key": "black_walnut",
+  "name": "Black Walnut",
+  "latin": "Juglans nigra",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "The most valuable native nut tree in eastern North America. Large, rich nuts consumed by squirrels, bears, deer, and turkeys. Impressive yellow fall color. Deep-rooted and long-lived.",
+  "notes": "Plant only in moist, fertile coves — struggles on rocky, acidic upland soils. 1–3 per acre maximum in the best spots.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/juglans/nigra.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Juglans_nigra_BW_2024-04-09_17-44-42_Stack.jpg/960px-Juglans_nigra_BW_2024-04-09_17-44-42_Stack.jpg",
+    "credit": "Berthold Werner",
+    "license": "CC BY-SA 4.0"
+  }
+}

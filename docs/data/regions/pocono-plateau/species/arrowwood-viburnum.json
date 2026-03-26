@@ -1,0 +1,20 @@
+{
+  "key": "arrowwood_viburnum",
+  "name": "Arrowwood Viburnum",
+  "latin": "Viburnum dentatum",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "The most adaptable native viburnum for this region — tolerates sun or shade, wet or dry, and a wide range of soil types. Flat-topped white flower clusters in June followed by dark blue-black berries consumed by more than 35 bird species.",
+  "notes": "An excellent all-purpose shrub for any challenging spot in the planting. Spreads slowly by suckers to form a colony. Outstanding fall color (red to orange-red).",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Viburnum_dentatum_-_Arrowwood_Viburnum.jpg/960px-Viburnum_dentatum_-_Arrowwood_Viburnum.jpg",
+    "credit": "Fritzflohrreynolds",
+    "license": "CC BY-SA 3.0"
+  }
+}

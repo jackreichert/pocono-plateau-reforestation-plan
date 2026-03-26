@@ -1,0 +1,24 @@
+{
+  "key": "black_oak",
+  "name": "Black Oak",
+  "latin": "Quercus velutina",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Ridge and dry-slope companion to red and chestnut oak. Highly adaptable to thin, acidic upland soils. Supports 500+ Lepidoptera species alongside its oak relatives.",
+  "notes": "Plant on dry ridges and upper slopes. Similar habitat to chestnut oak — the two belong together as the ridge-top canopy duo. Fall color is deep red to russet.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/quercus/velutina.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Forest_Road_-_Black_Oak_%28Quercus_velutina%29_leaves_-_Flickr_-_Jay_Sturner_%281%29.jpg/960px-Forest_Road_-_Black_Oak_%28Quercus_velutina%29_leaves_-_Flickr_-_Jay_Sturner_%281%29.jpg",
+    "credit": "Jay Sturner",
+    "license": "CC BY 2.0"
+  }
+}

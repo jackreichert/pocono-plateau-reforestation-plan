@@ -1,0 +1,24 @@
+{
+  "key": "mockernut_hickory",
+  "name": "Mockernut Hickory",
+  "latin": "Carya tomentosa",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "C",
+    "D"
+  ],
+  "summary": "Third hickory species for dry upper ridges, growing alongside pignut hickory. Large, hard nuts that wildlife consume. Dense rounded crown. No significant disease threats.",
+  "notes": "Plant on dry upper ridges as a companion to pignut and shagbark hickory. Restoring all three hickory species corrects the pre-settlement oak-hickory co-dominance.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/carya/tomentosa.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Carya_tomentosa_%288745432970%29_4x3.jpg/960px-Carya_tomentosa_%288745432970%29_4x3.jpg",
+    "credit": "John B., Dendroica cerulea",
+    "license": "CC BY 2.0"
+  }
+}

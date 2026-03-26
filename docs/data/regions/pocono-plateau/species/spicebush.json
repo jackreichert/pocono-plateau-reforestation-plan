@@ -1,0 +1,19 @@
+{
+  "key": "spicebush",
+  "name": "Spicebush",
+  "latin": "Lindera benzoin",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "A native forest understory shrub with aromatic leaves, bark, and berries. Host plant for the spicebush swallowtail butterfly. Yellow flowers very early in spring. Brilliant red berries in fall eaten by thrushes and migrating songbirds.",
+  "notes": "Shade tolerant — true forest interior native. Plant in sheltered spots and lower elevations. The aromatic foliage is immediately recognizable.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Lindera_benzoin_kz01.jpg/960px-Lindera_benzoin_kz01.jpg",
+    "credit": "Krzysztof Ziarnek",
+    "license": "CC BY-SA 4.0"
+  }
+}

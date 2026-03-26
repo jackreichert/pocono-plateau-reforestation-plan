@@ -1,0 +1,21 @@
+{
+  "key": "balsam_fir",
+  "name": "Balsam Fir",
+  "latin": "Abies balsamea",
+  "layer": "conifer",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "The signature fragrant fir of northern forests and the recommended primary conifer for this elevation. Dense winter cover, classic conical form. Lower climate risk profile than red spruce for the 2,000ft zone.",
+  "notes": "No natural seed source at this elevation — must be planted. Cool ravines and north-facing slopes. Wire cage — heat-sensitive.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Abies_balsamea.jpg/960px-Abies_balsamea.jpg",
+    "credit": "U.S. Fish and Wildlife Service",
+    "license": "Public domain"
+  }
+}

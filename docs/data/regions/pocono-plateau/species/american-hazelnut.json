@@ -1,0 +1,20 @@
+{
+  "key": "american_hazelnut",
+  "name": "American Hazelnut",
+  "latin": "Corylus americana",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Produces hard nuts in papery husks — a critical food source for turkeys, grouse, blue jays, and squirrels. Shade tolerant, spreads by rhizome, provides dense cover. Host for Polyphemus moth, one of the largest and most spectacular native moths.",
+  "notes": "Plant throughout understory and gap edges. Easy to establish; tolerates a wide range of soils.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/American_Hazelnut_%28Corylus_americana%29_-_London%2C_Ontario_2015-04-12.jpg/960px-American_Hazelnut_%28Corylus_americana%29_-_London%2C_Ontario_2015-04-12.jpg",
+    "credit": "Ryan Hodnett",
+    "license": "CC BY-SA 4.0"
+  }
+}

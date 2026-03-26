@@ -1,0 +1,25 @@
+{
+  "key": "black_gum",
+  "name": "Black Gum / Black Tupelo",
+  "latin": "Nyssa sylvatica",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Produces the earliest and most brilliant fall color of any eastern native — deep scarlet as early as late August. Highly disease-resistant. More than 35 bird species consume the small blue-black berries.",
+  "notes": "USFS climate modeling projects black gum gaining habitat in this region under warming scenarios. Adaptable to a wide range of moisture conditions.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/nyssa/silvatica.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Nyssa_sylvatica_JPG1b.jpg/960px-Nyssa_sylvatica_JPG1b.jpg",
+    "credit": "Jean-Pol Grandmont",
+    "license": "CC BY-SA 3.0"
+  }
+}

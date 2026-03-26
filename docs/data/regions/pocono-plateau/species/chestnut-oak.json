@@ -1,0 +1,24 @@
+{
+  "key": "chestnut_oak",
+  "name": "Chestnut Oak",
+  "latin": "Quercus montana",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The signature oak of dry, rocky ridges at this elevation — more drought-tolerant than red oak on thin, acidic, exposed soils. Produces the largest acorn of any eastern oak, critical mast for wildlife on the ridge.",
+  "notes": "Plant on rocky ridges and dry south/west-facing slopes. Deeply ridged bark. Slower-growing but very long-lived.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/tree/quemon/all.html"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Chestnut_Oak_-_Quercus_montana%2C_Meadowood_Farm_SRMA%2C_Mason_Neck%2C_Virginia.jpg/960px-Chestnut_Oak_-_Quercus_montana%2C_Meadowood_Farm_SRMA%2C_Mason_Neck%2C_Virginia.jpg",
+    "credit": "Judy Gallagher",
+    "license": "CC BY 2.0"
+  }
+}

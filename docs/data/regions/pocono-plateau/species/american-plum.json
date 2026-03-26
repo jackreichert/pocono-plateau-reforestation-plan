@@ -1,0 +1,24 @@
+{
+  "key": "american_plum",
+  "name": "American Plum",
+  "latin": "Prunus americana",
+  "layer": "fruiting",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Native edge and old-field fruit tree with outstanding wildlife value. Plums consumed by bears, deer, foxes, turkeys, and dozens of bird species in summer. White flowers in April provide early nectar. Spreads slowly by root suckers to form a small colony.",
+  "notes": "⚠️ Same genus as black cherry — susceptible to black knot fungus. Survey your site for existing black knot infection before ordering. Plant at forest edges and path edges only — not deep interior gaps. Monitor yearly and prune any infected branches immediately.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/tree/pruame/all.html"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Prunus_americana_3.jpg/960px-Prunus_americana_3.jpg",
+    "credit": "Karl Thomas Moore",
+    "license": "CC BY-SA 3.0"
+  }
+}

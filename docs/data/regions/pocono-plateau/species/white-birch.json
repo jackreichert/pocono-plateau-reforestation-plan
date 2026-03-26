@@ -1,0 +1,18 @@
+{
+  "key": "white_birch",
+  "name": "Sweet/Black Birch",
+  "latin": "Betula lenta",
+  "layer": "canopy",
+  "protection": "cage",
+  "plans": [
+    "C"
+  ],
+  "summary": "Common native of rocky Appalachian slopes at this elevation. Peel a twig and smell wintergreen — it's the original source of oil of wintergreen. Dark bronze-brown bark and golden fall color.",
+  "notes": "Wire cage. No significant disease threats. Well-adapted to rocky outcrops and steep slopes throughout NEPA.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Betula_lenta_%C3%96BG_09-07-16_01.jpg/960px-Betula_lenta_%C3%96BG_09-07-16_01.jpg",
+    "credit": "El Grafo",
+    "license": "CC BY-SA 3.0"
+  }
+}

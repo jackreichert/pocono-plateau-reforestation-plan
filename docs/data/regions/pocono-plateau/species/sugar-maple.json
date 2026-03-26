@@ -1,0 +1,26 @@
+{
+  "key": "sugar_maple",
+  "name": "Sugar Maple",
+  "latin": "Acer saccharum",
+  "layer": "canopy",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "The primary ecological replacement for dying beech on north-facing slopes. The gold standard of fall color — orange, red, and yellow simultaneously on the same branch. Highly shade-tolerant as a seedling.",
+  "notes": "⚠️ Use wire cage, NOT plastic tube — PSU 2024 research found tube interiors reach 30°F above ambient, measurably damaging this species. Plant on moist, north-facing slopes.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/acer/saccharum.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Acer_saccharum_UL_01.jpg/960px-Acer_saccharum_UL_01.jpg",
+    "credit": "Cephas",
+    "license": "CC BY-SA 4.0"
+  }
+}

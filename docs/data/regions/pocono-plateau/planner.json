@@ -1,0 +1,143 @@
+{
+  "planDefaults": { "FM": 60, "MF": 150 },
+  "costTiers": {
+    "seedlings": [
+      { "maxTrees": 25,  "low": 3.00, "high": 8.00 },
+      { "maxTrees": 100, "low": 1.80, "high": 5.00 },
+      { "maxTrees": 300, "low": 1.45, "high": 3.50 },
+      {                  "low": 1.20, "high": 2.50 }
+    ],
+    "tube":  { "low": 2.00, "high": 4.50 },
+    "cage":  { "low": 3.50, "high": 7.00 },
+    "shrub": { "low": 1.50, "high": 3.50 }
+  },
+  "groups": [
+    {
+      "id": "oaks",
+      "name": "Gap-Filling Canopy Oaks",
+      "why": "Fast, broadly adaptable canopy for all gap types. Pre-settlement forests were oak-dominated; modern restoration under-represents them. Oaks support more wildlife species than any other genus.",
+      "stdPct": 22, "mfPct": 0,
+      "mfNote": "For Management-First: direct seed acorns from nearby legacy trees instead — free and locally adapted. Skip purchasing oaks.",
+      "species": [
+        { "name": "Northern Red Oak",  "key": "northern_red_oak", "weight": 55, "protection": "tube",
+          "note": "Fastest-growing oak (24\"/yr). 500+ Lepidoptera species." },
+        { "name": "White Oak",         "key": "white_oak",        "weight": 30, "protection": "tube",
+          "note": "Generational anchor. Best acorn quality. Deep burgundy fall color." },
+        { "name": "Black Oak",         "key": "black_oak",        "weight": 15, "protection": "tube", "flex": true,
+          "note": "Ridge and slope companion. Absorbs proportionally when others are reduced." }
+      ]
+    },
+    {
+      "id": "moist",
+      "name": "Moist-Slope Canopy",
+      "why": "For north-facing slopes where beech is dying. These species fill the beech niche. If maples are already regenerating naturally on your site, reduce Sugar Maple and Basswood absorbs.",
+      "stdPct": 15, "mfPct": 25,
+      "species": [
+        { "name": "Sugar Maple",  "key": "sugar_maple",  "weight": 55, "protection": "cage",
+          "note": "Primary beech replacement. Wire cage required — tubes overheat this species." },
+        { "name": "Yellow Birch", "key": "yellow_birch", "weight": 30, "protection": "cage",
+          "note": "Native at 1,800–2,500ft. Needs mineral soil to germinate. Wire cage." },
+        { "name": "Basswood",     "key": "basswood",     "weight": 15, "protection": "tube", "flex": true,
+          "note": "#1 bee tree in eastern N. America. Absorbs overflow." }
+      ]
+    },
+    {
+      "id": "ridge",
+      "name": "Ridge & Dry-Slope Canopy",
+      "why": "Dry rocky ridges and upper slopes. Pre-settlement forests were oak-HICKORY co-dominant — modern restoration forgets the hickory half. These three belong together on the ridge.",
+      "stdPct": 15, "mfPct": 35,
+      "species": [
+        { "name": "Chestnut Oak",    "key": "chestnut_oak",    "weight": 40, "protection": "tube", "mfAutoZero": true,
+          "note": "Ridge oak at your elevation. Management-First: auto-zeroed — hickories absorb this allocation." },
+        { "name": "Shagbark Hickory","key": "shagbark_hickory","weight": 35, "protection": "tube",
+          "note": "Loose bark = critical bat roosting habitat. Pre-settlement dominant. Takes 50–70 yrs to bat-roosting size." },
+        { "name": "Pignut Hickory",  "key": "pignut_hickory",  "weight": 25, "protection": "tube", "flex": true,
+          "note": "Most appropriate hickory for upper ridges to 4,900ft. Absorbs proportionally." }
+      ]
+    },
+    {
+      "id": "pioneers",
+      "name": "Pioneers / Fast-Fill",
+      "why": "Short-to-medium-lived trees that fill open gaps immediately, creating conditions for slower long-lived species beneath.",
+      "stdPct": 8, "mfPct": 0,
+      "mfNote": "For Management-First: pioneers arrive naturally — aspen via clonal root sprouting, gray birch via seed, cherry after management. Skip purchasing.",
+      "species": [
+        { "name": "Bigtooth Aspen", "key": "bigtooth_aspen", "weight": 55, "protection": "tube",
+          "note": "318 Lepidoptera species. Clonal spread. Best for large open gaps." },
+        { "name": "Black Cherry",   "key": "black_cherry",   "weight": 30, "protection": "tube", "caution": true,
+          "note": "⚠️ Black knot fungus present on many properties. Survey existing trees before ordering." },
+        { "name": "Gray Birch",     "key": "gray_birch",     "weight": 15, "protection": "tube", "flex": true,
+          "note": "Short-lived pioneer (~40 yrs) for disturbed ground." }
+      ]
+    },
+    {
+      "id": "conifers",
+      "name": "Conifers",
+      "why": "Year-round structure and winter wildlife cover. Each species has a specific microsite. No natural seed source for spruce or fir at 2,000ft — these must be planted.",
+      "stdPct": 12, "mfPct": 28,
+      "species": [
+        { "name": "Balsam Fir",       "key": "balsam_fir",      "weight": 45, "protection": "cage",
+          "note": "Best climate-risk profile. Dense winter cover. Cool ravines + north slopes." },
+        { "name": "Red Spruce",       "key": "red_spruce",      "weight": 35, "protection": "cage",
+          "note": "North-facing slopes ONLY — lower edge of climate range at 2,000ft. Wire cage." },
+        { "name": "Eastern Hemlock",  "key": "eastern_hemlock", "weight": 20, "protection": "cage", "flex": true, "caution": true,
+          "note": "⚠️ Requires HWA treatment plan (soil drench every 4–6 yrs). Ravines only." }
+      ]
+    },
+    {
+      "id": "understory",
+      "name": "Understory / Mid-Story",
+      "why": "The mid-layer that provides spring flowers, summer berries, nesting cover, and four-season structure. A 2025 study found diverse understory increases total forest biomass by 50%+.",
+      "stdPct": 15, "mfPct": 7,
+      "species": [
+        { "name": "Allegheny Serviceberry", "key": "serviceberry",  "weight": 45, "protection": "cage", "mfAutoZero": true,
+          "note": "Management-First: arrives within 3–7 yrs of deer management. Save budget for hickory and conifers." },
+        { "name": "Pagoda Dogwood",         "key": "pagoda_dogwood","weight": 35, "protection": "cage",
+          "note": "Disease-free forest-interior dogwood. 40+ bird species. Spring Azure butterfly host." },
+        { "name": "Hop-Hornbeam",           "key": "hop_hornbeam",  "weight": 20, "protection": "cage", "flex": true, "mfAutoZero": true,
+          "note": "Management-First: arrives with deer management. Stump-sprouts. Skip purchasing." }
+      ]
+    },
+    {
+      "id": "fruiting",
+      "name": "Fruiting / Flowering",
+      "why": "Trees selected for wildlife food and visual interest. Keep at ~8–10% so fruiting does not dominate the ecological restoration.",
+      "stdPct": 8, "mfPct": 0,
+      "mfNote": "For Management-First: skip fruiting trees — budget goes to hickory and conifers first. Add in later years.",
+      "species": [
+        { "name": "Native Sweet Crabapple",  "key": "native_crabapple",   "weight": 35, "protection": "tube",
+          "note": "Rose-scented May bloom. 287 Lepidoptera species. Winter bird food." },
+        { "name": "American Chestnut (TACF)","key": "american_chestnut",  "weight": 25, "protection": "tube",
+          "note": "Backcross hybrid. Contact PA-NJ TACF chapter (patacf.org) for seedlings." },
+        { "name": "American Plum",           "key": "american_plum",      "weight": 20, "protection": "tube", "caution": true,
+          "note": "⚠️ Same genus as black cherry — monitor for black knot. Bears, foxes, turkeys, birds. Forest edges only." },
+        { "name": "Black Walnut",            "key": "black_walnut",       "weight": 12, "protection": "tube", "caution": true,
+          "note": "⚠️ Moist fertile coves only — allelopathic; suppresses nearby plants. 1–3 per cluster max. Most valuable native nut tree." },
+        { "name": "Fire-Resistant Pear",     "key": "fire_resistant_pear","weight":  8, "protection": "tube", "flex": true,
+          "note": "Moonglow, Harrow Sweet, or Luscious. DJ-confirmed at this elevation. Absorbs if Chestnut stock limited." }
+      ]
+    },
+    {
+      "id": "specialty",
+      "name": "Notable Specialty",
+      "why": "Ecologically native species rarely planted in restoration — each fills a specific microhabitat with high individual value.",
+      "stdPct": 5, "mfPct": 5,
+      "species": [
+        { "name": "Cucumber Magnolia",    "key": "cucumber_magnolia", "weight": 45, "protection": "tube",
+          "note": "Native to Allegheny Plateau. Associates with yellow birch, hemlock, sugar maple. Almost never planted." },
+        { "name": "American Mountain Ash","key": "mountain_ash",      "weight": 30, "protection": "cage",
+          "note": "Native to your exact elevation. Outstanding migrant bird food. Wire cage." },
+        { "name": "Black Gum",            "key": "black_gum",         "weight": 25, "protection": "tube", "flex": true,
+          "note": "USFS climate winner. Best fall color of any eastern native. Absorbs overflow." }
+      ]
+    }
+  ],
+  "shrubs": [
+    { "name": "American Hazelnut",     "key": "american_hazelnut",    "weight": 25, "note": "Hard mast for turkey + grouse. Polyphemus moth host." },
+    { "name": "Nannyberry",            "key": "nannyberry",           "weight": 20, "note": "Winter berries for waxwings + robins. Cold-hardy." },
+    { "name": "Pennsylvania Hawthorn", "key": "pennsylvania_hawthorn","weight": 18, "note": "159 Lepidoptera species. Best nesting cover available." },
+    { "name": "Spicebush",             "key": "spicebush",            "weight": 17, "note": "Spicebush Swallowtail butterfly host." },
+    { "name": "Red Elderberry",        "key": "red_elderberry",       "weight": 15, "note": "Native at your elevation. June berries for migrating thrushes." },
+    { "name": "Arrowwood Viburnum",    "key": "arrowwood_viburnum",   "weight":  5, "flex": true, "note": "Most adaptable native viburnum. Absorbs overflow." }
+  ]
+}

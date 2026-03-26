@@ -1,0 +1,24 @@
+{
+  "key": "native_crabapple",
+  "name": "Native Sweet Crabapple",
+  "latin": "Malus coronaria",
+  "layer": "fruiting",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The native crabapple. Pink-white flowers in May are intensely rose-scented and visible from a distance. Hosts 287 species of moths and butterflies. Small tart apples persist on the tree through winter, providing critical cold-weather bird food.",
+  "notes": "Plant at forest edges and in large open gaps. Not the same as ornamental Sargent crabapple — Malus coronaria is the ecologically correct species for this region.",
+  "refs": [
+    {
+      "label": "Wildflower.org",
+      "url": "https://www.wildflower.org/plants/result.php?id_plant=maco5"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Crab_apple_flower_4004.jpg/960px-Crab_apple_flower_4004.jpg",
+    "credit": "Chris Light",
+    "license": "CC BY-SA 4.0"
+  }
+}

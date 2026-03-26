@@ -1,0 +1,25 @@
+{
+  "key": "red_elderberry",
+  "name": "Red Elderberry",
+  "latin": "Sambucus racemosa",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Native to cool, rocky mountain slopes — specifically your elevation and aspect. Produces large clusters of bright red berries in June, important food for thrushes and migrating songbirds. White flower clusters in May.",
+  "notes": "Plant on north-facing slopes and in cool forest gaps. Distinct from the more common American elderberry — racemosa is the species native at this elevation.",
+  "refs": [
+    {
+      "label": "PA Flora",
+      "url": "https://www.paenflowered.org/apgii/dipsacales/adoxaceae/sambucus/sambucus-racemosa"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/20220621_Sambucus_racemosa_01.jpg/960px-20220621_Sambucus_racemosa_01.jpg",
+    "credit": "Flocci Nivis",
+    "license": "CC BY 4.0"
+  }
+}

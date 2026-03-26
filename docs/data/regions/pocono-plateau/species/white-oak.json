@@ -1,0 +1,24 @@
+{
+  "key": "white_oak",
+  "name": "White Oak",
+  "latin": "Quercus alba",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The generational anchor. Grows slowly but lives for centuries. White oak acorns are the least bitter and most nutritious of any eastern oak — preferred wildlife food. Deep burgundy fall color.",
+  "notes": "Plant for your grandchildren's grandchildren. Matures into a broad, majestic crown. Best on well-drained upland sites.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/quercus/alba.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Quercus_alba_leaf_spring.jpg/960px-Quercus_alba_leaf_spring.jpg",
+    "credit": "Harborsparrow",
+    "license": "Public domain"
+  }
+}

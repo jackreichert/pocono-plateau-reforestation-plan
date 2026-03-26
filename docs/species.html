@@ -25,7 +25,7 @@
 
 <section class="hero hero-sm">
   <div class="hero-bg" style="background:linear-gradient(135deg,#0a2518,#2D6A4F)"></div>
-  <div class="container hero-content" style="padding:2.5rem 0">
+  <div class="container hero-content">
     <p class="section-label" style="color:var(--green-200)">What to Plant</p>
     <h1 style="font-size:clamp(1.75rem,3vw,2.5rem)">Species Guide</h1>
     <p>Every species validated against PA Flora, USFS Silvics, and current disease research. All are ecologically native to Zone 6a at ~2,000ft on the Pocono Plateau.</p>
@@ -242,7 +242,7 @@
   </div>
 </footer>
 
-<script src="js/species-data.js"></script>
+<script src="js/region-loader.js"></script>
 <script src="js/main.js"></script>
 <script>
 const LAYER_LABELS = {canopy:'Canopy',understory:'Understory',conifer:'Conifer',shrub:'Shrub',fruiting:'Fruiting'};
@@ -351,18 +351,20 @@ document.getElementById('species-modal-overlay').addEventListener('click', e => 
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-buildGrid('all');
-buildDoNotPlant('all');
+// Wait for region data before rendering — SPECIES_DATA is set by region-loader.js
+window.regionReady.then(() => {
+  buildGrid('all');
+  buildDoNotPlant('all');
+  openFromHash();
+});
 
 // Auto-open species modal from URL hash — e.g. species.html#shagbark_hickory
 function openFromHash() {
   const hashKey = window.location.hash.replace('#', '');
-  if (hashKey) {
-    const sp = SPECIES_DATA.find(s => s.key === hashKey);
-    if (sp) openSpecies(sp.key);
-  }
+  if (!hashKey || !window.SPECIES_DATA) return;
+  const sp = SPECIES_DATA.find(s => s.key === hashKey);
+  if (sp) openSpecies(sp.key);
 }
-openFromHash();
 window.addEventListener('hashchange', openFromHash);
 </script>
 </body>

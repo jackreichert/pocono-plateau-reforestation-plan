@@ -1,0 +1,20 @@
+{
+  "key": "nannyberry",
+  "name": "Nannyberry",
+  "latin": "Viburnum lentago",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Clusters of dark blue-black berries that persist well into winter, providing critical food for songbirds during the coldest months. Cedar waxwings, robins, and thrushes depend on it. Cold-hardy and native throughout NEPA.",
+  "notes": "Grows in sun or shade. One of the best native viburnums for this elevation.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/39._Viburnum_lentago%2C_sweet_viburnum%2C_sheep-berry_-_DPLA_-_c89626decde326641a454f253a5fb17a.jpg/960px-39._Viburnum_lentago%2C_sweet_viburnum%2C_sheep-berry_-_DPLA_-_c89626decde326641a454f253a5fb17a.jpg",
+    "credit": "Edwin Hale Lincoln",
+    "license": "Public domain"
+  }
+}

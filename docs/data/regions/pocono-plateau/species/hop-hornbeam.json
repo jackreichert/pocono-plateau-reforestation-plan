@@ -1,0 +1,25 @@
+{
+  "key": "hop_hornbeam",
+  "name": "Hop-Hornbeam / Ironwood",
+  "latin": "Ostrya virginiana",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C"
+  ],
+  "summary": "The most reliable native understory tree — shade tolerant, disease-free, drought tolerant on rocky slopes. The seed clusters resemble hops. Important seed source for woodland birds. Essentially fails to receive attention despite being excellent.",
+  "notes": "For Plan D: arrives naturally with deer management — let it come. For Plans A–C: an excellent foundational understory species for any challenging spot.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/ostrya-virginiana/"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ostrya_virginiana_-_Mount_Airy_Arboretum_-_DSC03828.JPG/960px-Ostrya_virginiana_-_Mount_Airy_Arboretum_-_DSC03828.JPG",
+    "credit": "Daderot",
+    "license": "CC0"
+  }
+}

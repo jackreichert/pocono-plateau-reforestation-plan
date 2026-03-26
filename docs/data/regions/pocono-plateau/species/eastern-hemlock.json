@@ -1,0 +1,24 @@
+{
+  "key": "eastern_hemlock",
+  "name": "Eastern Hemlock",
+  "latin": "Tsuga canadensis",
+  "layer": "conifer",
+  "protection": "cage",
+  "plans": [
+    "C",
+    "D"
+  ],
+  "summary": "Pennsylvania's state tree and one of the most ecologically critical conifers in the northeast. Its dense shade creates the unique cool, dark microhabitat that brook trout, salamanders, and many woodland birds depend on.",
+  "notes": "⚠️ Hemlock Woolly Adelgid (HWA) confirmed in all 67 PA counties. Plant only where you will commit to treatment (soil drench every 4–6 years). Wire cage. Ravines and stream edges only.",
+  "refs": [
+    {
+      "label": "PSU Extension — HWA",
+      "url": "https://extension.psu.edu/hemlock-woolly-adelgid"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Tsuga_canadensis_morton.jpg",
+    "credit": "Bruce Marlin",
+    "license": "CC BY-SA 3.0"
+  }
+}

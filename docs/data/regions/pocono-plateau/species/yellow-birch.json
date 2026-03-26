@@ -1,0 +1,25 @@
+{
+  "key": "yellow_birch",
+  "name": "Yellow Birch",
+  "latin": "Betula alleghaniensis",
+  "layer": "canopy",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "Native specifically to cool forests at 1,800–2,500ft — your exact habitat. Bark peels in thin golden-yellow strips with a faint wintergreen scent. Rich golden fall color.",
+  "notes": "⚠️ Requires mineral soil or nurse log to germinate naturally. Wire cage — heat-sensitive. Plant in moist gaps on north-facing slopes.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://research.fs.usda.gov/silvics/yellow-birch"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Betula_alleghaniensis_%28Yellow_Birch%29_%2826505120302%29.jpg/960px-Betula_alleghaniensis_%28Yellow_Birch%29_%2826505120302%29.jpg",
+    "credit": "Plant Image Library",
+    "license": "CC BY-SA 2.0"
+  }
+}

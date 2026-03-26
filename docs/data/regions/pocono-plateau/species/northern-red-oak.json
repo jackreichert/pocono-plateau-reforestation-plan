@@ -1,0 +1,25 @@
+{
+  "key": "northern_red_oak",
+  "name": "Northern Red Oak",
+  "latin": "Quercus rubra",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "A",
+    "B",
+    "C"
+  ],
+  "summary": "The backbone of this restoration. Grows 2 ft/year once established and begins supporting wildlife within the first season. More than 500 moth and butterfly species depend on oaks — more than any other eastern tree genus.",
+  "notes": "Plant in open gaps and along forest edges. Do not prune April–July (oak wilt risk). Climate-resilient — a USFS-confirmed winner as conditions warm.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/quercus/rubra.htm"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/D%C3%BClmen%2C_Wildpark%2C_Br%C3%BCcke_am_Herzteich_--_2022_--_4642.jpg/960px-D%C3%BClmen%2C_Wildpark%2C_Br%C3%BCcke_am_Herzteich_--_2022_--_4642.jpg",
+    "credit": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0"
+  }
+}

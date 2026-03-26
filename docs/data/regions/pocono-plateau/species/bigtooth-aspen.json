@@ -1,0 +1,24 @@
+{
+  "key": "bigtooth_aspen",
+  "name": "Bigtooth Aspen",
+  "latin": "Populus grandidentata",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The most important pioneer for filling large open gaps immediately. Grows very fast, spreads by root sprouting into dense thickets that are prime habitat for ruffed grouse and woodcock. Supports 318 Lepidoptera species.",
+  "notes": "Plant as a nurse crop in the most open disturbed areas. Short-lived (~40–60 years); creates conditions for slower oaks and hickories beneath it.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/popgra"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Populus_grandidentata.JPG/960px-Populus_grandidentata.JPG",
+    "credit": "Schzmo",
+    "license": "Public domain"
+  }
+}

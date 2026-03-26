@@ -1,0 +1,25 @@
+{
+  "key": "pignut_hickory",
+  "name": "Pignut Hickory",
+  "latin": "Carya glabra",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C",
+    "D"
+  ],
+  "summary": "The most ecologically appropriate hickory for upper ridges and slopes at 2,000ft — documented as a dominant species on ridge crests up to 4,900ft in the Appalachians. Supports 200+ moth species.",
+  "notes": "Plant on upper slopes and ridge tops. More shade-tolerant than shagbark — can establish in partially closed gaps.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/cargla"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Carya_glabra_49.jpg/960px-Carya_glabra_49.jpg",
+    "credit": "Cedar Wood",
+    "license": "CC BY 4.0"
+  }
+}

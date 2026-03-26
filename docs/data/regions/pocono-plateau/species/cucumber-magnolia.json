@@ -1,0 +1,24 @@
+{
+  "key": "cucumber_magnolia",
+  "name": "Cucumber Magnolia",
+  "latin": "Magnolia acuminata",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "C",
+    "D"
+  ],
+  "summary": "The most overlooked native canopy tree for this region. People don't think of magnolias as Appalachian upland trees — but this one is native and common on the Allegheny Plateau, associating naturally with yellow birch, hemlock, and basswood.",
+  "notes": "Almost never planted in restoration. Grows to 60–80ft. Large red seed cones in fall. Plant in rich, moist coves.",
+  "refs": [
+    {
+      "label": "PA Flora",
+      "url": "https://www.paenflowered.org/apgii/magnoliales/magnoliaceae/magnolia/magnolia-acuminata"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Magnolia_acuminata_-_flower_%28MBG%2C_Moscow%29.jpg",
+    "credit": "Игорь Курицын",
+    "license": "CC BY-SA 4.0"
+  }
+}

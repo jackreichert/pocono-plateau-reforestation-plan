@@ -1,0 +1,18 @@
+{
+  "key": "american_hornbeam",
+  "name": "American Hornbeam / Musclewood",
+  "latin": "Carpinus caroliniana",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "C"
+  ],
+  "summary": "Named for its sinewy, muscle-like bark — one of the most distinctive of any native tree. One of the few understory trees that establishes in deep shade near streams and moist hollows. Disease-free, long-lived, and virtually ignored in restoration plantings.",
+  "notes": "Best near drainages and moist hollows. Seeds eaten by birds and small mammals; buds by turkeys and grouse. Wire cage — slow-growing and preferred by deer.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Carpinus_caroliniana_kz1.jpg/960px-Carpinus_caroliniana_kz1.jpg",
+    "credit": "Krzysztof Ziarnek",
+    "license": "CC BY-SA 4.0"
+  }
+}

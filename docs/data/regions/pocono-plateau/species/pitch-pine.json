@@ -1,0 +1,18 @@
+{
+  "key": "pitch_pine",
+  "name": "Pitch Pine",
+  "latin": "Pinus rigida",
+  "layer": "conifer",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "The most fire- and drought-resistant pine in the northeast. Can re-sprout from its base after fire. Important for dry rocky ridge tops where other conifers struggle. Supports a unique moth community.",
+  "notes": "Plant specifically on the most exposed, rocky, dry ridge tops. No current significant disease threats.",
+  "refs": [],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pitch_pine_in_Quogue_%2892734p%29.jpg/960px-Pitch_pine_in_Quogue_%2892734p%29.jpg",
+    "credit": "Rhododendrites",
+    "license": "CC BY-SA 4.0"
+  }
+}

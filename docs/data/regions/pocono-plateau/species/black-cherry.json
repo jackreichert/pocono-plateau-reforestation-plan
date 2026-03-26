@@ -1,0 +1,23 @@
+{
+  "key": "black_cherry",
+  "name": "Black Cherry",
+  "latin": "Prunus serotina",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "One of the most ecologically valuable trees in eastern North America — 450+ Lepidoptera species depend on it. Critical wildlife food. Recovers naturally after management if black knot is addressed.",
+  "notes": "⚠️ If black knot fungus is present on your property, survey and manage existing trees before replanting. See our disease guide.",
+  "refs": [
+    {
+      "label": "Black Knot Guide",
+      "url": "management.html#black-knot"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Prunus_serotina_kz07.jpg/960px-Prunus_serotina_kz07.jpg",
+    "credit": "Krzysztof Ziarnek",
+    "license": "CC BY-SA 4.0"
+  }
+}

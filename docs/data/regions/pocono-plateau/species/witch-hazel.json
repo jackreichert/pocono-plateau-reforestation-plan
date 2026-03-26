@@ -1,0 +1,24 @@
+{
+  "key": "witch_hazel",
+  "name": "Witch Hazel",
+  "latin": "Hamamelis virginiana",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The last thing blooming in the forest — yellow spider-like flowers in October and November, after all the leaves have fallen. Unique in the native flora. Seed pods explode audibly, shooting seeds up to 30 feet.",
+  "notes": "Native forest understory throughout this region. No significant disease problems. Outstanding four-season interest.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/hamamelis-virginiana/"
+    }
+  ],
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hamamelis_virginiana_03.JPG/960px-Hamamelis_virginiana_03.JPG",
+    "credit": "H. Zell",
+    "license": "CC BY-SA 3.0"
+  }
+}

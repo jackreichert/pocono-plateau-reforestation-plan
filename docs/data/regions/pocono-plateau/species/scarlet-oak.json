@@ -1,0 +1,20 @@
+{
+  "key": "scarlet_oak",
+  "name": "Scarlet Oak",
+  "latin": "Quercus coccinea",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The most dramatically colored oak in the eastern forest — deep scarlet fall color that rivals any ornamental. Companion to chestnut and black oak on dry, rocky ridges. Supports 400+ Lepidoptera species. Well-adapted to the thin, acidic, well-drained soils of the Pocono uplands.",
+  "notes": "Plant on dry upper ridges and south-facing slopes alongside chestnut and black oak. Fast-growing for an upland oak. Deep root system makes it drought-resistant once established. Do not prune April–July (oak wilt risk).",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/quercus/coccinea.htm"
+    }
+  ],
+  "photo": null
+}

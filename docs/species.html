@@ -18,7 +18,7 @@
       <li><a href="planner.html">Planner</a></li>
       <li><a href="management.html">Before You Plant</a></li>
       <li><a href="planting.html">Planting Guide</a></li>
-      <li><a href="research.html">Research</a></li>
+      <li><a href="research.html">Resources</a></li>
     </ul>
   </div>
 </nav>
@@ -36,13 +36,15 @@
 <section class="section-sm" style="background:var(--green-50);border-bottom:1px solid var(--border)">
   <div class="container">
     <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
-      <span style="font-weight:600;font-size:.9rem">Filter by layer:</span>
+      <span style="font-weight:600;font-size:.9rem">Filter:</span>
       <button class="btn btn-ghost btn-sm filter-btn active" data-filter="all">All species</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="canopy">🌳 Canopy</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="understory">🌿 Understory</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="conifer">🌲 Conifers</button>
+      <button class="btn btn-ghost btn-sm filter-btn" data-filter="trees">🌲 Trees</button>
       <button class="btn btn-ghost btn-sm filter-btn" data-filter="shrub">🌱 Shrubs</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="fruiting">🍎 Fruiting</button>
+      <span style="width:1px;background:var(--border);align-self:stretch;flex-shrink:0"></span>
+      <button class="btn btn-ghost btn-sm filter-btn" data-filter="canopy">Canopy</button>
+      <button class="btn btn-ghost btn-sm filter-btn" data-filter="understory">Understory</button>
+      <button class="btn btn-ghost btn-sm filter-btn" data-filter="conifer">Conifers</button>
+      <button class="btn btn-ghost btn-sm filter-btn" data-filter="fruiting">Fruiting</button>
       <span style="margin-left:auto;font-size:.875rem;color:var(--text-light)">Click any card for details</span>
     </div>
   </div>
@@ -237,7 +239,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-bottom" style="justify-content:center;gap:2rem">
-      <a href="index.html">Home</a><a href="plans.html">Plans</a><a href="planner.html">Planner</a><a href="management.html">Before You Plant</a><a href="research.html">Research</a>
+      <a href="index.html">Home</a><a href="plans.html">Plans</a><a href="planner.html">Planner</a><a href="management.html">Before You Plant</a><a href="research.html">Resources</a>
     </div>
   </div>
 </footer>
@@ -261,7 +263,8 @@ const DO_NOT_PLANT = [
 
 function buildDoNotPlant(filter) {
   const el = document.getElementById('do-not-plant');
-  const items = DO_NOT_PLANT.filter(d => d.layers.includes(filter));
+  const lookupFilter = filter === 'trees' ? 'all' : filter;
+  const items = DO_NOT_PLANT.filter(d => d.layers.includes(lookupFilter));
   if (!items.length) { el.innerHTML = ''; return; }
   el.innerHTML = `
     <div class="callout callout-amber mt-4" style="display:flex;gap:1rem;align-items:flex-start">
@@ -275,7 +278,9 @@ function buildDoNotPlant(filter) {
 
 function buildGrid(filter) {
   const grid = document.getElementById('species-grid');
-  const items = filter === 'all' ? SPECIES_DATA : SPECIES_DATA.filter(s => s.layer === filter);
+  const items = filter === 'all'   ? SPECIES_DATA
+    : filter === 'trees' ? SPECIES_DATA.filter(s => s.layer !== 'shrub')
+    : SPECIES_DATA.filter(s => s.layer === filter);
   grid.innerHTML = items.map(sp => {
     const photo = SPECIES_PHOTOS[sp.key];
     const imgHtml = photo
@@ -327,8 +332,9 @@ function openSpecies(key) {
 }
 
 function showLayerDesc(filter) {
+  const descFilter = filter === 'trees' ? 'all' : filter;
   document.querySelectorAll('.layer-desc').forEach(el => {
-    el.style.display = el.dataset.layer === filter ? '' : 'none';
+    el.style.display = el.dataset.layer === descFilter ? '' : 'none';
   });
 }
 

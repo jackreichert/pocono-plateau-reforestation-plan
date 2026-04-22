@@ -1,0 +1,20 @@
+{
+  "key": "highbush_blueberry",
+  "name": "Highbush Blueberry",
+  "latin": "Vaccinium corymbosum",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Native to the acidic upland soils of the Pocono Plateau — pH 4–5.5 is exactly what this site provides. More than 100 bird species consume the berries. White bell-shaped flowers in May are critical early nectar for native bees and bumble bees. Brilliant orange-red fall color.",
+  "notes": "One of the best native shrubs for this exact site — the acidic, sandy, well-drained upland soils that many other shrubs struggle with are ideal for blueberry. Wire cage to protect from deer browse. Dioecious — plant at least two shrubs for fruit production. Spreads slowly by root suckers once established.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/vaccor/all.html"
+    }
+  ],
+  "photo": null
+}

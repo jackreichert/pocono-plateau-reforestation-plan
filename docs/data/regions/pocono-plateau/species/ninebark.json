@@ -1,0 +1,20 @@
+{
+  "key": "ninebark",
+  "name": "Ninebark",
+  "latin": "Physocarpus opulifolius",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The most adaptable native shrub available — tolerates dry or wet soil, sun or shade, clay or sand, compacted or rocky ground. Dense arching branches provide excellent nesting cover. White flower clusters in June. Peeling, layered bark gives the plant its name. Host for several native moth species.",
+  "notes": "Use ninebark in any difficult spots — steep banks, disturbed edges, rocky outcrops, compacted soil near trails. Natural arrival in open areas; also easy to establish from transplants. No significant disease or pest concerns. Tolerates flooding and dry spells equally. One of the toughest native shrubs for NEPA.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/phoopa/all.html"
+    }
+  ],
+  "photo": null
+}

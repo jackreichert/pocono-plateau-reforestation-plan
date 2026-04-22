@@ -1,0 +1,20 @@
+{
+  "key": "american_elderberry",
+  "name": "American Elderberry",
+  "latin": "Sambucus canadensis",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Distinct from the red elderberry already in this guide — American elderberry thrives in moist edges, roadsides, and productive lower slopes rather than cool rocky hillsides. Large flat-topped white flower clusters in June followed by heavy crops of dark purple-black berries that are critical food for 40+ bird species during migration.",
+  "notes": "Plant at forest edges, moist margins, and path edges — not deep forest interior. Spreads by root suckers into productive thickets. Flowers attract native bees and butterflies. Do not confuse with red elderberry (Sambucus racemosa) — different niche, different berry timing, different elevation preference. Both belong in this restoration.",
+  "refs": [
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/samcan/all.html"
+    }
+  ],
+  "photo": null
+}

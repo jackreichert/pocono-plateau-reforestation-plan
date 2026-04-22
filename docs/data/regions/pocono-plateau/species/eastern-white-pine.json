@@ -1,0 +1,24 @@
+{
+  "key": "eastern_white_pine",
+  "name": "Eastern White Pine",
+  "latin": "Pinus strobus",
+  "layer": "conifer",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The dominant native pine throughout NEPA and one of the fastest-growing conifers available — 2–3 ft/year in good conditions. Soft, bluish-green needles in groups of five. Provides year-round structural cover and important seed for crossbills and nuthatches.",
+  "notes": "⚠️ White Pine Needle Disease (WPND) is epidemic across the Pocono Plateau — high May–July precipitation here drives disease severity. Plant at low density only; never in dense monoculture blocks. Best on ridge tops and slopes with good air movement. Wire cage only — tube heat damages this species.",
+  "refs": [
+    {
+      "label": "PSU Extension — WPND",
+      "url": "https://extension.psu.edu/eastern-white-pine-modern-disease-threats-to-a-historically-important-species/"
+    },
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_1/pinus/strobus.htm"
+    }
+  ],
+  "photo": null
+}

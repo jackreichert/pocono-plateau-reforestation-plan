@@ -1,0 +1,20 @@
+{
+  "key": "gray_dogwood",
+  "name": "Gray Dogwood",
+  "latin": "Cornus racemosa",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Disease-resistant native shrub for wet edges, open margins, and disturbed areas. White berries on striking red stems persist into fall — one of the most visually distinctive shrubs in the native palette. More than 40 bird species consume the berries. Spreads aggressively by root suckers.",
+  "notes": "Best for wet edges, stream margins, and open disturbed areas where other shrubs struggle. Tolerates wet soil, clay, poor drainage. Spreads by root suckering to form dense colonies — gives excellent nesting cover. No disease concerns (unlike flowering dogwood). Natural arrival in open areas.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/cornus-racemosa/"
+    }
+  ],
+  "photo": null
+}

@@ -9,12 +9,26 @@
     "C",
     "D"
   ],
-  "summary": "Produces hard nuts in papery husks — a critical food source for turkeys, grouse, blue jays, and squirrels. Shade tolerant, spreads by rhizome, provides dense cover. Host for Polyphemus moth, one of the largest and most spectacular native moths.",
+  "summary": "Produces hard nuts in papery husks \u2014 a critical food source for turkeys, grouse, blue jays, and squirrels. Shade tolerant, spreads by rhizome, provides dense cover. Host for Polyphemus moth, one of the largest and most spectacular native moths.",
   "notes": "Plant throughout understory and gap edges. Easy to establish; tolerates a wide range of soils.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/American_Hazelnut_%28Corylus_americana%29_-_London%2C_Ontario_2015-04-12.jpg/960px-American_Hazelnut_%28Corylus_americana%29_-_London%2C_Ontario_2015-04-12.jpg",
     "credit": "Ryan Hodnett",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "6\u20138",
+    "aspect": "Any",
+    "light": "Partial shade to full sun (shade tolerant)",
+    "moisture": "Well-drained to mesic",
+    "soil": "Wide tolerance",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Plant throughout understory and at gap edges \u2014 shade tolerant. Spreads by rhizome. No deer protection needed. Produces critical hard mast (nuts) for turkeys, grouse, and jays.",
+    "cluster_with": [
+      "northern_red_oak",
+      "chestnut_oak",
+      "pennsylvania_hawthorn"
+    ]
   }
 }

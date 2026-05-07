@@ -8,7 +8,7 @@
     "C",
     "D"
   ],
-  "summary": "Native to rocky north-facing slopes at your exact elevation — 1,800–2,500ft in the Pocono Plateau. Clusters of white flowers turn into bright orange-red berries by fall. Critical food for migrating robins, thrushes, waxwings, and grouse.",
+  "summary": "Native to rocky north-facing slopes at your exact elevation \u2014 1,800\u20132,500ft in the Pocono Plateau. Clusters of white flowers turn into bright orange-red berries by fall. Critical food for migrating robins, thrushes, waxwings, and grouse.",
   "notes": "Almost never planted in restoration work despite being ecologically native here. Source from Go Native Tree Farm (Lancaster, PA) or Cold Stream Farm.",
   "refs": [
     {
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/American_Ash_%28Sorbus_americana%29_Fruit_%2812786%29-Relic38.JPG/960px-American_Ash_%28Sorbus_americana%29_Fruit_%2812786%29-Relic38.JPG",
     "credit": "Darren Swim",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "10\u201312",
+    "aspect": "North-facing, rocky slopes",
+    "light": "Partial shade to full sun",
+    "moisture": "Well-drained, cool",
+    "soil": "Rocky, acidic, well-drained \u2014 native at 1,800\u20132,500 ft",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Native to your exact elevation and habitat type. Plant on cool, rocky, north-facing slopes. Critical for migrating thrushes, waxwings, and grouse. Almost never available at nurseries \u2014 check Go Native Tree Farm (Lancaster).",
+    "cluster_with": [
+      "balsam_fir",
+      "red_spruce",
+      "sugar_maple"
+    ]
   }
 }

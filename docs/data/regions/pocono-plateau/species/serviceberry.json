@@ -9,8 +9,8 @@
     "B",
     "C"
   ],
-  "summary": "The first tree in your forest to bloom — white flowers in late March or early April, before the leaves emerge. The berries ripen in June and are consumed by virtually every forest bird species within days.",
-  "notes": "For Plan D: arrives naturally within 3–7 years of deer management. Save your budget. For Plans A–C: excellent investment, shade-tolerant, no serious disease issues.",
+  "summary": "The first tree in your forest to bloom \u2014 white flowers in late March or early April, before the leaves emerge. The berries ripen in June and are consumed by virtually every forest bird species within days.",
+  "notes": "For Plan D: arrives naturally within 3\u20137 years of deer management. Save your budget. For Plans A\u2013C: excellent investment, shade-tolerant, no serious disease issues.",
   "refs": [
     {
       "label": "Wildflower.org",
@@ -21,5 +21,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Alleghany_Serviceberry_%28Amelanchier_laevis%29_-_Guelph%2C_Ontario_01.jpg/960px-Alleghany_Serviceberry_%28Amelanchier_laevis%29_-_Guelph%2C_Ontario_01.jpg",
     "credit": "Ryan Hodnett",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "8\u201310",
+    "aspect": "Any",
+    "light": "Partial shade to full sun (shade tolerant)",
+    "moisture": "Well-drained to mesic",
+    "soil": "Adaptable; wide soil tolerance",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant at gap edges and in partial shade \u2014 shade tolerant. First bloom of the season (late March). Spreads by bird dispersal so once established, free seedlings appear. Wire cage \u2014 deer browse heavily.",
+    "cluster_with": [
+      "sugar_maple",
+      "pagoda_dogwood",
+      "northern_red_oak"
+    ]
   }
 }

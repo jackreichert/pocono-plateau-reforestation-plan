@@ -7,12 +7,26 @@
   "plans": [
     "C"
   ],
-  "summary": "Named for its sinewy, muscle-like bark — one of the most distinctive of any native tree. One of the few understory trees that establishes in deep shade near streams and moist hollows. Disease-free, long-lived, and virtually ignored in restoration plantings.",
-  "notes": "Best near drainages and moist hollows. Seeds eaten by birds and small mammals; buds by turkeys and grouse. Wire cage — slow-growing and preferred by deer.",
+  "summary": "Named for its sinewy, muscle-like bark \u2014 one of the most distinctive of any native tree. One of the few understory trees that establishes in deep shade near streams and moist hollows. Disease-free, long-lived, and virtually ignored in restoration plantings.",
+  "notes": "Best near drainages and moist hollows. Seeds eaten by birds and small mammals; buds by turkeys and grouse. Wire cage \u2014 slow-growing and preferred by deer.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Carpinus_caroliniana_kz1.jpg/960px-Carpinus_caroliniana_kz1.jpg",
     "credit": "Krzysztof Ziarnek",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "10\u201312",
+    "aspect": "Any \u2014 near water preferred",
+    "light": "Deep shade tolerant",
+    "moisture": "Moist to wet",
+    "soil": "Rich, moist soils near streams and hollows",
+    "hole_depth_in": "8\u201310",
+    "site_notes": "Establishes in the deepest shade near streams and moist hollows. Wire cage. Best planted near drainages, seeps, and wet spots where other trees struggle. Disease-free and long-lived.",
+    "cluster_with": [
+      "eastern_hemlock",
+      "yellow_birch",
+      "spicebush"
+    ]
   }
 }

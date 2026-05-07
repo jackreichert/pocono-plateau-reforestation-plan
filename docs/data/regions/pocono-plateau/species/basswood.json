@@ -9,7 +9,7 @@
     "D"
   ],
   "summary": "The single most important tree for native bees and pollinators in eastern North America. The June bloom is intensely fragrant and can be heard from a distance as thousands of bees work the flowers.",
-  "notes": "Best on moist, productive north-facing coves. Regenerates poorly in disturbed upland without active planting — worth buying for this reason.",
+  "notes": "Best on moist, productive north-facing coves. Regenerates poorly in disturbed upland without active planting \u2014 worth buying for this reason.",
   "refs": [
     {
       "label": "USFS Silvics",
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tilia_americana_-_American_Basswood.jpg/960px-Tilia_americana_-_American_Basswood.jpg",
     "credit": "Fritzflohrreynolds",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "North-facing coves",
+    "light": "Partial shade to full sun",
+    "moisture": "Moist, productive",
+    "soil": "Rich, deep, well-drained cove soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Most important tree for native bees in eastern North America. Regenerates poorly without planting \u2014 worth buying. Plant in moist, north-facing coves with deep productive soil. Not for exposed ridges or thin rocky soils.",
+    "cluster_with": [
+      "sugar_maple",
+      "yellow_birch",
+      "cucumber_magnolia"
+    ]
   }
 }

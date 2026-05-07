@@ -9,7 +9,7 @@
     "C",
     "D"
   ],
-  "summary": "Produces the earliest and most brilliant fall color of any eastern native — deep scarlet as early as late August. Highly disease-resistant. More than 35 bird species consume the small blue-black berries.",
+  "summary": "Produces the earliest and most brilliant fall color of any eastern native \u2014 deep scarlet as early as late August. Highly disease-resistant. More than 35 bird species consume the small blue-black berries.",
   "notes": "USFS climate modeling projects black gum gaining habitat in this region under warming scenarios. Adaptable to a wide range of moisture conditions.",
   "refs": [
     {
@@ -21,5 +21,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Nyssa_sylvatica_JPG1b.jpg/960px-Nyssa_sylvatica_JPG1b.jpg",
     "credit": "Jean-Pol Grandmont",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "Any",
+    "light": "Full sun to partial shade",
+    "moisture": "Adaptable \u2014 wet to well-drained",
+    "soil": "Wide range; acidic soils preferred",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Extremely adaptable. USFS climate winner \u2014 expanding range under warming. Plant in any gap with adequate light. Earliest and most brilliant fall color of any eastern native.",
+    "cluster_with": [
+      "northern_red_oak",
+      "sassafras",
+      "serviceberry"
+    ]
   }
 }

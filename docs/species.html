@@ -231,6 +231,19 @@
       <p id="modal-latin" style="font-style:italic;color:var(--text-mid);margin-bottom:1rem;font-size:.9rem"></p>
       <p id="modal-why" style="font-size:.95rem;margin-bottom:1rem"></p>
       <p id="modal-notes" style="font-size:.875rem;color:var(--text-mid)"></p>
+      <div id="modal-planting" style="margin-top:1.25rem;display:none">
+        <h3 style="font-size:.95rem;margin-bottom:.75rem;color:var(--green-800)">🌱 Planting Instructions</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem .75rem;font-size:.85rem">
+          <div><strong style="color:var(--text-mid)">Spacing</strong><div id="modal-spacing"></div></div>
+          <div><strong style="color:var(--text-mid)">Aspect</strong><div id="modal-aspect"></div></div>
+          <div><strong style="color:var(--text-mid)">Light</strong><div id="modal-light"></div></div>
+          <div><strong style="color:var(--text-mid)">Moisture</strong><div id="modal-moisture"></div></div>
+          <div><strong style="color:var(--text-mid)">Soil</strong><div id="modal-soil"></div></div>
+          <div><strong style="color:var(--text-mid)">Hole Depth</strong><div id="modal-hole-depth"></div></div>
+        </div>
+        <p id="modal-site-notes" style="margin-top:.75rem;font-size:.85rem;padding:.75rem;background:var(--green-50);border-radius:6px;border-left:3px solid var(--green-600)"></p>
+        <div id="modal-cluster" style="margin-top:.75rem;font-size:.8rem;color:var(--text-mid)"></div>
+      </div>
       <div id="modal-refs" style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap"></div>
     </div>
   </div>
@@ -316,6 +329,30 @@ function openSpecies(key) {
   pb.textContent = PROT_LABEL[sp.protection]||sp.protection;
   const refsEl = document.getElementById('modal-refs');
   refsEl.innerHTML = (sp.refs||[]).map(r => `<a href="${r.url}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">${r.label} ↗</a>`).join('');
+  // Planting instructions
+  const plantingEl = document.getElementById('modal-planting');
+  if (sp.planting) {
+    plantingEl.style.display = '';
+    document.getElementById('modal-spacing').textContent = sp.planting.spacing_ft + ' ft';
+    document.getElementById('modal-aspect').textContent = sp.planting.aspect;
+    document.getElementById('modal-light').textContent = sp.planting.light;
+    document.getElementById('modal-moisture').textContent = sp.planting.moisture;
+    document.getElementById('modal-soil').textContent = sp.planting.soil;
+    document.getElementById('modal-hole-depth').textContent = sp.planting.hole_depth_in + '"';
+    document.getElementById('modal-site-notes').textContent = sp.planting.site_notes;
+    const clusterEl = document.getElementById('modal-cluster');
+    if (sp.planting.cluster_with && sp.planting.cluster_with.length) {
+      const names = sp.planting.cluster_with.map(k => {
+        const match = SPECIES_DATA.find(s => s.key === k);
+        return match ? match.name : k.replace(/_/g, ' ');
+      });
+      clusterEl.innerHTML = '<strong>Plant with:</strong> ' + names.join(', ');
+    } else {
+      clusterEl.innerHTML = '';
+    }
+  } else {
+    plantingEl.style.display = 'none';
+  }
   const imgEl = document.getElementById('modal-img');
   const phEl  = document.getElementById('modal-img-placeholder');
   if (photo) {

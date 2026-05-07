@@ -8,12 +8,26 @@
     "B",
     "C"
   ],
-  "summary": "One of the best native shrubs for wildlife in the entire eastern forest. Hosts 159 Lepidoptera species. Dense thorny branching provides the best nesting cover available — robins, catbirds, and thrushes specifically seek it out. White flowers in May, red berries persisting into January.",
+  "summary": "One of the best native shrubs for wildlife in the entire eastern forest. Hosts 159 Lepidoptera species. Dense thorny branching provides the best nesting cover available \u2014 robins, catbirds, and thrushes specifically seek it out. White flowers in May, red berries persisting into January.",
   "notes": "Native to this state. The thorns that make it impenetrable for predators are the feature, not a bug. Plant at forest edges and gap margins.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Crataegus_monogyna_003.JPG/960px-Crataegus_monogyna_003.JPG",
     "credit": "H. Zell",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "8\u201310",
+    "aspect": "Any \u2014 edges preferred",
+    "light": "Full sun to partial shade",
+    "moisture": "Well-drained to mesic",
+    "soil": "Adaptable",
+    "hole_depth_in": "8\u201310",
+    "site_notes": "Plant at forest edges and gap margins. Thorns provide the BEST nesting cover available (robins, catbirds, thrushes seek it out). No deer protection needed \u2014 thorns deter browse. Berries persist into January.",
+    "cluster_with": [
+      "arrowwood_viburnum",
+      "nannyberry",
+      "american_hazelnut"
+    ]
   }
 }

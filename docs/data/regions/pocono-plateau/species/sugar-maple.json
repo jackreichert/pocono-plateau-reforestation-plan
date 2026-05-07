@@ -10,8 +10,8 @@
     "C",
     "D"
   ],
-  "summary": "The primary ecological replacement for dying beech on north-facing slopes. The gold standard of fall color — orange, red, and yellow simultaneously on the same branch. Highly shade-tolerant as a seedling.",
-  "notes": "⚠️ Use wire cage, NOT plastic tube — PSU 2024 research found tube interiors reach 30°F above ambient, measurably damaging this species. Plant on moist, north-facing slopes.",
+  "summary": "The primary ecological replacement for dying beech on north-facing slopes. The gold standard of fall color \u2014 orange, red, and yellow simultaneously on the same branch. Highly shade-tolerant as a seedling.",
+  "notes": "\u26a0\ufe0f Use wire cage, NOT plastic tube \u2014 PSU 2024 research found tube interiors reach 30\u00b0F above ambient, measurably damaging this species. Plant on moist, north-facing slopes.",
   "refs": [
     {
       "label": "USFS Silvics",
@@ -22,5 +22,20 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Acer_saccharum_UL_01.jpg/960px-Acer_saccharum_UL_01.jpg",
     "credit": "Cephas",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "North-facing (strongly preferred)",
+    "light": "Shade tolerant \u2014 establishes under partial canopy",
+    "moisture": "Moist, consistent",
+    "soil": "Rich, deep, well-drained loam; not drought-tolerant",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Direct beech replacement on moist north slopes. Wire cage ONLY \u2014 tubes reach 30\u00b0F above ambient and damage this species (PSU 2024). Plant where dying beech is opening the canopy on north aspects.",
+    "cluster_with": [
+      "serviceberry",
+      "pagoda_dogwood",
+      "balsam_fir",
+      "yellow_birch"
+    ]
   }
 }

@@ -9,7 +9,7 @@
     "C"
   ],
   "summary": "Ridge and dry-slope companion to red and chestnut oak. Highly adaptable to thin, acidic upland soils. Supports 500+ Lepidoptera species alongside its oak relatives.",
-  "notes": "Plant on dry ridges and upper slopes. Similar habitat to chestnut oak — the two belong together as the ridge-top canopy duo. Fall color is deep red to russet.",
+  "notes": "Plant on dry ridges and upper slopes. Similar habitat to chestnut oak \u2014 the two belong together as the ridge-top canopy duo. Fall color is deep red to russet.",
   "refs": [
     {
       "label": "USFS Silvics",
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Forest_Road_-_Black_Oak_%28Quercus_velutina%29_leaves_-_Flickr_-_Jay_Sturner_%281%29.jpg/960px-Forest_Road_-_Black_Oak_%28Quercus_velutina%29_leaves_-_Flickr_-_Jay_Sturner_%281%29.jpg",
     "credit": "Jay Sturner",
     "license": "CC BY 2.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "South, West, ridgetops",
+    "light": "Full sun",
+    "moisture": "Dry to well-drained",
+    "soil": "Acidic upland; thin rocky soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Ridge companion to chestnut oak \u2014 plant them together on dry upper slopes. Adaptable to the thinnest, most acidic soils. Do not prune April\u2013July (oak wilt).",
+    "cluster_with": [
+      "chestnut_oak",
+      "scarlet_oak",
+      "pignut_hickory"
+    ]
   }
 }

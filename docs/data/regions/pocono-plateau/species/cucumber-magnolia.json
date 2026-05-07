@@ -8,8 +8,8 @@
     "C",
     "D"
   ],
-  "summary": "The most overlooked native canopy tree for this region. People don't think of magnolias as Appalachian upland trees — but this one is native and common on the Allegheny Plateau, associating naturally with yellow birch, hemlock, and basswood.",
-  "notes": "Almost never planted in restoration. Grows to 60–80ft. Large red seed cones in fall. Plant in rich, moist coves.",
+  "summary": "The most overlooked native canopy tree for this region. People don't think of magnolias as Appalachian upland trees \u2014 but this one is native and common on the Allegheny Plateau, associating naturally with yellow birch, hemlock, and basswood.",
+  "notes": "Almost never planted in restoration. Grows to 60\u201380ft. Large red seed cones in fall. Plant in rich, moist coves.",
   "refs": [
     {
       "label": "PA Flora",
@@ -18,7 +18,21 @@
   ],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Magnolia_acuminata_-_flower_%28MBG%2C_Moscow%29.jpg",
-    "credit": "Игорь Курицын",
+    "credit": "\u0418\u0433\u043e\u0440\u044c \u041a\u0443\u0440\u0438\u0446\u044b\u043d",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "North-facing, sheltered",
+    "light": "Partial shade to full sun",
+    "moisture": "Moist",
+    "soil": "Rich, deep, moist cove soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Plant in the richest, most sheltered, moist coves. Associates with sugar maple, yellow birch, hemlock, basswood. Overlooked native that deserves more planting at this elevation.",
+    "cluster_with": [
+      "basswood",
+      "sugar_maple",
+      "yellow_birch"
+    ]
   }
 }

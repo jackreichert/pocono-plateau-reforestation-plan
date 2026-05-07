@@ -7,12 +7,26 @@
   "plans": [
     "C"
   ],
-  "summary": "Short-lived pioneer (40–50 years) for disturbed gaps and old-field edges. Establishes fast on poor, compacted soils and creates the dappled canopy that longer-lived oaks and maples need to establish beneath.",
-  "notes": "A scaffold species — does a job for a few decades, then steps aside. Does not require mineral soil like yellow birch. Plant in the most disturbed, open areas.",
+  "summary": "Short-lived pioneer (40\u201350 years) for disturbed gaps and old-field edges. Establishes fast on poor, compacted soils and creates the dappled canopy that longer-lived oaks and maples need to establish beneath.",
+  "notes": "A scaffold species \u2014 does a job for a few decades, then steps aside. Does not require mineral soil like yellow birch. Plant in the most disturbed, open areas.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Betula_populifolia_leaves.jpg/960px-Betula_populifolia_leaves.jpg",
     "credit": "Richtid",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "8\u201310",
+    "aspect": "Any",
+    "light": "Full sun (shade intolerant)",
+    "moisture": "Adaptable",
+    "soil": "Tolerates poor, compacted, disturbed soils",
+    "hole_depth_in": "8\u201310",
+    "site_notes": "Short-lived pioneer (40\u201350 years) for disturbed gaps and old-field edges. Establishes fast on the worst soils. Creates dappled canopy that oaks need to establish beneath. Scaffold species \u2014 steps aside after a few decades.",
+    "cluster_with": [
+      "bigtooth_aspen",
+      "northern_red_oak",
+      "sassafras"
+    ]
   }
 }

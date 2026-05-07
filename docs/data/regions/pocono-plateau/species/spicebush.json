@@ -9,11 +9,25 @@
     "C"
   ],
   "summary": "A native forest understory shrub with aromatic leaves, bark, and berries. Host plant for the spicebush swallowtail butterfly. Yellow flowers very early in spring. Brilliant red berries in fall eaten by thrushes and migrating songbirds.",
-  "notes": "Shade tolerant — true forest interior native. Plant in sheltered spots and lower elevations. The aromatic foliage is immediately recognizable.",
+  "notes": "Shade tolerant \u2014 true forest interior native. Plant in sheltered spots and lower elevations. The aromatic foliage is immediately recognizable.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Lindera_benzoin_kz01.jpg/960px-Lindera_benzoin_kz01.jpg",
     "credit": "Krzysztof Ziarnek",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "6\u20138",
+    "aspect": "Any \u2014 sheltered, shaded spots",
+    "light": "Shade tolerant \u2014 true forest interior",
+    "moisture": "Moist preferred",
+    "soil": "Rich, moist forest soils",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Forest interior shrub \u2014 plant in sheltered, shaded spots. Host for spicebush swallowtail. No deer protection needed. Aromatic leaves, bark, and berries.",
+    "cluster_with": [
+      "pagoda_dogwood",
+      "american_hornbeam",
+      "witch_hazel"
+    ]
   }
 }

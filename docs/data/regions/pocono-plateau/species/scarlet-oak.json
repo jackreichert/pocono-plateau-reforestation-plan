@@ -8,13 +8,31 @@
     "B",
     "C"
   ],
-  "summary": "The most dramatically colored oak in the eastern forest — deep scarlet fall color that rivals any ornamental. Companion to chestnut and black oak on dry, rocky ridges. Supports 400+ Lepidoptera species. Well-adapted to the thin, acidic, well-drained soils of the Pocono uplands.",
-  "notes": "Plant on dry upper ridges and south-facing slopes alongside chestnut and black oak. Fast-growing for an upland oak. Deep root system makes it drought-resistant once established. Do not prune April–July (oak wilt risk).",
+  "summary": "The most dramatically colored oak in the eastern forest \u2014 deep scarlet fall color that rivals any ornamental. Companion to chestnut and black oak on dry, rocky ridges. Supports 400+ Lepidoptera species. Well-adapted to the thin, acidic, well-drained soils of the Pocono uplands.",
+  "notes": "Plant on dry upper ridges and south-facing slopes alongside chestnut and black oak. Fast-growing for an upland oak. Deep root system makes it drought-resistant once established. Do not prune April\u2013July (oak wilt risk).",
   "refs": [
     {
       "label": "USFS Silvics",
       "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/quercus/coccinea.htm"
     }
   ],
-  "photo": null
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Scharlakansek.jpg/960px-Scharlakansek.jpg",
+    "credit": "Anders Lager\u00e5s",
+    "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "South, West, ridgetops",
+    "light": "Full sun",
+    "moisture": "Dry to well-drained",
+    "soil": "Thin, acidic, well-drained rocky soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Third member of the dry-ridge oak trio with chestnut and black oak. Fast-growing for an upland species. Deep root system \u2014 excellent drought tolerance once established. Do not prune April\u2013July (oak wilt).",
+    "cluster_with": [
+      "chestnut_oak",
+      "black_oak",
+      "pitch_pine"
+    ]
+  }
 }

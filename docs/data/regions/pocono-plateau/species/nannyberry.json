@@ -16,5 +16,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/39._Viburnum_lentago%2C_sweet_viburnum%2C_sheep-berry_-_DPLA_-_c89626decde326641a454f253a5fb17a.jpg/960px-39._Viburnum_lentago%2C_sweet_viburnum%2C_sheep-berry_-_DPLA_-_c89626decde326641a454f253a5fb17a.jpg",
     "credit": "Edwin Hale Lincoln",
     "license": "Public domain"
+  },
+  "planting": {
+    "spacing_ft": "6\u20138",
+    "aspect": "Any",
+    "light": "Full sun to shade",
+    "moisture": "Adaptable \u2014 moist preferred",
+    "soil": "Wide tolerance; cold-hardy native",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Winter berries persist into coldest months \u2014 critical for cedar waxwings and robins. No deer protection needed. One of the best native shrubs for this elevation. Plant in clusters of 2\u20133 for visual mass.",
+    "cluster_with": [
+      "arrowwood_viburnum",
+      "pennsylvania_hawthorn",
+      "spicebush"
+    ]
   }
 }

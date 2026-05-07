@@ -7,12 +7,26 @@
   "plans": [
     "C"
   ],
-  "summary": "A true northern hardwood forest companion — native to NEPA at this exact elevation. The distinctive white-striped green bark is recognizable year-round. Clear yellow fall color.",
-  "notes": "Small understory tree to 15–20ft. Highly shade tolerant. Often browsed by deer — wire cage essential.",
+  "summary": "A true northern hardwood forest companion \u2014 native to NEPA at this exact elevation. The distinctive white-striped green bark is recognizable year-round. Clear yellow fall color.",
+  "notes": "Small understory tree to 15\u201320ft. Highly shade tolerant. Often browsed by deer \u2014 wire cage essential.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Acer_pensylvanicum_%28Moosewood%2C_Striped_Maple%2C_Snake-bark_Maple%29_%2838246389231%29.jpg/960px-Acer_pensylvanicum_%28Moosewood%2C_Striped_Maple%2C_Snake-bark_Maple%29_%2838246389231%29.jpg",
     "credit": "Plant Image Library",
     "license": "CC BY-SA 2.0"
+  },
+  "planting": {
+    "spacing_ft": "8\u201310",
+    "aspect": "North-facing, sheltered",
+    "light": "Highly shade tolerant",
+    "moisture": "Moist",
+    "soil": "Rich, moist forest soils",
+    "hole_depth_in": "8\u201310",
+    "site_notes": "True northern hardwood companion at this elevation. Wire cage ESSENTIAL \u2014 strongly preferred by deer. Small tree (15\u201320 ft). Plant in sheltered forest interior, not exposed edges.",
+    "cluster_with": [
+      "sugar_maple",
+      "yellow_birch",
+      "balsam_fir"
+    ]
   }
 }

@@ -8,7 +8,7 @@
     "C"
   ],
   "summary": "Restored from near-extinction. The American chestnut once fed an entire eastern forest ecosystem. TACF backcross hybrids have intermediate blight resistance and can survive to reproductive age. Planting them is both ecological restoration and an act of historical reconnection.",
-  "notes": "TACF backcross hybrids only — not straight-species stock. Contact PA-NJ TACF Chapter (patacf.org) for seedling availability.",
+  "notes": "TACF backcross hybrids only \u2014 not straight-species stock. Contact PA-NJ TACF Chapter (patacf.org) for seedling availability.",
   "refs": [
     {
       "label": "TACF",
@@ -23,5 +23,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Castanea_dentata.jpg/960px-Castanea_dentata.jpg",
     "credit": "Jean-Pol Grandmont",
     "license": "CC BY 3.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "Any \u2014 well-drained slopes",
+    "light": "Full sun to partial shade",
+    "moisture": "Well-drained (not wet)",
+    "soil": "Well-drained, acidic to neutral; intolerant of wet or compacted",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "TACF backcross hybrids ONLY \u2014 not straight-species. Plant in well-drained gaps with good light. Grows fast once established. Tube OK. Contact PA-NJ TACF Chapter for stock (patacf.org).",
+    "cluster_with": [
+      "northern_red_oak",
+      "white_oak",
+      "chestnut_oak"
+    ]
   }
 }

@@ -8,13 +8,31 @@
     "B",
     "C"
   ],
-  "summary": "Distinct from the red elderberry already in this guide — American elderberry thrives in moist edges, roadsides, and productive lower slopes rather than cool rocky hillsides. Large flat-topped white flower clusters in June followed by heavy crops of dark purple-black berries that are critical food for 40+ bird species during migration.",
-  "notes": "Plant at forest edges, moist margins, and path edges — not deep forest interior. Spreads by root suckers into productive thickets. Flowers attract native bees and butterflies. Do not confuse with red elderberry (Sambucus racemosa) — different niche, different berry timing, different elevation preference. Both belong in this restoration.",
+  "summary": "Distinct from the red elderberry already in this guide \u2014 American elderberry thrives in moist edges, roadsides, and productive lower slopes rather than cool rocky hillsides. Large flat-topped white flower clusters in June followed by heavy crops of dark purple-black berries that are critical food for 40+ bird species during migration.",
+  "notes": "Plant at forest edges, moist margins, and path edges \u2014 not deep forest interior. Spreads by root suckers into productive thickets. Flowers attract native bees and butterflies. Do not confuse with red elderberry (Sambucus racemosa) \u2014 different niche, different berry timing, different elevation preference. Both belong in this restoration.",
   "refs": [
     {
       "label": "USFS FEIS",
       "url": "https://www.fs.usda.gov/database/feis/plants/shrub/samcan/all.html"
     }
   ],
-  "photo": null
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Sambucus_canadensis_inflorescence_001.JPG/960px-Sambucus_canadensis_inflorescence_001.JPG",
+    "credit": "SB Johnny",
+    "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "6\u20138",
+    "aspect": "Any \u2014 moist edges",
+    "light": "Full sun to partial shade",
+    "moisture": "Moist to wet",
+    "soil": "Rich, moist; forest edges and roadsides",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Plant at moist forest edges, path margins, and roadsides \u2014 NOT deep forest interior. Different niche from red elderberry. Spreads by root suckers into productive thickets. No deer protection needed. Heavy fruit crop for 40+ migrating bird species.",
+    "cluster_with": [
+      "gray_dogwood",
+      "nannyberry",
+      "arrowwood_viburnum"
+    ]
+  }
 }

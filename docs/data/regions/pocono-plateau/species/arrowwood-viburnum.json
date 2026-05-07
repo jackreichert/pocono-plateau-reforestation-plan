@@ -9,12 +9,26 @@
     "C",
     "D"
   ],
-  "summary": "The most adaptable native viburnum for this region — tolerates sun or shade, wet or dry, and a wide range of soil types. Flat-topped white flower clusters in June followed by dark blue-black berries consumed by more than 35 bird species.",
+  "summary": "The most adaptable native viburnum for this region \u2014 tolerates sun or shade, wet or dry, and a wide range of soil types. Flat-topped white flower clusters in June followed by dark blue-black berries consumed by more than 35 bird species.",
   "notes": "An excellent all-purpose shrub for any challenging spot in the planting. Spreads slowly by suckers to form a colony. Outstanding fall color (red to orange-red).",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Viburnum_dentatum_-_Arrowwood_Viburnum.jpg/960px-Viburnum_dentatum_-_Arrowwood_Viburnum.jpg",
     "credit": "Fritzflohrreynolds",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "6\u20138",
+    "aspect": "Any",
+    "light": "Full sun to full shade (extremely adaptable)",
+    "moisture": "Wet to dry (extremely adaptable)",
+    "soil": "Wide tolerance \u2014 sun, shade, wet, dry, clay, rocky",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Most adaptable shrub in this list. Plant in any challenging spot where other species might struggle. No deer protection needed. Spreads slowly by suckers. Outstanding fall color.",
+    "cluster_with": [
+      "nannyberry",
+      "pennsylvania_hawthorn",
+      "ninebark"
+    ]
   }
 }

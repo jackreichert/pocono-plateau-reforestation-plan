@@ -7,12 +7,26 @@
   "plans": [
     "C"
   ],
-  "summary": "Common native of rocky Appalachian slopes at this elevation. Peel a twig and smell wintergreen — it's the original source of oil of wintergreen. Dark bronze-brown bark and golden fall color.",
+  "summary": "Common native of rocky Appalachian slopes at this elevation. Peel a twig and smell wintergreen \u2014 it's the original source of oil of wintergreen. Dark bronze-brown bark and golden fall color.",
   "notes": "Wire cage. No significant disease threats. Well-adapted to rocky outcrops and steep slopes throughout NEPA.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Betula_lenta_%C3%96BG_09-07-16_01.jpg/960px-Betula_lenta_%C3%96BG_09-07-16_01.jpg",
     "credit": "El Grafo",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "Any \u2014 rocky slopes preferred",
+    "light": "Partial shade to full sun",
+    "moisture": "Well-drained to moist",
+    "soil": "Rocky outcrops, steep slopes; wide tolerance",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Well-adapted to rocky Appalachian slopes at this elevation. Wire cage \u2014 heat-sensitive. Original source of oil of wintergreen (peel a twig to check). No significant disease threats.",
+    "cluster_with": [
+      "yellow_birch",
+      "sugar_maple",
+      "northern_red_oak"
+    ]
   }
 }

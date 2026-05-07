@@ -9,8 +9,8 @@
     "C",
     "D"
   ],
-  "summary": "The most ecologically appropriate hickory for upper ridges and slopes at 2,000ft — documented as a dominant species on ridge crests up to 4,900ft in the Appalachians. Supports 200+ moth species.",
-  "notes": "Plant on upper slopes and ridge tops. More shade-tolerant than shagbark — can establish in partially closed gaps.",
+  "summary": "The most ecologically appropriate hickory for upper ridges and slopes at 2,000ft \u2014 documented as a dominant species on ridge crests up to 4,900ft in the Appalachians. Supports 200+ moth species.",
+  "notes": "Plant on upper slopes and ridge tops. More shade-tolerant than shagbark \u2014 can establish in partially closed gaps.",
   "refs": [
     {
       "label": "USFS FEIS",
@@ -21,5 +21,20 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Carya_glabra_49.jpg/960px-Carya_glabra_49.jpg",
     "credit": "Cedar Wood",
     "license": "CC BY 4.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "Upper slopes, ridges",
+    "light": "Partial shade to full sun (more shade-tolerant than shagbark)",
+    "moisture": "Dry to well-drained",
+    "soil": "Thin, acidic upland; documented dominant to 4,900 ft",
+    "hole_depth_in": "12\u201316 (deep taproot)",
+    "site_notes": "Most appropriate hickory for ridge crests at 2,000 ft. More shade-tolerant than shagbark \u2014 can go in partially closed gaps. Deep taproot \u2014 dig deep, never J-root.",
+    "cluster_with": [
+      "chestnut_oak",
+      "black_oak",
+      "shagbark_hickory",
+      "mockernut_hickory"
+    ]
   }
 }

@@ -7,8 +7,8 @@
   "plans": [
     "C"
   ],
-  "summary": "An aromatic pioneer with three distinct leaf shapes on the same tree. Host plant for the eastern tiger swallowtail and spicebush swallowtail. Historically significant to the Lenape people of this region. Clonal — spreads by root sprouting.",
-  "notes": "37 Lepidoptera species depend on it. Excellent for old fields, edges, and disturbed gaps. Dioecious — needs both sexes for fruit.",
+  "summary": "An aromatic pioneer with three distinct leaf shapes on the same tree. Host plant for the eastern tiger swallowtail and spicebush swallowtail. Historically significant to the Lenape people of this region. Clonal \u2014 spreads by root sprouting.",
+  "notes": "37 Lepidoptera species depend on it. Excellent for old fields, edges, and disturbed gaps. Dioecious \u2014 needs both sexes for fruit.",
   "refs": [
     {
       "label": "USFS Silvics",
@@ -19,5 +19,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sassafras_albidum_8311.jpg/960px-Sassafras_albidum_8311.jpg",
     "credit": "Chris Light",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "10\u201312",
+    "aspect": "Any \u2014 best on edges",
+    "light": "Full sun to partial shade",
+    "moisture": "Well-drained",
+    "soil": "Adaptable; tolerates poor soils",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Pioneer for old fields, edges, and disturbed areas. Will spread by root sprouting into a clonal colony. Dioecious \u2014 need both sexes for fruit. Plant at forest edges and transitional zones, not deep interior.",
+    "cluster_with": [
+      "bigtooth_aspen",
+      "gray_birch",
+      "black_gum"
+    ]
   }
 }

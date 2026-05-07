@@ -8,13 +8,31 @@
     "B",
     "C"
   ],
-  "summary": "Disease-resistant native shrub for wet edges, open margins, and disturbed areas. White berries on striking red stems persist into fall — one of the most visually distinctive shrubs in the native palette. More than 40 bird species consume the berries. Spreads aggressively by root suckers.",
-  "notes": "Best for wet edges, stream margins, and open disturbed areas where other shrubs struggle. Tolerates wet soil, clay, poor drainage. Spreads by root suckering to form dense colonies — gives excellent nesting cover. No disease concerns (unlike flowering dogwood). Natural arrival in open areas.",
+  "summary": "Disease-resistant native shrub for wet edges, open margins, and disturbed areas. White berries on striking red stems persist into fall \u2014 one of the most visually distinctive shrubs in the native palette. More than 40 bird species consume the berries. Spreads aggressively by root suckers.",
+  "notes": "Best for wet edges, stream margins, and open disturbed areas where other shrubs struggle. Tolerates wet soil, clay, poor drainage. Spreads by root suckering to form dense colonies \u2014 gives excellent nesting cover. No disease concerns (unlike flowering dogwood). Natural arrival in open areas.",
   "refs": [
     {
       "label": "NC State Extension",
       "url": "https://plants.ces.ncsu.edu/plants/cornus-racemosa/"
     }
   ],
-  "photo": null
+  "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northern_Swamp_Dogwood_berries.jpg/960px-Northern_Swamp_Dogwood_berries.jpg",
+    "credit": "Mitternacht90",
+    "license": "Public domain"
+  },
+  "planting": {
+    "spacing_ft": "6\u20138",
+    "aspect": "Any \u2014 wet edges preferred",
+    "light": "Full sun to partial shade",
+    "moisture": "Wet to mesic (tolerates poor drainage)",
+    "soil": "Wet, clay, compacted \u2014 the worst drainage spots",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Plant in wet margins, ditches, and areas with poor drainage where other species fail. Spreads aggressively by root suckers into dense nesting cover. No deer protection needed. White berries on striking red stems.",
+    "cluster_with": [
+      "nannyberry",
+      "american_elderberry",
+      "ninebark"
+    ]
+  }
 }

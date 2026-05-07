@@ -9,8 +9,8 @@
     "B",
     "C"
   ],
-  "summary": "The most reliable native understory tree — shade tolerant, disease-free, drought tolerant on rocky slopes. The seed clusters resemble hops. Important seed source for woodland birds. Essentially fails to receive attention despite being excellent.",
-  "notes": "For Plan D: arrives naturally with deer management — let it come. For Plans A–C: an excellent foundational understory species for any challenging spot.",
+  "summary": "The most reliable native understory tree \u2014 shade tolerant, disease-free, drought tolerant on rocky slopes. The seed clusters resemble hops. Important seed source for woodland birds. Essentially fails to receive attention despite being excellent.",
+  "notes": "For Plan D: arrives naturally with deer management \u2014 let it come. For Plans A\u2013C: an excellent foundational understory species for any challenging spot.",
   "refs": [
     {
       "label": "NC State Extension",
@@ -21,5 +21,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ostrya_virginiana_-_Mount_Airy_Arboretum_-_DSC03828.JPG/960px-Ostrya_virginiana_-_Mount_Airy_Arboretum_-_DSC03828.JPG",
     "credit": "Daderot",
     "license": "CC0"
+  },
+  "planting": {
+    "spacing_ft": "10\u201312",
+    "aspect": "Any",
+    "light": "Shade tolerant",
+    "moisture": "Dry to mesic",
+    "soil": "Rocky slopes; wide tolerance; drought tolerant",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "The workhorse understory tree \u2014 shade tolerant, drought tolerant, disease-free. Wire cage. Will stump-sprout and self-seed, so also check for natural seedlings during spring surveys and cage those instead of buying.",
+    "cluster_with": [
+      "northern_red_oak",
+      "sugar_maple",
+      "chestnut_oak"
+    ]
   }
 }

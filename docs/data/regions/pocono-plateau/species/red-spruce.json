@@ -9,8 +9,8 @@
     "C",
     "D"
   ],
-  "summary": "Native to this elevation in the Pocono Plateau. Long-lived, ecologically irreplaceable for the boreal species guild. No natural seed source nearby — must be planted. Part of a major multi-state restoration initiative (CASRI).",
-  "notes": "⚠️ Plant on NORTH-FACING slopes and cool ravines only — at 2,000ft you are at the lower fringe of its climate range. Wire cage. Local forester advises planting conservatively.",
+  "summary": "Native to this elevation in the Pocono Plateau. Long-lived, ecologically irreplaceable for the boreal species guild. No natural seed source nearby \u2014 must be planted. Part of a major multi-state restoration initiative (CASRI).",
+  "notes": "\u26a0\ufe0f Plant on NORTH-FACING slopes and cool ravines only \u2014 at 2,000ft you are at the lower fringe of its climate range. Wire cage. Local forester advises planting conservatively.",
   "refs": [
     {
       "label": "CASRI",
@@ -21,5 +21,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Picea_rubens_Bear_Rock_WV.jpg/960px-Picea_rubens_Bear_Rock_WV.jpg",
     "credit": "Forest Wander",
     "license": "CC BY-SA 2.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "North-facing ONLY",
+    "light": "Partial shade to full sun",
+    "moisture": "Moist, cool",
+    "soil": "Acidic, well-drained, cool",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "\u26a0\ufe0f North-facing slopes and cool ravines ONLY \u2014 at 2,000 ft you are at the lower fringe of its climate range. Wire cage. No natural seed source. Part of major multi-state restoration (CASRI).",
+    "cluster_with": [
+      "balsam_fir",
+      "mountain_ash",
+      "yellow_birch"
+    ]
   }
 }

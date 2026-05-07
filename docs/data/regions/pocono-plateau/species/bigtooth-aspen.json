@@ -9,7 +9,7 @@
     "C"
   ],
   "summary": "The most important pioneer for filling large open gaps immediately. Grows very fast, spreads by root sprouting into dense thickets that are prime habitat for ruffed grouse and woodcock. Supports 318 Lepidoptera species.",
-  "notes": "Plant as a nurse crop in the most open disturbed areas. Short-lived (~40–60 years); creates conditions for slower oaks and hickories beneath it.",
+  "notes": "Plant as a nurse crop in the most open disturbed areas. Short-lived (~40\u201360 years); creates conditions for slower oaks and hickories beneath it.",
   "refs": [
     {
       "label": "USFS FEIS",
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Populus_grandidentata.JPG/960px-Populus_grandidentata.JPG",
     "credit": "Schzmo",
     "license": "Public domain"
+  },
+  "planting": {
+    "spacing_ft": "8\u201310",
+    "aspect": "Any \u2014 prefers most open areas",
+    "light": "Full sun (intolerant of shade)",
+    "moisture": "Adaptable",
+    "soil": "Tolerates poor, disturbed soils",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Pioneer nurse crop. Plant in the MOST open, disturbed areas \u2014 full sun required. Will sucker and spread into thickets (prime grouse habitat). Short-lived scaffold species (40\u201360 yrs) that creates conditions for oaks beneath.",
+    "cluster_with": [
+      "northern_red_oak",
+      "white_oak",
+      "gray_birch"
+    ]
   }
 }

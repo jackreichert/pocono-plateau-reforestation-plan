@@ -9,8 +9,8 @@
     "B",
     "C"
   ],
-  "summary": "The backbone of this restoration. Grows 2 ft/year once established and begins supporting wildlife within the first season. More than 500 moth and butterfly species depend on oaks — more than any other eastern tree genus.",
-  "notes": "Plant in open gaps and along forest edges. Do not prune April–July (oak wilt risk). Climate-resilient — a USFS-confirmed winner as conditions warm.",
+  "summary": "The backbone of this restoration. Grows 2 ft/year once established and begins supporting wildlife within the first season. More than 500 moth and butterfly species depend on oaks \u2014 more than any other eastern tree genus.",
+  "notes": "Plant in open gaps and along forest edges. Do not prune April\u2013July (oak wilt risk). Climate-resilient \u2014 a USFS-confirmed winner as conditions warm.",
   "refs": [
     {
       "label": "USFS Silvics",
@@ -21,5 +21,20 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/D%C3%BClmen%2C_Wildpark%2C_Br%C3%BCcke_am_Herzteich_--_2022_--_4642.jpg/960px-D%C3%BClmen%2C_Wildpark%2C_Br%C3%BCcke_am_Herzteich_--_2022_--_4642.jpg",
     "credit": "Dietmar Rabich",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "Any",
+    "light": "Full sun to partial shade (needs canopy gap)",
+    "moisture": "Well-drained to mesic",
+    "soil": "Adaptable; tolerates acidic upland soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Plant in largest canopy gaps and along forest edges. Fastest-growing oak \u2014 best gap-filler available. Do not prune April\u2013July (oak wilt vector window).",
+    "cluster_with": [
+      "white_oak",
+      "chestnut_oak",
+      "black_oak",
+      "shagbark_hickory"
+    ]
   }
 }

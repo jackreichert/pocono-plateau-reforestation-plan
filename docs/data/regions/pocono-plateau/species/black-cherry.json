@@ -7,8 +7,8 @@
   "plans": [
     "C"
   ],
-  "summary": "One of the most ecologically valuable trees in eastern North America — 450+ Lepidoptera species depend on it. Critical wildlife food. Recovers naturally after management if black knot is addressed.",
-  "notes": "⚠️ If black knot fungus is present on your property, survey and manage existing trees before replanting. See our disease guide.",
+  "summary": "One of the most ecologically valuable trees in eastern North America \u2014 450+ Lepidoptera species depend on it. Critical wildlife food. Recovers naturally after management if black knot is addressed.",
+  "notes": "\u26a0\ufe0f If black knot fungus is present on your property, survey and manage existing trees before replanting. See our disease guide.",
   "refs": [
     {
       "label": "Black Knot Guide",
@@ -19,5 +19,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Prunus_serotina_kz07.jpg/960px-Prunus_serotina_kz07.jpg",
     "credit": "Krzysztof Ziarnek",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "Any",
+    "light": "Full sun to partial shade (needs good light)",
+    "moisture": "Well-drained to mesic",
+    "soil": "Prefers rich, well-drained soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "\u26a0\ufe0f Survey for black knot fungus BEFORE planting. If infected wild cherry/chokecherry present within 500 ft, manage those first. Plant in gaps with good light and air circulation.",
+    "cluster_with": [
+      "northern_red_oak",
+      "white_oak",
+      "serviceberry"
+    ]
   }
 }

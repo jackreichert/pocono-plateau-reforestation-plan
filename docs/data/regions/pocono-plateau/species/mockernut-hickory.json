@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Carya_tomentosa_%288745432970%29_4x3.jpg/960px-Carya_tomentosa_%288745432970%29_4x3.jpg",
     "credit": "John B., Dendroica cerulea",
     "license": "CC BY 2.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "Upper slopes, ridges",
+    "light": "Full sun to partial shade",
+    "moisture": "Dry to well-drained",
+    "soil": "Dry upland, rocky ridges",
+    "hole_depth_in": "12\u201316 (deep taproot)",
+    "site_notes": "Third hickory species for dry upper ridges \u2014 companion to pignut. Completes the pre-settlement three-hickory co-dominance. No significant disease threats. Deep taproot \u2014 dig deep, never J-root.",
+    "cluster_with": [
+      "pignut_hickory",
+      "shagbark_hickory",
+      "chestnut_oak"
+    ]
   }
 }

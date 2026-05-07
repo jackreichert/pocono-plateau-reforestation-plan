@@ -10,7 +10,7 @@
     "D"
   ],
   "summary": "The better native dogwood for forest interior planting. Unlike flowering dogwood, pagoda dogwood is disease-free, genuinely shade-tolerant, and thrives in forest interior conditions. 40+ bird species consume the dark blue-black berries.",
-  "notes": "Host for Spring Azure butterfly. Horizontal branching in tiers gives striking four-season structure. No anthracnose risk — the primary problem with flowering dogwood at this elevation.",
+  "notes": "Host for Spring Azure butterfly. Horizontal branching in tiers gives striking four-season structure. No anthracnose risk \u2014 the primary problem with flowering dogwood at this elevation.",
   "refs": [
     {
       "label": "Morton Arboretum",
@@ -21,5 +21,20 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pagoda_Tree_Cornus_alternifolia_Flower_Head_2580px.jpg/960px-Pagoda_Tree_Cornus_alternifolia_Flower_Head_2580px.jpg",
     "credit": "Derek Ramsey",
     "license": "CC BY-SA 2.5"
+  },
+  "planting": {
+    "spacing_ft": "8\u201310",
+    "aspect": "North-facing preferred, any shaded spot",
+    "light": "Shade tolerant \u2014 true forest interior species",
+    "moisture": "Moist preferred",
+    "soil": "Rich, moist forest soils",
+    "hole_depth_in": "8\u201310",
+    "site_notes": "Plant in forest interior under partial canopy \u2014 this is the shade-tolerant dogwood. Does NOT need a large open gap. Wire cage. Will not thrive in full sun exposed sites.",
+    "cluster_with": [
+      "sugar_maple",
+      "serviceberry",
+      "balsam_fir",
+      "spicebush"
+    ]
   }
 }

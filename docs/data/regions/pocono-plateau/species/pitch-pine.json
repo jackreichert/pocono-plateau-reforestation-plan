@@ -14,5 +14,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pitch_pine_in_Quogue_%2892734p%29.jpg/960px-Pitch_pine_in_Quogue_%2892734p%29.jpg",
     "credit": "Rhododendrites",
     "license": "CC BY-SA 4.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "Exposed ridgetops, driest sites",
+    "light": "Full sun",
+    "moisture": "Very dry \u2014 drought specialist",
+    "soil": "Thin, rocky, dry \u2014 the toughest sites",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant on the MOST exposed, rocky, dry ridge tops where everything else struggles. Most fire- and drought-resistant pine in northeast. Can re-sprout from base after fire. Tube OK (heat tolerant).",
+    "cluster_with": [
+      "chestnut_oak",
+      "scarlet_oak",
+      "black_oak"
+    ]
   }
 }

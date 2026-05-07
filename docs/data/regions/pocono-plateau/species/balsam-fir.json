@@ -11,11 +11,26 @@
     "D"
   ],
   "summary": "The signature fragrant fir of northern forests and the recommended primary conifer for this elevation. Dense winter cover, classic conical form. Lower climate risk profile than red spruce for the 2,000ft zone.",
-  "notes": "No natural seed source at this elevation — must be planted. Cool ravines and north-facing slopes. Wire cage — heat-sensitive.",
+  "notes": "No natural seed source at this elevation \u2014 must be planted. Cool ravines and north-facing slopes. Wire cage \u2014 heat-sensitive.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Abies_balsamea.jpg/960px-Abies_balsamea.jpg",
     "credit": "U.S. Fish and Wildlife Service",
     "license": "Public domain"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "North-facing, cool ravines",
+    "light": "Partial shade to full sun",
+    "moisture": "Moist, cool",
+    "soil": "Moist, acidic, well-drained; cool microsites",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "No natural seed source at 2,000 ft \u2014 must be planted. Wire cage (heat-sensitive). Plant in the COOLEST spot you have \u2014 north-facing ravines, sheltered hollows, stream edges. Recommended primary conifer for this elevation.",
+    "cluster_with": [
+      "red_spruce",
+      "sugar_maple",
+      "yellow_birch",
+      "serviceberry"
+    ]
   }
 }

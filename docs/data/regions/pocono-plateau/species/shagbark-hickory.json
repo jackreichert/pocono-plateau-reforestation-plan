@@ -10,7 +10,7 @@
     "C",
     "D"
   ],
-  "summary": "Pre-settlement dominant species that modern restoration almost entirely forgets. The shaggy peeling bark plates are the primary roosting habitat for Indiana bats and several other threatened bat species. Takes 50–70 years from seedling to bat-roosting size — plant now.",
+  "summary": "Pre-settlement dominant species that modern restoration almost entirely forgets. The shaggy peeling bark plates are the primary roosting habitat for Indiana bats and several other threatened bat species. Takes 50\u201370 years from seedling to bat-roosting size \u2014 plant now.",
   "notes": "USFWS requires 16 trees >11\" DBH per acre for bat colony habitat. Plant on south-facing upland slopes. Hard mast for bears, squirrels, turkeys.",
   "refs": [
     {
@@ -26,5 +26,20 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shagbark_hickory_spring_leaf_cluster.jpg/960px-Shagbark_hickory_spring_leaf_cluster.jpg",
     "credit": "Dcrjsr",
     "license": "CC BY 3.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "South-facing upland",
+    "light": "Full sun to light shade",
+    "moisture": "Well-drained",
+    "soil": "Deep, well-drained upland; tolerates rocky if soil pockets are adequate",
+    "hole_depth_in": "12\u201316 (deep taproot \u2014 dig deep, never J-root)",
+    "site_notes": "Critical bat habitat \u2014 takes 50\u201370 years to reach roosting size. Start now. Plant on south-facing upland slopes. Deep taproot requires an especially deep hole. Never J-root a hickory.",
+    "cluster_with": [
+      "northern_red_oak",
+      "white_oak",
+      "pignut_hickory",
+      "mockernut_hickory"
+    ]
   }
 }

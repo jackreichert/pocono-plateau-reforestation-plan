@@ -8,7 +8,7 @@
     "B",
     "C"
   ],
-  "summary": "The signature oak of dry, rocky ridges at this elevation — more drought-tolerant than red oak on thin, acidic, exposed soils. Produces the largest acorn of any eastern oak, critical mast for wildlife on the ridge.",
+  "summary": "The signature oak of dry, rocky ridges at this elevation \u2014 more drought-tolerant than red oak on thin, acidic, exposed soils. Produces the largest acorn of any eastern oak, critical mast for wildlife on the ridge.",
   "notes": "Plant on rocky ridges and dry south/west-facing slopes. Deeply ridged bark. Slower-growing but very long-lived.",
   "refs": [
     {
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Chestnut_Oak_-_Quercus_montana%2C_Meadowood_Farm_SRMA%2C_Mason_Neck%2C_Virginia.jpg/960px-Chestnut_Oak_-_Quercus_montana%2C_Meadowood_Farm_SRMA%2C_Mason_Neck%2C_Virginia.jpg",
     "credit": "Judy Gallagher",
     "license": "CC BY 2.0"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "South, West, or exposed ridgetops",
+    "light": "Full sun",
+    "moisture": "Dry to well-drained",
+    "soil": "Thin, acidic, rocky \u2014 thrives on the poorest ridge soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Your ridge-top specialist. Plant on the rockiest, driest, most exposed sites where red oak would struggle. Produces the largest acorn of any eastern oak. Pair with black oak on dry ridges.",
+    "cluster_with": [
+      "black_oak",
+      "scarlet_oak",
+      "pitch_pine"
+    ]
   }
 }

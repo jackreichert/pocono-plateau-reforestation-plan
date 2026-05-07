@@ -7,12 +7,26 @@
   "plans": [
     "C"
   ],
-  "summary": "The tallest native tree in eastern North America — grows 3 feet per year and reaches 100+ feet with a straight, clean trunk. Spectacular orange-green tulip-shaped flowers in May. At the northern fringe of its range at 2,000ft — south-facing, sheltered, lower slopes only.",
-  "notes": "Skip for exposed or north-facing sites. Best in moist, fertile coves on southern aspects. Provides exceptional wildlife value — hummingbirds and bees work the flowers heavily.",
+  "summary": "The tallest native tree in eastern North America \u2014 grows 3 feet per year and reaches 100+ feet with a straight, clean trunk. Spectacular orange-green tulip-shaped flowers in May. At the northern fringe of its range at 2,000ft \u2014 south-facing, sheltered, lower slopes only.",
+  "notes": "Skip for exposed or north-facing sites. Best in moist, fertile coves on southern aspects. Provides exceptional wildlife value \u2014 hummingbirds and bees work the flowers heavily.",
   "refs": [],
   "photo": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Liriodendron_tulipifera_PAN_leaf.JPG/960px-Liriodendron_tulipifera_PAN_leaf.JPG",
     "credit": "Crusier",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "15\u201320",
+    "aspect": "South-facing, sheltered, LOWER slopes ONLY",
+    "light": "Full sun",
+    "moisture": "Moist, deep soil",
+    "soil": "Deep, rich, moist \u2014 NOT thin rocky upland",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "At northern fringe of range at 2,000 ft. ONLY plant on south-facing, sheltered, lower slopes with deep soil. Skip entirely for exposed, north-facing, or ridge-top sites. Grows 3 ft/year if sited correctly.",
+    "cluster_with": [
+      "basswood",
+      "black_walnut",
+      "cucumber_magnolia"
+    ]
   }
 }

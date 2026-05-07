@@ -9,10 +9,10 @@
     "D"
   ],
   "summary": "Pennsylvania's state tree and one of the most ecologically critical conifers in the northeast. Its dense shade creates the unique cool, dark microhabitat that brook trout, salamanders, and many woodland birds depend on.",
-  "notes": "⚠️ Hemlock Woolly Adelgid (HWA) confirmed in all 67 PA counties. Plant only where you will commit to treatment (soil drench every 4–6 years). Wire cage. Ravines and stream edges only.",
+  "notes": "\u26a0\ufe0f Hemlock Woolly Adelgid (HWA) confirmed in all 67 PA counties. Plant only where you will commit to treatment (soil drench every 4\u20136 years). Wire cage. Ravines and stream edges only.",
   "refs": [
     {
-      "label": "PSU Extension — HWA",
+      "label": "PSU Extension \u2014 HWA",
       "url": "https://extension.psu.edu/hemlock-woolly-adelgid"
     }
   ],
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Tsuga_canadensis_morton.jpg",
     "credit": "Bruce Marlin",
     "license": "CC BY-SA 3.0"
+  },
+  "planting": {
+    "spacing_ft": "10\u201312",
+    "aspect": "North-facing, ravines, stream edges",
+    "light": "Deep shade tolerant",
+    "moisture": "Moist, consistent \u2014 stream edges ideal",
+    "soil": "Moist, acidic, rocky ravines and stream edges",
+    "hole_depth_in": "8\u201310",
+    "site_notes": "\u26a0\ufe0f Hemlock Woolly Adelgid (HWA) in all PA counties. Plant ONLY where you commit to treatment (imidacloprid soil drench every 4\u20136 years). Ravines and stream edges only. Wire cage. Creates irreplaceable cool, dark microhabitat for brook trout and salamanders.",
+    "cluster_with": [
+      "american_hornbeam",
+      "yellow_birch",
+      "spicebush"
+    ]
   }
 }

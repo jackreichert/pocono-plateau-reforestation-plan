@@ -8,7 +8,7 @@
     "B",
     "C"
   ],
-  "summary": "The generational anchor. Grows slowly but lives for centuries. White oak acorns are the least bitter and most nutritious of any eastern oak — preferred wildlife food. Deep burgundy fall color.",
+  "summary": "The generational anchor. Grows slowly but lives for centuries. White oak acorns are the least bitter and most nutritious of any eastern oak \u2014 preferred wildlife food. Deep burgundy fall color.",
   "notes": "Plant for your grandchildren's grandchildren. Matures into a broad, majestic crown. Best on well-drained upland sites.",
   "refs": [
     {
@@ -20,5 +20,19 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Quercus_alba_leaf_spring.jpg/960px-Quercus_alba_leaf_spring.jpg",
     "credit": "Harborsparrow",
     "license": "Public domain"
+  },
+  "planting": {
+    "spacing_ft": "12\u201315",
+    "aspect": "Any",
+    "light": "Full sun to partial shade (needs canopy gap)",
+    "moisture": "Well-drained, mesic",
+    "soil": "Prefers deep, well-drained loam; tolerates rocky upland",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Give premium spots \u2014 this tree will outlive everything else you plant. Slow starter but centuries-long payoff. Best on productive upland soils with good drainage.",
+    "cluster_with": [
+      "northern_red_oak",
+      "shagbark_hickory",
+      "pignut_hickory"
+    ]
   }
 }

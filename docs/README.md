@@ -8,7 +8,7 @@ Static website for GitHub Pages. All research, species data, and the interactive
 2. Go to **Settings → Pages → Source**
 3. Select **"Deploy from a branch"**
 4. Set branch to `main` and folder to `/docs`
-5. Save — site will be live at `https://yourusername.github.io/reponame/`
+5. Save — site will be live at `https://poconoforest.org`
 
 ## Structure
 

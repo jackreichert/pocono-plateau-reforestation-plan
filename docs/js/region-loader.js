@@ -15,18 +15,19 @@
 (function () {
   const REGION_ID = 'pocono-plateau';
   const base = `data/regions/${REGION_ID}`;
+  const V = '?v=20260511';
 
   // Load the species index first, then fetch all species files in parallel.
   // Each species file is self-contained with its photo embedded inline.
   // To add or edit a species, just edit (or add) its file in species/.
-  const speciesReady = fetch(`${base}/species/index.json`)
+  const speciesReady = fetch(`${base}/species/index.json${V}`)
     .then(r => {
       if (!r.ok) throw new Error(`Failed to load species index: ${r.status}`);
       return r.json();
     })
     .then(keys => Promise.all(
       keys.map(key =>
-        fetch(`${base}/species/${key.replace(/_/g, '-')}.json`)
+        fetch(`${base}/species/${key.replace(/_/g, '-')}.json${V}`)
           .then(r => {
             if (!r.ok) throw new Error(`Failed to load species ${key}: ${r.status}`);
             return r.json();
@@ -34,20 +35,20 @@
       )
     ));
 
-  const plannerReady = fetch(`${base}/planner.json`).then(r => {
+  const plannerReady = fetch(`${base}/planner.json${V}`).then(r => {
     if (!r.ok) throw new Error(`Failed to load planner config: ${r.status}`);
     return r.json();
   });
 
   // Multi-image gallery — graceful fallback if file isn't present yet
-  const galleryReady = fetch(`${base}/photos-gallery.json`)
+  const galleryReady = fetch(`${base}/photos-gallery.json${V}`)
     .then(r => r.ok ? r.json() : {})
     .catch(() => ({}));
 
   // Intrinsic dimensions, written by scripts/optimize-images.py.
   // Used to set width/height on <img> tags so the browser can reserve layout
   // space before pixels arrive (eliminates CLS on photo grids).
-  const dimensionsReady = fetch(`${base}/photos/dimensions.json`)
+  const dimensionsReady = fetch(`${base}/photos/dimensions.json${V}`)
     .then(r => r.ok ? r.json() : {})
     .catch(() => ({}));
 

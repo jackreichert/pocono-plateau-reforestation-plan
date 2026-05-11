@@ -223,14 +223,14 @@ document.addEventListener('click', (e) => {
   let speciesIndex = {};
   if (!gallery) {
     try {
-      const res = await fetch('data/regions/pocono-plateau/photos-gallery.json');
+      const res = await fetch('data/regions/pocono-plateau/photos-gallery.json?v=20260511');
       if (res.ok) gallery = await res.json();
     } catch (_) { /* graceful: leave gallery undefined */ }
   }
   // Also fetch the species index so we can resolve key → display name.
   // Fallback: derive display name from the key itself.
   try {
-    const idxRes = await fetch('data/regions/pocono-plateau/species/index.json');
+    const idxRes = await fetch('data/regions/pocono-plateau/species/index.json?v=20260511');
     if (idxRes.ok) {
       const keys = await idxRes.json();
       // Lightweight name lookup — fetch each species' name only if needed for a strip.
@@ -238,7 +238,7 @@ document.addEventListener('click', (e) => {
       strips.forEach(el => el.dataset.species.split(',').map(s => s.trim()).forEach(k => stripKeys.add(k)));
       const needed = keys.filter(k => stripKeys.has(k));
       const speciesArr = await Promise.all(needed.map(k =>
-        fetch(`data/regions/pocono-plateau/species/${k.replace(/_/g, '-')}.json`).then(r => r.ok ? r.json() : null)
+        fetch(`data/regions/pocono-plateau/species/${k.replace(/_/g, '-')}.json?v=20260511`).then(r => r.ok ? r.json() : null)
       ));
       speciesArr.filter(Boolean).forEach(s => { speciesIndex[s.key] = s; });
     }

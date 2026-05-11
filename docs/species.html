@@ -57,16 +57,33 @@
       <input type="search" id="species-search" class="species-search" placeholder="Search by name — oak, Carya, hemlock…" autocomplete="off" aria-label="Search species">
     </div>
     <div class="species-filter-buttons">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="trees">Trees</button>
-      <button class="filter-btn" data-filter="shrub">Shrubs</button>
+      <button class="filter-btn active" data-filter-type="layer" data-filter="all">All</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="trees">Trees</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="shrub">Shrubs</button>
       <span class="filter-divider"></span>
-      <button class="filter-btn" data-filter="canopy">Canopy</button>
-      <button class="filter-btn" data-filter="understory">Understory</button>
-      <button class="filter-btn" data-filter="conifer">Conifer</button>
-      <button class="filter-btn" data-filter="fruiting">Fruiting</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="canopy">Canopy</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="understory">Understory</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="conifer">Conifer</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="fruiting">Fruiting</button>
     </div>
     <div class="species-count" id="species-count">— species</div>
+  </div>
+  <div class="wrap species-toolbar-inner" style="padding-top:0;padding-bottom:.8rem;border-top:1px dashed var(--rule-soft);margin-top:.4rem;padding-top:.8rem">
+    <div class="species-filter-label" style="font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-light);align-self:center">By priority</div>
+    <div class="species-filter-buttons">
+      <button class="filter-btn active" data-filter-type="tier" data-filter="all">All priorities</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier1">★ Plant first</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier2">Wetland sites</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier3">Climate trial</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier4">Niche / specialist</button>
+    </div>
+  </div>
+  <div class="wrap species-toolbar-inner" style="padding-top:0;padding-bottom:.8rem;border-top:1px dashed var(--rule-soft);margin-top:.4rem;padding-top:.8rem">
+    <div class="species-filter-label" style="font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-light);align-self:center">By group</div>
+    <div class="species-filter-buttons" id="group-filter-buttons">
+      <button class="filter-btn active" data-filter-type="group" data-filter="all">All groups</button>
+      <!-- Group buttons populated dynamically from planner.json -->
+    </div>
   </div>
 </section>
 
@@ -76,7 +93,7 @@
     <div id="layer-note" style="max-width:60ch;margin:0 auto;text-align:center">
       <p class="eyebrow" id="layer-note-eyebrow" style="justify-content:center;margin-bottom:1rem">A Forest is Layers</p>
       <p style="font-family:var(--body);font-style:italic;font-weight:300;font-size:1.15rem;line-height:1.55;color:var(--ink-soft)" id="layer-note-body">
-        A healthy northern hardwood forest at this elevation has five distinct layers, each with its own ecological role. Filter above to focus on a single layer; click any species card to see images, planting instructions, and references.
+        A healthy northern hardwood forest at this elevation has six distinct layers, each with its own ecological role. This guide covers the five woody layers — canopy, understory, conifers, shrubs, and fruiting — that you actively plant. The sixth, the herbaceous forest floor of spring ephemerals like trillium and bloodroot, returns on its own decadal timeline once the conditions you build allow it. Filter above to focus on a single layer; click any species card to see images, planting instructions, and references.
       </p>
     </div>
   </div>
@@ -193,15 +210,24 @@ const LAYER_LABELS = {canopy:'Canopy',understory:'Understory',conifer:'Conifer',
 const LAYER_BADGE  = {canopy:'badge-canopy',understory:'badge-understory',conifer:'badge-conifer',shrub:'badge-shrub',fruiting:'badge-fruiting'};
 const PROT_BADGE   = {tube:'badge-tube',cage:'badge-cage',none:'badge-natural'};
 const PROT_LABEL   = {tube:'Tube',cage:'Wire cage',none:'Natural arrival'};
+const TIER_LABELS  = {tier1:'',tier2:'Wetland',tier3:'Climate trial',tier4:'Niche'};
 
 const LAYER_NOTES = {
-  all:        { eyebrow: 'A Forest is Layers',           body: 'A healthy northern hardwood forest at this elevation has five distinct layers, each with its own ecological role. Filter above to focus on a single layer; click any species card to see images, planting instructions, and references.' },
+  all:        { eyebrow: 'A Forest is Layers',           body: 'A healthy northern hardwood forest at this elevation has six distinct layers. This guide covers the five woody layers you actively plant — canopy, understory, conifers, shrubs, and fruiting. The sixth, the herbaceous forest floor of spring ephemerals like trillium and bloodroot, returns on its own decadal timeline once conditions allow. Filter above to focus on a single layer or priority tier.' },
   trees:      { eyebrow: 'The Tree Layers',              body: 'Trees — canopy, understory, and conifer — make up the structural frame of the forest. Shrubs (filter separately) form the dense layer that doubles total biomass.' },
   canopy:     { eyebrow: 'The Canopy · 40–100 ft',       body: 'Canopy trees are the structural backbone and the engine of the food web. Oaks and hickories dominated pre-settlement forests on this plateau and supported more wildlife species than any other genus.' },
   understory: { eyebrow: 'The Understory · 15–40 ft',    body: 'The mid-story where most daily wildlife activity happens. Tolerates shade, produces the first spring blooms, the summer berries, and year-round nesting cover.' },
   conifer:    { eyebrow: 'The Conifer Layer · 40–80 ft', body: 'The only layer that looks the same in February as in July. Critical thermal cover for deer, turkey, and songbirds. Must be planted — no natural seed source at 2,000 ft.' },
   shrub:      { eyebrow: 'The Shrub Layer · 5–20 ft',    body: 'A 2025 National Science Review study found that increasing shrub diversity from 2 to 8 species boosted total tree biomass by 53.8%. Target 6–8 species, scattered loosely.' },
   fruiting:   { eyebrow: 'Fruiting & Flowering · 15–80 ft', body: 'The bonus layer — selected primarily for wildlife food value, seasonal flowers, or historical significance. Keep at ~15% of total — enough to add value, not enough to shift focus from the oak-hickory backbone.' },
+};
+
+const TIER_NOTES = {
+  all:    { eyebrow: 'All Priorities',         body: 'Every species in the guide, across all four priority tiers.' },
+  tier1:  { eyebrow: '★ Tier 1 · Plant First', body: 'The canonical baseline — broadly applicable species that belong on most Pocono Plateau plantings regardless of site specifics. Start here. Oaks, hickories, sugar maple, the core understory and shrub layers, conifers, and the recently-added canonical species that the PA DCNR Northern Hardwood Forest reference community names but most plantings omit (hobblebush, maple-leaved viburnum, beaked hazelnut, mountain holly, pinxter azalea, black huckleberry).' },
+  tier2:  { eyebrow: 'Tier 2 · Wetland Sites', body: 'Species requiring wet feet, wet edges, or seasonal flooding — for properties with streams, vernal pools, swale bottoms, bog edges, or wet hollows. Will not survive upland. Skip this tier if your property is dry.' },
+  tier3:  { eyebrow: 'Tier 3 · Climate Trial', body: 'Assisted migration / climate-winner trial plantings. Documented expansion candidates under USFS Tree Atlas warming scenarios. Plant 5–10 trees as a trial cluster; observe survival before scaling. Source northern-edge provenance stock where possible.' },
+  tier4:  { eyebrow: 'Tier 4 · Niche / Specialist', body: 'Specialist species for specific site conditions — disturbed acid ridges, cool ravines, rocky openings. Add only if the matching niche exists on your property.' },
 };
 
 const DO_NOT_PLANT = [
@@ -214,8 +240,109 @@ const DO_NOT_PLANT = [
 ];
 
 // State -------------------------------------------------------------
-let currentFilter = 'all';
+let currentFilter = 'all';      // layer filter
+let currentTierFilter = 'all';  // priority tier filter
+let currentGroupFilter = 'all'; // planner-group filter
 let currentSearch = '';
+
+// Build species→group lookup map from REGION_CONFIG (populated by region-loader).
+// Each entry: { groupId, groupName, weight, role: 'primary'|'fallback' }
+// "Primary" = top 2 by weight in group OR weight >= 25; "Fallback" = flex:true OR rest.
+let SPECIES_GROUP_MAP = {};
+let GROUP_INFO = {};  // groupId → { name, why }
+
+function buildGroupMap() {
+  if (!window.REGION_CONFIG) return;
+  SPECIES_GROUP_MAP = {};
+  GROUP_INFO = {};
+  // Tree groups
+  (window.REGION_CONFIG.groups || []).forEach(g => {
+    GROUP_INFO[g.id] = { name: g.name, why: g.why, optional: !!g.optional };
+    // Sort species by weight desc to determine primary/fallback
+    const sorted = [...g.species].sort((a, b) => (b.weight || 0) - (a.weight || 0));
+    const topWeight = sorted[0] ? sorted[0].weight : 0;
+    g.species.forEach((sp, idx) => {
+      const isFlex = !!sp.flex;
+      const isPrimary = !isFlex && (sp.weight >= 25 || sp === sorted[0] || (sp === sorted[1] && topWeight - sp.weight < 20));
+      SPECIES_GROUP_MAP[sp.key] = {
+        groupId: g.id,
+        groupName: g.name,
+        weight: sp.weight || 0,
+        role: isPrimary ? 'primary' : 'fallback'
+      };
+    });
+  });
+  // Top-level shrubs as a group
+  if (window.REGION_CONFIG.shrubs && window.REGION_CONFIG.shrubs.length) {
+    GROUP_INFO['shrubs'] = { name: 'Shrubs', why: 'A 2025 National Science Review study found diverse shrubs boost total tree biomass by 53.8%. Target 6–8 species, scattered loosely.', optional: false };
+    const sorted = [...window.REGION_CONFIG.shrubs].sort((a, b) => (b.weight || 0) - (a.weight || 0));
+    const topWeight = sorted[0] ? sorted[0].weight : 0;
+    window.REGION_CONFIG.shrubs.forEach((sh, idx) => {
+      const isFlex = !!sh.flex;
+      const isPrimary = !isFlex && (sh.weight >= 9 || sh === sorted[0] || sh === sorted[1] || sh === sorted[2]);
+      SPECIES_GROUP_MAP[sh.key] = {
+        groupId: 'shrubs',
+        groupName: 'Shrubs',
+        weight: sh.weight || 0,
+        role: isPrimary ? 'primary' : 'fallback'
+      };
+    });
+  }
+}
+
+function buildGroupFilterButtons() {
+  const container = document.getElementById('group-filter-buttons');
+  if (!container) return;
+  // Keep "All groups" button, append group buttons
+  const groupOrder = ['oaks', 'moist', 'ridge', 'pioneers', 'conifers', 'understory', 'fruiting', 'specialty', 'shrubs', 'wetland', 'climate_trial', 'niche'];
+  const shortNames = {
+    'oaks': 'Oaks',
+    'moist': 'Moist canopy',
+    'ridge': 'Ridge canopy',
+    'pioneers': 'Pioneers',
+    'conifers': 'Conifers',
+    'understory': 'Understory',
+    'fruiting': 'Fruiting',
+    'specialty': 'Specialty',
+    'shrubs': 'Shrubs',
+    'wetland': 'Wetland',
+    'climate_trial': 'Climate trial',
+    'niche': 'Niche'
+  };
+  groupOrder.forEach(gid => {
+    if (!GROUP_INFO[gid]) return;
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.dataset.filterType = 'group';
+    btn.dataset.filter = gid;
+    btn.textContent = shortNames[gid] || GROUP_INFO[gid].name;
+    if (GROUP_INFO[gid].optional) {
+      btn.style.fontStyle = 'italic';
+      btn.title = 'Site-conditional group';
+    }
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn[data-filter-type="group"]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentGroupFilter = gid;
+      updateLayerNote();
+      buildGrid();
+      buildDoNotPlant();
+    });
+    container.appendChild(btn);
+  });
+  // Wire the "All groups" button too
+  const allBtn = container.querySelector('[data-filter="all"]');
+  if (allBtn) {
+    allBtn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn[data-filter-type="group"]').forEach(b => b.classList.remove('active'));
+      allBtn.classList.add('active');
+      currentGroupFilter = 'all';
+      updateLayerNote();
+      buildGrid();
+      buildDoNotPlant();
+    });
+  }
+}
 
 function getFilteredSpecies() {
   if (!window.SPECIES_DATA) return [];
@@ -226,6 +353,17 @@ function getFilteredSpecies() {
   } else if (currentFilter !== 'all') {
     items = items.filter(s => s.layer === currentFilter);
   }
+  // Tier filter (treat missing tier as tier1 — canonical baseline)
+  if (currentTierFilter !== 'all') {
+    items = items.filter(s => (s.tier || 'tier1') === currentTierFilter);
+  }
+  // Group filter (planner-group classification)
+  if (currentGroupFilter !== 'all') {
+    items = items.filter(s => {
+      const groupInfo = SPECIES_GROUP_MAP[s.key];
+      return groupInfo && groupInfo.groupId === currentGroupFilter;
+    });
+  }
   // Search filter
   if (currentSearch) {
     const q = currentSearch.toLowerCase().trim();
@@ -235,6 +373,13 @@ function getFilteredSpecies() {
       (s.summary && s.summary.toLowerCase().includes(q))
     );
   }
+  // Sort: within filtered set, primaries first, then fallbacks, by weight desc
+  items = [...items].sort((a, b) => {
+    const ga = SPECIES_GROUP_MAP[a.key] || { weight: 0, role: 'fallback' };
+    const gb = SPECIES_GROUP_MAP[b.key] || { weight: 0, role: 'fallback' };
+    if (ga.role !== gb.role) return ga.role === 'primary' ? -1 : 1;
+    return (gb.weight || 0) - (ga.weight || 0);
+  });
   return items;
 }
 
@@ -255,9 +400,25 @@ function buildGrid() {
       ? `<img class="species-card-img" src="${photoUrl}" alt="${sp.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
       : '';
     const phHtml = `<div class="species-card-img-placeholder" style="display:${photoUrl?'none':'flex'}">${(sp.latin || '').split(' ')[0]}</div>`;
+    const tier = sp.tier || 'tier1';
+    const tierLabel = TIER_LABELS[tier] || '';
+    const tierBadge = tierLabel
+      ? `<span class="species-tier-badge species-tier-${tier}" title="Priority: ${tierLabel}">${tierLabel}</span>`
+      : '';
+    const groupInfo = SPECIES_GROUP_MAP[sp.key];
+    const roleBadge = groupInfo && groupInfo.role === 'primary'
+      ? `<span class="species-role-badge species-role-primary" title="${groupInfo.groupName} — Primary species">★ Primary</span>`
+      : (groupInfo && groupInfo.role === 'fallback'
+          ? `<span class="species-role-badge species-role-fallback" title="${groupInfo.groupName} — Fallback / flex species">Fallback</span>`
+          : '');
+    const groupTag = groupInfo
+      ? `<span class="species-group-tag">${groupInfo.groupName}</span>`
+      : '';
     return `
-      <a class="species-card" href="#${sp.key}" data-key="${sp.key}" data-layer="${sp.layer}">
+      <a class="species-card" href="#${sp.key}" data-key="${sp.key}" data-layer="${sp.layer}" data-tier="${tier}" data-group="${groupInfo ? groupInfo.groupId : ''}">
         ${imgHtml}${phHtml}
+        ${tierBadge}
+        ${roleBadge}
         <div class="species-card-body">
           <div class="latin">${sp.latin || ''}</div>
           <div class="common">${sp.name}</div>
@@ -266,6 +427,7 @@ function buildGrid() {
             <span>${LAYER_LABELS[sp.layer] || sp.layer}</span>
             <span>${PROT_LABEL[sp.protection] || ''}</span>
           </div>
+          ${groupTag}
         </div>
       </a>`;
   }).join('');
@@ -292,7 +454,17 @@ function buildDoNotPlant() {
 }
 
 function updateLayerNote() {
-  const note = LAYER_NOTES[currentFilter] || LAYER_NOTES.all;
+  // Priority: group filter > tier filter > layer filter > default
+  let note;
+  if (currentGroupFilter !== 'all' && GROUP_INFO[currentGroupFilter]) {
+    const gi = GROUP_INFO[currentGroupFilter];
+    const optTag = gi.optional ? ' · site-conditional' : '';
+    note = { eyebrow: `${gi.name}${optTag}`, body: gi.why || '' };
+  } else if (currentTierFilter !== 'all' && TIER_NOTES[currentTierFilter]) {
+    note = TIER_NOTES[currentTierFilter];
+  } else {
+    note = LAYER_NOTES[currentFilter] || LAYER_NOTES.all;
+  }
   document.getElementById('layer-note-eyebrow').textContent = note.eyebrow;
   document.getElementById('layer-note-body').textContent = note.body;
 }
@@ -484,12 +656,18 @@ function closeModal() {
 }
 window.closeModal = closeModal;
 
-// Filter buttons
+// Filter buttons — handle both layer and tier filter groups independently
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    const filterType = btn.dataset.filterType || 'layer';
+    // Deactivate only the buttons in the same filter group
+    document.querySelectorAll(`.filter-btn[data-filter-type="${filterType}"]`).forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    currentFilter = btn.dataset.filter;
+    if (filterType === 'tier') {
+      currentTierFilter = btn.dataset.filter;
+    } else {
+      currentFilter = btn.dataset.filter;
+    }
     updateLayerNote();
     buildGrid();
     buildDoNotPlant();
@@ -516,6 +694,8 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 // Initial render after region data loads
 window.regionReady.then(() => {
+  buildGroupMap();
+  buildGroupFilterButtons();
   updateLayerNote();
   buildGrid();
   buildDoNotPlant();

@@ -1,0 +1,46 @@
+{
+  "key": "swamp_white_oak",
+  "name": "Swamp White Oak",
+  "latin": "Quercus bicolor",
+  "layer": "canopy",
+  "protection": "tube",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The most common riparian oak in NEPA \u2014 slow but reliable bottomland canopy tree. Adds a 6th oak species to the planting and brings Quercus (Tallamy keystone genus #1 at ~500 Lepidoptera species) to wet bottomland sites where chestnut and red oak won't thrive.",
+  "notes": "Acorns feed deer, turkey, squirrel, bear, and wood ducks. White underside of leaf gives the species its name (bicolor). Long-lived (200+ years). Tolerates seasonal flooding and poorly-drained soils where most oaks fail. White oak group \u2014 not vulnerable to oak wilt as severely as red oak group.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/quercus/bicolor.htm"
+    },
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/quercus-bicolor/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "20\u201330",
+    "aspect": "Seasonal wet hollows; bottomland; floodplain margins",
+    "light": "Full sun preferred; tolerates partial shade as sapling",
+    "moisture": "Wet to mesic; tolerates seasonal flooding",
+    "soil": "Acidic to neutral; clay-tolerant; poorly-drained OK",
+    "hole_depth_in": "14\u201318",
+    "site_notes": "Plant in seasonally wet bottomland where regular oaks struggle. Standard bare-root from Wayne Conservation District. Tube protection (heat-tolerant); do not prune April\u2013July (oak wilt risk).",
+    "cluster_with": [
+      "american_hornbeam",
+      "winterberry",
+      "black_gum",
+      "tamarack"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/swamp_white_oak/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Quercus_bicolor_morton_acc_71-69-2.jpg/960px-Quercus_bicolor_morton_acc_71-69-2.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Quercus_bicolor"
+  }
+}

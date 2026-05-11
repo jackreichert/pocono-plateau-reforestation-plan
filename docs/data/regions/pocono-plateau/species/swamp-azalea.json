@@ -1,0 +1,46 @@
+{
+  "key": "swamp_azalea",
+  "name": "Swamp Azalea",
+  "latin": "Rhododendron viscosum",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Fragrant white-pink azalea of acid wet edges \u2014 vernal pool margins, peat hollows, and seep edges. Blooms June\u2013July (later than pinxter azalea), extending the spring native azalea forage window by a full month.",
+  "notes": "Hosts azalea-specialist bee Andrena cornelli. Special value to bumblebees. Night flowers are sphinx-moth pollinated; daytime visited by hummingbirds and swallowtails. Honest fit for Pocono acid wet sites. Pair with pinxter azalea (dry upland) for sequential native azalea bloom across the spring/early-summer.",
+  "refs": [
+    {
+      "label": "Wildflower.org",
+      "url": "https://www.wildflower.org/plants/result.php?id_plant=rhvi2"
+    },
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/rhododendron-viscosum/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "5\u20138",
+    "aspect": "Vernal pool edges; wet hollows; seep margins",
+    "light": "Partial shade",
+    "moisture": "Wet to moist",
+    "soil": "Strongly acidic (pH 4.5\u20135.5); organic-rich",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant only on permanently or seasonally wet acid sites. Wire cage; deer browse moderately. Pinelands Nursery and Mellow Marsh Farm carry this species reliably.",
+    "cluster_with": [
+      "winterberry",
+      "sweet_pepperbush",
+      "buttonbush",
+      "red_osier_dogwood"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/swamp_azalea/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Swamp_Azalea_Blooming.jpg/960px-Swamp_Azalea_Blooming.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Rhododendron_viscosum"
+  }
+}

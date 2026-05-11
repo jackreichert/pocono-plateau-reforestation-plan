@@ -1,0 +1,45 @@
+{
+  "key": "round_leaved_dogwood",
+  "name": "Round-leaved Dogwood",
+  "latin": "Cornus rugosa",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "C"
+  ],
+  "summary": "A small rocky-upland dogwood characteristic of cool Northern Hardwood Forest understories. Distinctively round, fuzzy-undersided leaves (the species name 'rugosa' = wrinkled). Less common than pagoda dogwood but canonical to the reference community.",
+  "notes": "Cornus genus supports ~120 Lepidoptera species. White flat-topped flower clusters in May\u2013June; blue berries on red stems in August feed thrushes and songbirds. Sometimes called 'round-leaved' or 'rough-leaved' dogwood. Best suited to rocky cool slopes where pagoda dogwood is less reliable.",
+  "refs": [
+    {
+      "label": "Go Botany \u2014 Cornus rugosa",
+      "url": "https://gobotany.nativeplanttrust.org/species/cornus/rugosa/"
+    },
+    {
+      "label": "Minnesota Wildflowers",
+      "url": "https://www.minnesotawildflowers.info/shrub/round-leaved-dogwood"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "5\u20138",
+    "aspect": "Cool rocky slopes; north-facing uplands",
+    "light": "Partial shade",
+    "moisture": "Mesic; well-drained",
+    "soil": "Acidic to neutral; rocky to loamy",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant on cool rocky north-facing slopes alongside yellow birch and striped maple. Wire cage essential \u2014 deer browse moderately. Less commercially available than pagoda dogwood; check Go Native Tree Farm and northeastern native nurseries.",
+    "cluster_with": [
+      "yellow_birch",
+      "striped_maple",
+      "mountain_holly",
+      "hobblebush"
+    ]
+  },
+  "tier": "tier4",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/round_leaved_dogwood/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cornus_rugosa_5474509.jpg/960px-Cornus_rugosa_5474509.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Cornus_rugosa"
+  }
+}

@@ -66,8 +66,8 @@
     </div>
 
     <!-- Full Mix notice -->
-    <div class="plan-d-notice" id="plan-fm-notice" style="background:#EFF6FF;border-color:#BFDBFE;color:#1E40AF">
-      <strong>Full Mix</strong> — Every ecological layer is represented. Enter your total trees and the planner scales everything automatically. For multi-year plantings, order in thirds (~120 trees/year) and <strong>diversify every year</strong> — don't save understory and conifers for later. Weight oaks and hickories a little heavier in Year 1, but each year's order should stand alone as a complete planting. <a href="plans.html#full-mix" style="color:#1E40AF">Full approach details →</a>
+    <div class="plan-d-notice" id="plan-fm-notice" style="background:#DDE2D6;border-left-color:var(--moss);color:var(--ink-soft)">
+      <strong>Full Mix</strong> — Every ecological layer is represented. Enter your total trees and the planner scales everything automatically. For multi-year plantings, <strong>diversify every year</strong> — don't save understory and conifers for later. Weight oaks and hickories a little heavier in Year 1, but each year's order should stand alone as a complete planting. <em>Most landowners plant 15–30 trees per year</em> — the rate canopy gaps actually open as beech declines — so a "Full Restoration" total of ~350 trees spreads naturally across a decade rather than three years. Order in whatever annual increment matches the rate your canopy is opening. <a href="plans.html#full-mix" style="color:var(--moss)">Full approach details →</a>
     </div>
 
     <!-- Management-First notice -->
@@ -130,6 +130,20 @@
       <div class="planner-body">
         <div id="planner-groups"></div>
 
+        <!-- Optional groups toggle -->
+        <div id="optional-groups-toggle" style="margin-top:1.5rem;padding:1rem 1.5rem;background:var(--green-50);border:1px dashed var(--border);border-radius:8px;text-align:center">
+          <button id="show-optional-btn" class="btn btn-ghost btn-sm" style="font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase">
+            <span id="optional-toggle-icon">▸</span>
+            <span id="optional-toggle-label">Show site-conditional groups</span>
+          </button>
+          <div style="margin-top:.5rem;font-size:.78rem;color:var(--text-mid);font-style:italic">
+            Wetland species · Climate-adapted trials · Niche specialists
+          </div>
+        </div>
+
+        <!-- Optional groups render target (hidden by default) -->
+        <div id="optional-groups" style="display:none;margin-top:1.5rem"></div>
+
         <!-- Shrub section -->
         <div class="planner-group mt-3">
           <div class="planner-group-header" style="background:var(--green-700)">
@@ -167,18 +181,18 @@
             <tr>
               <th>Ecological Group</th>
               <th>Full Mix</th>
-              <th style="background:#92400E">Management-First</th>
+              <th style="background:var(--bark);color:var(--paper)">Management-First</th>
               <th>Management-First Notes</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Gap-Filling Canopy Oaks</td><td>22%</td><td style="background:#FEF3C7;font-weight:700">0%</td><td>Direct seed acorns from legacy trees — free and locally adapted</td></tr>
-            <tr><td>Moist-Slope Canopy</td><td>15%</td><td style="background:#D1FAE5;font-weight:700">25%</td><td>Sugar maple, yellow birch, basswood — won't establish without help</td></tr>
-            <tr><td>Ridge &amp; Dry-Slope</td><td>15%</td><td style="background:#D1FAE5;font-weight:700">35%</td><td>Hickory-dominant; chestnut oak auto-zeroed (arrives naturally)</td></tr>
-            <tr><td>Pioneers / Fast-Fill</td><td>8%</td><td style="background:#FEF3C7;font-weight:700">0%</td><td>Arrive naturally via clonal spread and bird/wind seed dispersal</td></tr>
-            <tr><td>Conifers</td><td>12%</td><td style="background:#D1FAE5;font-weight:700">28%</td><td>No natural seed source at 2,000ft — must be planted</td></tr>
-            <tr><td>Understory</td><td>15%</td><td style="background:#FEF3C7;font-weight:700">7%</td><td>Pagoda dogwood only; serviceberry + hop-hornbeam arrive naturally</td></tr>
-            <tr><td>Fruiting / Flowering</td><td>8%</td><td style="background:#FEF3C7;font-weight:700">0%</td><td>Skip — budget goes to hickory and conifers first</td></tr>
+            <tr><td>Gap-Filling Canopy Oaks</td><td>22%</td><td style="background:var(--paper-soft);color:var(--ink-light);font-weight:700">0%</td><td>Direct seed acorns from legacy trees — free and locally adapted</td></tr>
+            <tr><td>Moist-Slope Canopy</td><td>15%</td><td style="background:var(--amber-100);font-weight:700">25%</td><td>Sugar maple, yellow birch, basswood — won't establish without help</td></tr>
+            <tr><td>Ridge &amp; Dry-Slope</td><td>15%</td><td style="background:var(--amber-100);font-weight:700">35%</td><td>Hickory-dominant; chestnut oak auto-zeroed (arrives naturally)</td></tr>
+            <tr><td>Pioneers / Fast-Fill</td><td>8%</td><td style="background:var(--paper-soft);color:var(--ink-light);font-weight:700">0%</td><td>Arrive naturally via clonal spread and bird/wind seed dispersal</td></tr>
+            <tr><td>Conifers</td><td>12%</td><td style="background:var(--amber-100);font-weight:700">28%</td><td>No natural seed source at 2,000ft — must be planted</td></tr>
+            <tr><td>Understory</td><td>15%</td><td style="background:var(--paper-soft);color:var(--ink-light);font-weight:700">7%</td><td>Pagoda dogwood only; serviceberry + hop-hornbeam arrive naturally</td></tr>
+            <tr><td>Fruiting / Flowering</td><td>8%</td><td style="background:var(--paper-soft);color:var(--ink-light);font-weight:700">0%</td><td>Skip — budget goes to hickory and conifers first</td></tr>
             <tr><td>Notable Specialty</td><td>5%</td><td>5%</td><td>Same in both approaches</td></tr>
           </tbody>
         </table>

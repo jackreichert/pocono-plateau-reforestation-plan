@@ -1,0 +1,45 @@
+{
+  "key": "sweetfern",
+  "name": "Sweetfern",
+  "latin": "Comptonia peregrina",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "C"
+  ],
+  "summary": "Nitrogen-fixing acid-pioneer shrub for dry disturbed openings \u2014 road cuts, old logging landings, ridge tops, burned-over areas. Strongly aromatic fern-like leaves that smell of bayberry-mint when crushed. Builds soil on degraded ground.",
+  "notes": "Native throughout the Poconos and northern PA. Hosts ~49 Lepidoptera species including the spectacular Sweetfern Underwing and Gray Hairstreak. Nitrogen-fixing via Frankia bacteria symbiosis (actinorhizal). Notoriously difficult to transplant \u2014 buy small container stock (NOT bare-root), plant in spring, mulch heavily, accept 2x mortality and plant accordingly.",
+  "refs": [
+    {
+      "label": "Ecological Landscape Alliance",
+      "url": "https://www.ecolandscaping.org/10/resources/ela-news/sweetfern/"
+    },
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/comper/all.html"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "3\u20135",
+    "aspect": "Dry openings; ridge tops; old logging landings; disturbed acid soils",
+    "light": "Full sun to partial shade",
+    "moisture": "Dry; tolerates poor sterile soils",
+    "soil": "Strongly acidic; sandy or gravelly; well-drained",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "BUY SMALL CONTAINER STOCK \u2014 bare-root transplants almost always fail. Plant in spring, mulch deeply with wood chips, expect ~50% mortality and plant 2x what you need. No deer protection needed. Excellent for skid trails and old log landings.",
+    "cluster_with": [
+      "pitch_pine",
+      "scarlet_oak",
+      "black_huckleberry",
+      "chestnut_oak"
+    ]
+  },
+  "tier": "tier4",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/sweetfern/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sweet-fern_%28Huron_Shores%29.JPG/960px-Sweet-fern_%28Huron_Shores%29.JPG",
+    "file_page_url": "https://en.wikipedia.org/wiki/Comptonia_peregrina"
+  }
+}

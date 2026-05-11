@@ -32,5 +32,6 @@
       "yellow_birch",
       "serviceberry"
     ]
-  }
+  },
+  "tier": "tier1"
 }

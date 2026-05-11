@@ -1,0 +1,45 @@
+{
+  "key": "pawpaw",
+  "name": "Pawpaw",
+  "latin": "Asimina triloba",
+  "layer": "understory",
+  "protection": "none",
+  "plans": [
+    "C"
+  ],
+  "summary": "The sole larval host plant of the Zebra Swallowtail butterfly. Pittsburgh-region restoration plantings documented the swallowtail's return to formerly extirpated areas in 2024 after pawpaws were re-established \u2014 a near-direct analog for what's possible in NEPA.",
+  "notes": "Native to PA; hardy Zone 5\u20138. Patch-forming small understory tree (15\u201330 ft). Maroon spring flowers are fly-pollinated (carrion-mimic). Large green fruit ripens in September \u2014 tastes like banana-mango custard; eaten by raccoons, opossums, foxes, deer (post-ripening only \u2014 unripe fruit is bitter). Acetogenin chemistry makes pawpaw essentially deer-proof through its entire life cycle.",
+  "refs": [
+    {
+      "label": "PublicSource \u2014 Zebra Swallowtail return to Pittsburgh",
+      "url": "https://www.publicsource.org/zebra-swallowtail-butterfly-effect-pawpaw-trees-history-return-pittsburgh/"
+    },
+    {
+      "label": "USDA Climate Hub",
+      "url": "https://www.climatehubs.usda.gov/hubs/northern-forests/topic/climate-change-projections-individual-tree-species"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "8\u201312",
+    "aspect": "Moist coves; bottomland; sheltered cool sites",
+    "light": "Partial shade preferred; tolerates full sun once established",
+    "moisture": "Mesic to moist; well-drained but not dry",
+    "soil": "Rich, organic, slightly acidic to neutral",
+    "hole_depth_in": "12\u201316",
+    "site_notes": "Self-incompatible \u2014 plant at least 2 unrelated trees within 30 ft for cross-pollination and fruit set. No deer protection needed (chemical defense). Plant in coves and bottomland \u2014 not exposed ridges.",
+    "cluster_with": [
+      "cucumber_magnolia",
+      "basswood",
+      "sugar_maple",
+      "american_hornbeam"
+    ]
+  },
+  "tier": "tier3",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/pawpaw/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Asimina_triloba3.jpg/960px-Asimina_triloba3.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Asimina_triloba"
+  }
+}

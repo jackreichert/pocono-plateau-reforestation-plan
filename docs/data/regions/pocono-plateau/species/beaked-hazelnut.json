@@ -1,0 +1,46 @@
+{
+  "key": "beaked_hazelnut",
+  "name": "Beaked Hazelnut",
+  "latin": "Corylus cornuta",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The cool-forest hazelnut \u2014 more characteristic of the true Northern Hardwood Forest understory than the warmer American hazelnut already on the list. Named for the long bristly husk that encloses each nut.",
+  "notes": "Corylus genus supports ~130+ Lepidoptera species. Hard mast feeds grouse, turkeys, jays, squirrels, and chipmunks. Multi-stemmed 6\u201312 ft shrub forming open thickets. Yellow catkins in April provide early-spring pollen for native bees. Better cold-tolerance and shade-tolerance than American hazelnut.",
+  "refs": [
+    {
+      "label": "Go Botany \u2014 Corylus cornuta",
+      "url": "https://gobotany.nativeplanttrust.org/species/corylus/cornuta/"
+    },
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/corcor/all.html"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "6\u201310",
+    "aspect": "Any; cool slopes preferred",
+    "light": "Partial shade",
+    "moisture": "Mesic to slightly dry",
+    "soil": "Acidic to neutral; well-drained; tolerates rocky ground",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Choose beaked hazelnut over American hazelnut for upland Pocono Plateau plantings \u2014 better cold-and-shade match for NHF. Wire cage for the first 3\u20135 years; deer browse leaves and twigs heavily.",
+    "cluster_with": [
+      "yellow_birch",
+      "sugar_maple",
+      "northern_red_oak",
+      "striped_maple"
+    ]
+  },
+  "tier": "tier1",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/beaked_hazelnut/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Corylus_cornuta.jpg/960px-Corylus_cornuta.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Corylus_cornuta"
+  }
+}

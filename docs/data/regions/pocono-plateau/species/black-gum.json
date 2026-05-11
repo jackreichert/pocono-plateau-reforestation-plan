@@ -35,5 +35,6 @@
       "sassafras",
       "serviceberry"
     ]
-  }
+  },
+  "tier": "tier1"
 }

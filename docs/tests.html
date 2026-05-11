@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Planner Tests — Pocono Forest Restoration</title>
+<meta name="robots" content="noindex">
+<style>
+  body { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; max-width: 980px; margin: 2rem auto; padding: 0 1rem; color: #1F1A12; background: #F1E8D2; line-height: 1.5; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  .sub { color: #6B6147; font-size: .9rem; margin-bottom: 2rem; }
+  .summary { padding: 1rem 1.25rem; background: #fff; border: 1px solid #D6CDB0; margin-bottom: 1.5rem; font-size: 1rem; }
+  .summary.pass { border-left: 4px solid #1E5C30; }
+  .summary.fail { border-left: 4px solid #DC2626; }
+  .suite { margin-bottom: 1.25rem; }
+  .suite-name { font-weight: 600; margin-bottom: .35rem; }
+  .test { padding: .25rem .5rem; font-size: .88rem; display: flex; gap: .6rem; align-items: baseline; }
+  .test.pass { color: #1E5C30; }
+  .test.fail { color: #DC2626; background: #FEF2F2; border-left: 3px solid #DC2626; padding-left: .8rem; }
+  .test .mark { font-weight: bold; min-width: 1.2rem; }
+  .test pre { font-size: .78rem; color: #463E2D; margin: .25rem 0 .25rem 1.8rem; white-space: pre-wrap; }
+  .control { margin-bottom: 1rem; }
+  button { font: inherit; padding: .35rem .7rem; border: 1px solid #1E5C30; background: #1E5C30; color: #fff; cursor: pointer; border-radius: 2px; }
+  button:hover { background: #164a26; }
+</style>
+</head>
+<body>
+
+<h1>Planner Tests</h1>
+<div class="sub">Pure-function tests for <code>js/planner.js</code> math + filter logic. Open this page to run. No build step, no installs.</div>
+
+<div class="control"><button id="rerun">Re-run tests</button></div>
+<div id="summary" class="summary"></div>
+<div id="results"></div>
+
+<!-- Fake region loader so planner.js doesn't try to fetch JSON during tests -->
+<script>
+  window.regionReady = new Promise(() => {}); // never resolves — bypasses the auto-init
+</script>
+<script src="js/planner.js"></script>
+<script>
+// ── Tiny test framework ────────────────────────────────────────────────────
+const suites = [];
+let currentSuite = null;
+
+function describe(name, fn) {
+  currentSuite = { name, tests: [] };
+  suites.push(currentSuite);
+  fn();
+}
+function it(name, fn) {
+  try {
+    fn();
+    currentSuite.tests.push({ name, pass: true });
+  } catch (err) {
+    currentSuite.tests.push({ name, pass: false, error: err.message || String(err), stack: err.stack });
+  }
+}
+function assert(condition, message) {
+  if (!condition) throw new Error(message || 'assertion failed');
+}
+function assertEqual(actual, expected, message) {
+  if (actual !== expected) {
+    throw new Error(`${message || 'expected equality'}\n  expected: ${JSON.stringify(expected)}\n  actual:   ${JSON.stringify(actual)}`);
+  }
+}
+function assertDeep(actual, expected, message) {
+  const a = JSON.stringify(actual); const b = JSON.stringify(expected);
+  if (a !== b) {
+    throw new Error(`${message || 'expected deep equality'}\n  expected: ${b}\n  actual:   ${a}`);
+  }
+}
+function assertThrows(fn, message) {
+  try { fn(); throw new Error('did not throw'); } catch (err) {
+    if (err.message === 'did not throw') throw new Error(message || 'expected to throw');
+  }
+}
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+function H() { return window.__plannerTest; }
+
+function singleFlexGroup() {
+  return [{
+    id: 'oaks', name: 'Oaks', why: '', stdPct: 100, mfPct: 100,
+    species: [
+      { name: 'Red Oak',   key: 'red_oak',   weight: 50, protection: 'tube' },
+      { name: 'White Oak', key: 'white_oak', weight: 30, protection: 'tube' },
+      { name: 'Black Oak', key: 'black_oak', weight: 15, protection: 'tube' },
+      { name: 'Scarlet',   key: 'scarlet',   weight:  5, protection: 'tube', flex: true },
+    ]
+  }];
+}
+
+function multiFlexGroup() {
+  // Three flex species — the regression case for the recursion bug
+  return [{
+    id: 'understory', name: 'Understory', why: '', stdPct: 100, mfPct: 100,
+    species: [
+      { name: 'Serviceberry',     key: 'serv',  weight: 50, protection: 'cage' },
+      { name: 'Pagoda Dogwood',   key: 'pagoda',weight: 30, protection: 'cage' },
+      { name: 'Striped Maple',    key: 'strip', weight: 10, protection: 'cage', flex: true },
+      { name: 'Witch Hazel',      key: 'witch', weight:  8, protection: 'cage', flex: true },
+      { name: 'American Hornbeam',key: 'hornb', weight:  2, protection: 'cage', flex: true },
+    ]
+  }];
+}
+
+function multiGroupSetup() {
+  return [
+    {
+      id: 'oaks', name: 'Oaks', why: '', stdPct: 22, mfPct: 0,
+      species: [
+        { name: 'Red Oak',   key: 'red_oak',   weight: 50, protection: 'tube' },
+        { name: 'White Oak', key: 'white_oak', weight: 25, protection: 'tube' },
+        { name: 'Black Oak', key: 'black_oak', weight: 15, protection: 'tube' },
+        { name: 'Scarlet',   key: 'scarlet',   weight: 10, protection: 'tube', flex: true },
+      ]
+    },
+    {
+      id: 'conifers', name: 'Conifers', why: '', stdPct: 12, mfPct: 28,
+      species: [
+        { name: 'Balsam Fir',   key: 'balsam', weight: 40, protection: 'cage' },
+        { name: 'Red Spruce',   key: 'spruce', weight: 30, protection: 'cage' },
+        { name: 'Eastern Hemlock', key: 'hemlock', weight: 30, protection: 'cage', flex: true },
+      ]
+    },
+    {
+      id: 'wetland', name: 'Wetland', why: '', stdPct: 0, mfPct: 0, optional: true,
+      species: [
+        { name: 'Winterberry',  key: 'winter', weight: 50, protection: 'cage' },
+        { name: 'Swamp Oak',    key: 'swamp',  weight: 30, protection: 'tube' },
+        { name: 'Tamarack',     key: 'tama',   weight: 20, protection: 'cage', flex: true },
+      ]
+    },
+    {
+      id: 'understory', name: 'Understory', why: '', stdPct: 66, mfPct: 72,
+      species: [
+        { name: 'Serviceberry',  key: 'serv',  weight: 50, protection: 'cage', mfAutoZero: true },
+        { name: 'Pagoda Dogwood',key: 'pagoda',weight: 30, protection: 'cage' },
+        { name: 'Striped Maple', key: 'strip', weight: 20, protection: 'cage', flex: true },
+      ]
+    }
+  ];
+}
+
+// ── Tests ──────────────────────────────────────────────────────────────────
+
+describe('getPct — group percentage selection', () => {
+  H().setData(singleFlexGroup(), [], { FM: 60, MF: 150 });
+  H().resetState();
+  it('returns stdPct when plan is FM', () => {
+    H().setState({ plan: 'FM' });
+    const grp = singleFlexGroup()[0];
+    assertEqual(H().fns.getPct(grp), 100);
+  });
+  it('returns mfPct when plan is MF', () => {
+    H().setState({ plan: 'MF' });
+    const grp = { id: 'g', stdPct: 22, mfPct: 0 };
+    assertEqual(H().fns.getPct(grp), 0);
+  });
+  it('respects groupOverrides when set', () => {
+    H().setState({ plan: 'FM', groupOverrides: { oaks: 50 } });
+    const grp = { id: 'oaks', stdPct: 22, mfPct: 0 };
+    assertEqual(H().fns.getPct(grp), 50);
+  });
+});
+
+describe('getGroupTotals — largest-remainder distribution', () => {
+  it('totals sum exactly to totalTrees (no drift)', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const totals = H().fns.getGroupTotals();
+    const sum = Object.values(totals).reduce((a, b) => a + b, 0);
+    assertEqual(sum, 100, 'group totals must sum exactly to totalTrees');
+  });
+  it('respects per-group stdPct allocations', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const totals = H().fns.getGroupTotals();
+    // oaks 22%, conifers 12%, wetland 0%, understory 66% → totals: 22, 12, 0, 66
+    assertEqual(totals.oaks, 22);
+    assertEqual(totals.conifers, 12);
+    assertEqual(totals.wetland, 0, 'optional group should default to 0');
+    assertEqual(totals.understory, 66);
+  });
+  it('handles fractional remainders without drift (largest-remainder)', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    // 17 trees across 22/12/0/66 = 3.74 / 2.04 / 0 / 11.22 → floor 3/2/0/11=16, remainder 1
+    // Highest fractional remainder: oaks (0.74) wins
+    H().setState({ totalTrees: 17, plan: 'FM' });
+    const totals = H().fns.getGroupTotals();
+    assertEqual(Object.values(totals).reduce((a, b) => a + b, 0), 17, 'no drift for fractional totals');
+  });
+});
+
+describe('getSpeciesActual — flex species', () => {
+  it('single flex species absorbs the remainder of its group', () => {
+    H().setData(singleFlexGroup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const grp = singleFlexGroup()[0];
+    // group total = 100 (stdPct 100). weights: 50/30/15/5 (last is flex)
+    // non-flex sum at weights: red=50, white=30, black=15 → 95. flex (scarlet) = 100 - 95 = 5
+    const red    = H().fns.getSpeciesActual(grp, 0);
+    const white  = H().fns.getSpeciesActual(grp, 1);
+    const black  = H().fns.getSpeciesActual(grp, 2);
+    const scarlet= H().fns.getSpeciesActual(grp, 3);
+    assertEqual(red + white + black + scarlet, 100, 'species sum equals group total');
+    assert(scarlet > 0, 'flex species should absorb at least the rounding remainder');
+  });
+
+  it('REGRESSION: multi-flex group does not recurse infinitely', () => {
+    H().setData(multiFlexGroup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const grp = multiFlexGroup()[0];
+    // Pre-fix: infinite recursion → stack overflow. Post-fix: only first flex absorbs.
+    const serv  = H().fns.getSpeciesActual(grp, 0);
+    const pagoda= H().fns.getSpeciesActual(grp, 1);
+    const strip = H().fns.getSpeciesActual(grp, 2); // first flex
+    const witch = H().fns.getSpeciesActual(grp, 3); // second flex — should be 0
+    const hornb = H().fns.getSpeciesActual(grp, 4); // third flex — should be 0
+    assertEqual(witch, 0, 'second flex species must return 0 (not recurse)');
+    assertEqual(hornb, 0, 'third flex species must return 0 (not recurse)');
+    assertEqual(serv + pagoda + strip, 100, 'first flex absorbs; sum still equals group total');
+  });
+
+  it('flex returns 0 when all other species sum exceeds group total (no negative)', () => {
+    H().setData(singleFlexGroup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    // Override non-flex species to consume the entire group total
+    H().setState({
+      totalTrees: 100, plan: 'FM',
+      speciesOverrides: { 'oaks:0': 60, 'oaks:1': 40 }
+    });
+    const grp = singleFlexGroup()[0];
+    const scarlet = H().fns.getSpeciesActual(grp, 3);
+    assert(scarlet >= 0, 'flex species count must not go negative');
+  });
+});
+
+describe('getSpeciesActual — overrides and auto-zero', () => {
+  it('user override takes precedence over weighted calc', () => {
+    H().setData(singleFlexGroup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({
+      totalTrees: 100, plan: 'FM',
+      speciesOverrides: { 'oaks:0': 99 }
+    });
+    const grp = singleFlexGroup()[0];
+    assertEqual(H().fns.getSpeciesActual(grp, 0), 99, 'override 99 should be returned');
+  });
+
+  it('mfAutoZero species returns 0 in Management-First plan', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'MF' });
+    const understory = multiGroupSetup().find(g => g.id === 'understory');
+    // serviceberry has mfAutoZero: true → should be 0 in MF
+    assertEqual(H().fns.getSpeciesActual(understory, 0), 0, 'mfAutoZero must return 0 in MF plan');
+  });
+
+  it('mfAutoZero species returns non-zero in Full Mix plan', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const understory = multiGroupSetup().find(g => g.id === 'understory');
+    const serv = H().fns.getSpeciesActual(understory, 0);
+    assert(serv > 0, 'mfAutoZero species should have a count in FM plan');
+  });
+
+  it('remaining species redistribute when one is overridden', () => {
+    H().setData(singleFlexGroup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    // Group total 100. Set red_oak override to 20 (was 50 by weight).
+    // Remaining 80 should redistribute among white(30) + black(15) + flex(5).
+    H().setState({
+      totalTrees: 100, plan: 'FM',
+      speciesOverrides: { 'oaks:0': 20 }
+    });
+    const grp = singleFlexGroup()[0];
+    const red    = H().fns.getSpeciesActual(grp, 0);
+    const white  = H().fns.getSpeciesActual(grp, 1);
+    const black  = H().fns.getSpeciesActual(grp, 2);
+    const scarlet= H().fns.getSpeciesActual(grp, 3);
+    assertEqual(red, 20, 'override respected');
+    assertEqual(red + white + black + scarlet, 100, 'group total preserved after override redistribution');
+    assert(white > black, 'higher-weight species gets more in redistribution');
+  });
+});
+
+describe('Optional groups', () => {
+  it('optional group with stdPct: 0 yields 0 total trees', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const wetland = multiGroupSetup().find(g => g.id === 'wetland');
+    assertEqual(H().fns.getGroupTotal(wetland), 0);
+    // All species in an optional group default to 0 trees
+    assertEqual(H().fns.getSpeciesActual(wetland, 0), 0);
+    assertEqual(H().fns.getSpeciesActual(wetland, 1), 0);
+    assertEqual(H().fns.getSpeciesActual(wetland, 2), 0);
+  });
+
+  it('optional group species can still be allocated via override', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({
+      totalTrees: 100, plan: 'FM',
+      speciesOverrides: { 'wetland:0': 5, 'wetland:1': 3 }
+    });
+    const wetland = multiGroupSetup().find(g => g.id === 'wetland');
+    assertEqual(H().fns.getSpeciesActual(wetland, 0), 5, 'wetland override applied');
+    assertEqual(H().fns.getSpeciesActual(wetland, 1), 3, 'second wetland override applied');
+  });
+});
+
+describe('Shrubs — getShrubActual', () => {
+  it('weighted distribution sums to shrubTotal', () => {
+    const shrubs = [
+      { name: 'Hazelnut',  key: 'haz',  weight: 50 },
+      { name: 'Nannyberry',key: 'nan',  weight: 30 },
+      { name: 'Spicebush', key: 'spi',  weight: 20, flex: true },
+    ];
+    H().setData([], shrubs, { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ shrubTotal: 50 });
+    const counts = shrubs.map((_, i) => H().fns.getShrubActual(i));
+    assertEqual(counts.reduce((a, b) => a + b, 0), 50, 'shrub sum equals shrubTotal');
+  });
+
+  it('REGRESSION: multi-flex shrubs do not recurse', () => {
+    const shrubs = [
+      { name: 'Hazelnut',  key: 'haz',  weight: 50 },
+      { name: 'Nannyberry',key: 'nan',  weight: 30, flex: true },
+      { name: 'Spicebush', key: 'spi',  weight: 20, flex: true },
+    ];
+    H().setData([], shrubs, { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ shrubTotal: 50 });
+    // Should not stack-overflow
+    const haz = H().fns.getShrubActual(0);
+    const nan = H().fns.getShrubActual(1); // first flex
+    const spi = H().fns.getShrubActual(2); // second flex — must be 0
+    assertEqual(spi, 0, 'second flex shrub returns 0');
+    assertEqual(haz + nan + spi, 50);
+  });
+});
+
+describe('getTotalActual — full plan integrity', () => {
+  it('total across all groups + species equals sum of group totals', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 100, plan: 'FM' });
+    const total = H().fns.getTotalActual();
+    const groupSum = Object.values(H().fns.getGroupTotals()).reduce((a, b) => a + b, 0);
+    assertEqual(total, groupSum, 'getTotalActual matches sum of group totals');
+  });
+
+  it('totals exactly match totalTrees when no overrides', () => {
+    H().setData(multiGroupSetup(), [], { FM: 60, MF: 150 });
+    H().resetState();
+    H().setState({ totalTrees: 60, plan: 'FM' });
+    assertEqual(H().fns.getTotalActual(), 60, 'unmodified plan returns exactly target tree count');
+  });
+});
+
+// ── Runner ─────────────────────────────────────────────────────────────────
+function run() {
+  // Reset state via test hooks
+  suites.length = 0;
+  // Re-execute describe blocks by reloading the script? No — they're already registered.
+  // For "Re-run", we just re-render the existing suite results.
+}
+
+function render() {
+  const results = document.getElementById('results');
+  const summary = document.getElementById('summary');
+  results.innerHTML = '';
+  let totalTests = 0, passed = 0, failed = 0;
+
+  suites.forEach(s => {
+    const sd = document.createElement('div');
+    sd.className = 'suite';
+    const sn = document.createElement('div');
+    sn.className = 'suite-name';
+    sn.textContent = s.name;
+    sd.appendChild(sn);
+
+    s.tests.forEach(t => {
+      totalTests++;
+      const td = document.createElement('div');
+      td.className = 'test ' + (t.pass ? 'pass' : 'fail');
+      const mark = document.createElement('span');
+      mark.className = 'mark';
+      mark.textContent = t.pass ? '✓' : '✗';
+      const name = document.createElement('span');
+      name.textContent = t.name;
+      td.appendChild(mark);
+      td.appendChild(name);
+      if (!t.pass) {
+        const pre = document.createElement('pre');
+        pre.textContent = t.error;
+        td.appendChild(pre);
+        failed++;
+      } else {
+        passed++;
+      }
+      sd.appendChild(td);
+    });
+    results.appendChild(sd);
+  });
+
+  summary.className = 'summary ' + (failed === 0 ? 'pass' : 'fail');
+  summary.textContent = failed === 0
+    ? `✓ All ${totalTests} tests passed`
+    : `✗ ${failed} of ${totalTests} tests failed (${passed} passing)`;
+}
+
+// Wait for planner.js to finish loading (regionReady will fail in tests.html
+// since we don't actually fetch region data, but the script itself loads).
+document.addEventListener('DOMContentLoaded', () => {
+  if (!window.__plannerTest) {
+    document.getElementById('summary').className = 'summary fail';
+    document.getElementById('summary').textContent = '✗ Test hooks not exposed by planner.js — make sure window.__plannerTest is set.';
+    return;
+  }
+  render();
+});
+
+document.getElementById('rerun').addEventListener('click', () => location.reload());
+</script>
+
+</body>
+</html>

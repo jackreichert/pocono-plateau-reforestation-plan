@@ -34,5 +34,6 @@
       "serviceberry",
       "hop_hornbeam"
     ]
-  }
+  },
+  "tier": "tier1"
 }

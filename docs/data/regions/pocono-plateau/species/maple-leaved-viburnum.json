@@ -1,0 +1,47 @@
+{
+  "key": "maple_leaved_viburnum",
+  "name": "Maple-leaved Viburnum",
+  "latin": "Viburnum acerifolium",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C"
+  ],
+  "summary": "The most shade-tolerant viburnum native to PA \u2014 a ubiquitous mesic-hardwood understory associate that thrives where almost no other shrub can. Three-lobed maple-like leaves turn pink to deep magenta in fall, a unique color in the forest.",
+  "notes": "Forms low colonies (3\u20136 ft tall) in deep shade beneath oaks, sugar maple, and hemlock. White flower clusters in May; blue-black berries persist into winter for songbirds, grouse, and turkeys. Host plant for Spring Azure butterfly, Cecropia silk moth, Hummingbird Clearwing moth, Henry's Elfin. One of the few shrubs that produces fall color in deep shade.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/viburnum-acerifolium/"
+    },
+    {
+      "label": "Native Plant Trust",
+      "url": "https://gobotany.nativeplanttrust.org/species/viburnum/acerifolium/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "4\u20136",
+    "aspect": "Any \u2014 thrives in deep shade",
+    "light": "Partial to deep shade",
+    "moisture": "Mesic to dry",
+    "soil": "Rich to moderately dry; acidic; well-drained",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Plant in scattered small clumps under closed canopy. Tolerates drier shade than most viburnums. Spreads slowly by suckers. Wire cage essential for the first 3\u20135 years \u2014 deer browse heavily.",
+    "cluster_with": [
+      "sugar_maple",
+      "northern_red_oak",
+      "pagoda_dogwood",
+      "witch_hazel"
+    ]
+  },
+  "tier": "tier1",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/maple_leaved_viburnum/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Viburnum_acerifolium.jpg/960px-Viburnum_acerifolium.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Viburnum_acerifolium"
+  }
+}

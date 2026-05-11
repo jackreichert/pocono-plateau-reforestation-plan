@@ -1,0 +1,45 @@
+{
+  "key": "great_rhododendron",
+  "name": "Great Rhododendron",
+  "latin": "Rhododendron maximum",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "C"
+  ],
+  "summary": "Native to cool moist acidic ravines and north-facing slopes \u2014 the Pocono Plateau is core PA range. Large evergreen broad-leaved shrub or small tree. Late June\u2013July pink-white flower trusses are visited by bumblebees, ruby-throated hummingbirds, and swallowtails.",
+  "notes": "Dense evergreen winter structure for grouse and songbirds. Can form thicket-like stands in ravines that suppress tree regeneration if overdone \u2014 plant SPARINGLY (3\u20135 in a single ravine, not a dozen). The hemlock-rhododendron community is a Pocono signature where it still survives HWA-killed hemlocks. Pair sparingly to fill the cool-ravine niche.",
+  "refs": [
+    {
+      "label": "PA Flora",
+      "url": "https://www.paenflowered.org/apgii/ericales/ericaceae/rhododendron/rhododendron-maximum"
+    },
+    {
+      "label": "USFS FEIS",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/rhomax/all.html"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "10\u201315",
+    "aspect": "Cool ravines; north-facing slopes; near-stream seeps",
+    "light": "Partial to deep shade",
+    "moisture": "Moist; cool",
+    "soil": "Strongly acidic (pH 4.5\u20135.5); organic-rich",
+    "hole_depth_in": "12\u201316",
+    "site_notes": "Plant SPARINGLY (3\u20135 plants per cool ravine site) to avoid creating regeneration-suppressing thickets \u2014 same caution applies as mountain laurel. Wire cage; some deer browse on new growth. Source from native nurseries \u2014 most commercial rhododendrons are hybrids, not the wild species.",
+    "cluster_with": [
+      "eastern_hemlock",
+      "yellow_birch",
+      "striped_maple",
+      "witch_hazel"
+    ]
+  },
+  "tier": "tier4",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/great_rhododendron/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/American_Rhododendron.jpg/960px-American_Rhododendron.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Rhododendron_maximum"
+  }
+}

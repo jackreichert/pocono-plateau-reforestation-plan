@@ -1,0 +1,45 @@
+{
+  "key": "american_persimmon",
+  "name": "American Persimmon",
+  "latin": "Diospyros virginiana",
+  "layer": "fruiting",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "Late-fall mast tree that fills the November-December food gap when other wildlife food is gone. Native range reaches southern PA; hardy to Zone 4 (\u201330\u00b0F) \u2014 easily survives Pocono winters. A canonical climate-winner expected to expand northward.",
+  "notes": "Larval host for the spectacular Luna Moth and several hairstreaks. Sweet 1-inch orange fruit hangs after leaf-drop, drawing fox, raccoon, opossum, deer, turkey, and songbirds at a time of year when little else is available. Dioecious \u2014 plant clusters of 5+ for reliable fruiting. Distinctive blocky black bark texture is unmistakable in winter.",
+  "refs": [
+    {
+      "label": "Wildflower.org",
+      "url": "https://www.wildflower.org/plants/result.php?id_plant=divi5"
+    },
+    {
+      "label": "USDA Climate Hub",
+      "url": "https://www.climatehubs.usda.gov/hubs/northern-forests/topic/climate-change-projections-individual-tree-species"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "20\u201330",
+    "aspect": "Open old-field edges; openings; gap interiors",
+    "light": "Full sun preferred; tolerates partial shade",
+    "moisture": "Adaptable; drought-tolerant once established",
+    "soil": "Acidic to neutral; well-drained; tolerates poor soils",
+    "hole_depth_in": "12\u201318",
+    "site_notes": "Dioecious \u2014 plant in cluster of 5+ to ensure both male and female trees. Standard tube protection for the first 3\u20135 years. Climate-adapted species worth a trial planting in a single cluster.",
+    "cluster_with": [
+      "sassafras",
+      "black_gum",
+      "native_crabapple",
+      "bigtooth_aspen"
+    ]
+  },
+  "tier": "tier3",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/american_persimmon/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Diospyros_virginiana_BB-1913.png/960px-Diospyros_virginiana_BB-1913.png",
+    "file_page_url": "https://en.wikipedia.org/wiki/Diospyros_virginiana"
+  }
+}

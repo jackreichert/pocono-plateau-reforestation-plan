@@ -679,6 +679,14 @@
       "license": "CC BY-SA 4.0",
       "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamamelis_virginiana_Vermont_USA_2016-05-08.jpg?width=640",
       "file_page_url": "https://commons.wikimedia.org/wiki/File:Hamamelis_virginiana_Vermont_USA_2016-05-08.jpg"
+    },
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/witch_hazel/tree.jpg",
+      "caption": "Witch Hazel",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hamamelis_virginiana_FlowersLeaves_BotGardBln0906.JPG/960px-Hamamelis_virginiana_FlowersLeaves_BotGardBln0906.JPG",
+      "file_page_url": "https://en.wikipedia.org/wiki/Hamamelis_virginiana"
     }
   },
   "striped_maple": {
@@ -1093,6 +1101,14 @@
       "license": "CC BY-SA 4.0",
       "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sambucus_canadensis_004.JPG?width=640",
       "file_page_url": "https://commons.wikimedia.org/wiki/File:Sambucus_canadensis_004.JPG"
+    },
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/american_elderberry/tree.jpg",
+      "caption": "American Elderberry",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Sambucus_nigra_subsp_canadensis_-_Indiana.jpg/960px-Sambucus_nigra_subsp_canadensis_-_Indiana.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Sambucus_canadensis"
     }
   },
   "ninebark": {
@@ -1265,6 +1281,644 @@
       "license": "CC BY-SA 4.0",
       "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Black_Birch_Leaf.jpg?width=640",
       "file_page_url": "https://commons.wikimedia.org/wiki/File:Black_Birch_Leaf.jpg"
+    }
+  },
+  "hobblebush": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/hobblebush/tree.jpg",
+      "caption": "Hobblebush",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/ON_-_Algonquin_Provincial_Park_-_Bl%C3%BCte.jpg/960px-ON_-_Algonquin_Provincial_Park_-_Bl%C3%BCte.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Viburnum_lantanoides"
+    },
+    "flower": {
+      "url": "data/regions/pocono-plateau/photos/hobblebush/flower.jpg",
+      "caption": "Hobblebush \u2014 flower",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/%28MHNT%29_Knautia_integrifolia_-_flower.jpg/960px-%28MHNT%29_Knautia_integrifolia_-_flower.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:(MHNT)_Knautia_integrifolia_-_flower.jpg"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/hobblebush/leaf.jpg",
+      "caption": "Hobblebush \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/2020-10-17_11_36_39_Leaf_turning_color_in_autumn_on_an_Alder-leaved_Viburnum_along_Spring_Lake%27s_Cove_Trail_in_Berlin%2C_New_York.jpg/960px-2020-10-17_11_36_39_Leaf_turning_color_in_autumn_on_an_Alder-leaved_Viburnum_along_Spring_Lake%27s_Cove_Trail_in_Berlin%2C_New_York.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2020-10-17_11_36_39_Leaf_turning_color_in_autumn_on_an_Alder-leaved_Viburnum_along_Spring_Lake%27s_Cove_Trail_in_Berlin,_New_York.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/hobblebush/fruit.jpg",
+      "caption": "Hobblebush \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/2008-06-06_P1090735_DDumais.jpg/960px-2008-06-06_P1090735_DDumais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2008-06-06_P1090735_DDumais.jpg"
+    }
+  },
+  "maple_leaved_viburnum": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/maple_leaved_viburnum/tree.jpg",
+      "caption": "Maple Leaved Viburnum",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Viburnum_acerifolium.jpg/960px-Viburnum_acerifolium.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Viburnum_acerifolium"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/maple_leaved_viburnum/leaf.jpg",
+      "caption": "Maple Leaved Viburnum \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Viac.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Viac.png"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/maple_leaved_viburnum/fruit.jpg",
+      "caption": "Maple Leaved Viburnum \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Viburnum_acerifolium_%2815715617223%29.jpg/960px-Viburnum_acerifolium_%2815715617223%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Viburnum_acerifolium_(15715617223).jpg"
+    }
+  },
+  "mountain_holly": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/mountain_holly/tree.jpg",
+      "caption": "Mountain Holly",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ilex_montana_563949373.jpg/960px-Ilex_montana_563949373.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Ilex_montana"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/mountain_holly/leaf.jpg",
+      "caption": "Mountain Holly \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Ilex_montana_2017-06-25_3048.jpg/960px-Ilex_montana_2017-06-25_3048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ilex_montana_2017-06-25_3048.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/mountain_holly/fruit.jpg",
+      "caption": "Mountain Holly \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ilex_montana_2017-06-25_3049.jpg/960px-Ilex_montana_2017-06-25_3049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ilex_montana_2017-06-25_3049.jpg"
+    }
+  },
+  "pawpaw": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/pawpaw/tree.jpg",
+      "caption": "Pawpaw",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Asimina_triloba3.jpg/960px-Asimina_triloba3.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Asimina_triloba"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/pawpaw/fruit.jpg",
+      "caption": "Pawpaw \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Pawpaw_ripe_fruit_green_to_brown.jpg/960px-Pawpaw_ripe_fruit_green_to_brown.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Pawpaw_ripe_fruit_green_to_brown.jpg"
+    },
+    "flower": {
+      "url": "data/regions/pocono-plateau/photos/pawpaw/flower.jpg",
+      "caption": "Pawpaw \u2014 flower",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Pawpaw_Flowers.jpg/960px-Pawpaw_Flowers.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Pawpaw_Flowers.jpg"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/pawpaw/leaf.jpg",
+      "caption": "Pawpaw \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Asimina_triloba_autumn_leaf_color_2012.jpg/960px-Asimina_triloba_autumn_leaf_color_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Asimina_triloba_autumn_leaf_color_2012.jpg"
+    }
+  },
+  "american_persimmon": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/american_persimmon/tree.jpg",
+      "caption": "American Persimmon \u2014 tree",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Diospyros_virginia_%28Ebenaceae%29_%28tree%29.JPG/960px-Diospyros_virginia_%28Ebenaceae%29_%28tree%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Diospyros_virginia_(Ebenaceae)_(tree).JPG"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/american_persimmon/fruit.jpg",
+      "caption": "American Persimmon \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Diospyros_virginiana-fruit.jpg/960px-Diospyros_virginiana-fruit.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Diospyros_virginiana-fruit.jpg"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/american_persimmon/leaf.jpg",
+      "caption": "American Persimmon \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Diospyros_virginia_%28Ebenaceae%29_%28leaves%29.JPG/960px-Diospyros_virginia_%28Ebenaceae%29_%28leaves%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Diospyros_virginia_(Ebenaceae)_(leaves).JPG"
+    }
+  },
+  "pinxter_azalea": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/pinxter_azalea/tree.jpg",
+      "caption": "Pinxter Azalea",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rhododendron_periclymenoides%2C_Kentucky.jpg/960px-Rhododendron_periclymenoides%2C_Kentucky.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Rhododendron_periclymenoides"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/pinxter_azalea/leaf.jpg",
+      "caption": "Pinxter Azalea \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pink_Azalea_Rhododendron_periclymenoides_New_Leaves_2029px.jpg/960px-Pink_Azalea_Rhododendron_periclymenoides_New_Leaves_2029px.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Pink_Azalea_Rhododendron_periclymenoides_New_Leaves_2029px.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/pinxter_azalea/fruit.jpg",
+      "caption": "Pinxter Azalea \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/2018-05-03_17_31_21_Pinxterbloom_Azalea_blossoms_along_the_Little_Difficult_Run_within_Fred_Crabtree_Park_in_Reston%2C_Fairfax_County%2C_Virginia.jpg/960px-2018-05-03_17_31_21_Pinxterbloom_Azalea_blossoms_along_the_Little_Difficult_Run_within_Fred_Crabtree_Park_in_Reston%2C_Fairfax_County%2C_Virginia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2018-05-03_17_31_21_Pinxterbloom_Azalea_blossoms_along_the_Little_Difficult_Run_within_Fred_Crabtree_Park_in_Reston,_Fairfax_County,_Virginia.jpg"
+    }
+  },
+  "black_huckleberry": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/black_huckleberry/tree.jpg",
+      "caption": "Black Huckleberry",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Black-huckleberry-Acadia.jpg/960px-Black-huckleberry-Acadia.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Gaylussacia_baccata"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/black_huckleberry/leaf.jpg",
+      "caption": "Black Huckleberry \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2012_Photo_Contest_-_Plants_Category_%287943808432%29.jpg/960px-2012_Photo_Contest_-_Plants_Category_%287943808432%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2012_Photo_Contest_-_Plants_Category_(7943808432).jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/black_huckleberry/fruit.jpg",
+      "caption": "Black Huckleberry \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Applied_and_economic_botany_for_students_in_technical_and_agricultural_schools%2C_pharmaceutical_and_medical_colleges%2C_for_chemists%2C_food_analysts_and_for_those_engaged_in_the_morphological_and_%2819740663412%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Applied_and_economic_botany_for_students_in_technical_and_agricultural_schools,_pharmaceutical_and_medical_colleges,_for_chemists,_food_analysts_and_for_those_engaged_in_the_morphological_and_(19740663412).jpg"
+    }
+  },
+  "beaked_hazelnut": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/beaked_hazelnut/tree.jpg",
+      "caption": "Beaked Hazelnut",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Corylus_cornuta.jpg/960px-Corylus_cornuta.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Corylus_cornuta"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/beaked_hazelnut/fruit.jpg",
+      "caption": "Beaked Hazelnut \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Corylus_cornuta%2C_nut.jpg/960px-Corylus_cornuta%2C_nut.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Corylus_cornuta,_nut.jpg"
+    },
+    "flower": {
+      "url": "data/regions/pocono-plateau/photos/beaked_hazelnut/flower.jpg",
+      "caption": "Beaked Hazelnut \u2014 flower",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Corylus_cornuta_catkin_Meadowbrook.JPG/960px-Corylus_cornuta_catkin_Meadowbrook.JPG",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Corylus_cornuta_catkin_Meadowbrook.JPG"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/beaked_hazelnut/leaf.jpg",
+      "caption": "Beaked Hazelnut \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Beaked_hazelnut_%28Whitefish_Island%29.JPG/960px-Beaked_hazelnut_%28Whitefish_Island%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Beaked_hazelnut_(Whitefish_Island).JPG"
+    }
+  },
+  "winterberry": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/winterberry/tree.jpg",
+      "caption": "Winterberry",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ilex_verticillata_fruits_and_foliage_1.JPG/960px-Ilex_verticillata_fruits_and_foliage_1.JPG",
+      "file_page_url": "https://en.wikipedia.org/wiki/Ilex_verticillata"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/winterberry/leaf.jpg",
+      "caption": "Winterberry \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ilex_verticillata_fruits_and_foliage_1.JPG/960px-Ilex_verticillata_fruits_and_foliage_1.JPG",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ilex_verticillata_fruits_and_foliage_1.JPG"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/winterberry/fruit.jpg",
+      "caption": "Winterberry \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ilex_verticillata_fruits_and_foliage_1.JPG/960px-Ilex_verticillata_fruits_and_foliage_1.JPG",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Ilex_verticillata_fruits_and_foliage_1.JPG"
+    }
+  },
+  "buttonbush": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/buttonbush/tree.jpg",
+      "caption": "Buttonbush",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cephalanthus_occidentalis_occidentalis1.jpg/960px-Cephalanthus_occidentalis_occidentalis1.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Cephalanthus_occidentalis"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/buttonbush/leaf.jpg",
+      "caption": "Buttonbush \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/2020-06-28_13_17_53_Buttonbush_blooming_along_Old_Dairy_Road_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-06-28_13_17_53_Buttonbush_blooming_along_Old_Dairy_Road_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2020-06-28_13_17_53_Buttonbush_blooming_along_Old_Dairy_Road_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/buttonbush/fruit.jpg",
+      "caption": "Buttonbush \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/3762-Cephalanthus_occidentalis-Arb.Brno-10.12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:3762-Cephalanthus_occidentalis-Arb.Brno-10.12.JPG"
+    }
+  },
+  "sweet_pepperbush": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/sweet_pepperbush/tree.jpg",
+      "caption": "Sweet Pepperbush",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Clethra-alnifolia-flowers.JPG/960px-Clethra-alnifolia-flowers.JPG",
+      "file_page_url": "https://en.wikipedia.org/wiki/Clethra_alnifolia"
+    },
+    "flower": {
+      "url": "data/regions/pocono-plateau/photos/sweet_pepperbush/flower.jpg",
+      "caption": "Sweet Pepperbush \u2014 flower",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Clethra-alnifolia-flowers.JPG/960px-Clethra-alnifolia-flowers.JPG",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Clethra-alnifolia-flowers.JPG"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/sweet_pepperbush/leaf.jpg",
+      "caption": "Sweet Pepperbush \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Clethra_alnifolia_leaf_%2801%29.jpg/960px-Clethra_alnifolia_leaf_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Clethra_alnifolia_leaf_(01).jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/sweet_pepperbush/fruit.jpg",
+      "caption": "Sweet Pepperbush \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Chase_fruit_and_flowers_in_natural_colors_%286237578396%29.jpg/960px-Chase_fruit_and_flowers_in_natural_colors_%286237578396%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Chase_fruit_and_flowers_in_natural_colors_(6237578396).jpg"
+    }
+  },
+  "tamarack": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/tamarack/tree.jpg",
+      "caption": "Tamarack",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/2024-10-17_12_32_32_American_Larches-Tamaracks_changing_color_in_autumn_in_a_bog_near_Rensselaer_County_Route_42_%28Taborton_Road%29_in_Sand_Lake%2C_Rensselaer_County%2C_New_York.jpg/960px-thumbnail.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Larix_laricina"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/tamarack/fruit.jpg",
+      "caption": "Tamarack \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/2024-10-17_12_32_32_American_Larches-Tamaracks_changing_color_in_autumn_in_a_bog_near_Rensselaer_County_Route_42_%28Taborton_Road%29_in_Sand_Lake%2C_Rensselaer_County%2C_New_York.jpg/960px-thumbnail.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2024-10-17_12_32_32_American_Larches-Tamaracks_changing_color_in_autumn_in_a_bog_near_Rensselaer_County_Route_42_(Taborton_Road)_in_Sand_Lake,_Rensselaer_County,_New_York.jpg"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/tamarack/leaf.jpg",
+      "caption": "Tamarack \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/2012-09-27_P1250090_%2829%29_DDumais.jpg/960px-2012-09-27_P1250090_%2829%29_DDumais.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2012-09-27_P1250090_(29)_DDumais.jpg"
+    }
+  },
+  "swamp_white_oak": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/swamp_white_oak/tree.jpg",
+      "caption": "Swamp White Oak",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Quercus_bicolor_morton_acc_71-69-2.jpg/960px-Quercus_bicolor_morton_acc_71-69-2.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Quercus_bicolor"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/swamp_white_oak/fruit.jpg",
+      "caption": "Swamp White Oak \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Swamp_White_Oak_Unripe_Acorn_Aug_28_2023.jpg/960px-Swamp_White_Oak_Unripe_Acorn_Aug_28_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Swamp_White_Oak_Unripe_Acorn_Aug_28_2023.jpg"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/swamp_white_oak/leaf.jpg",
+      "caption": "Swamp White Oak \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/01_14_2022_Oak_Tree_on_McKibbin_Street_a.jpg/960px-01_14_2022_Oak_Tree_on_McKibbin_Street_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:01_14_2022_Oak_Tree_on_McKibbin_Street_a.jpg"
+    }
+  },
+  "speckled_alder": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/speckled_alder/tree.jpg",
+      "caption": "Speckled Alder",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Alnus_incana_rugosa_leaves.jpg/960px-Alnus_incana_rugosa_leaves.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Alnus_incana"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/speckled_alder/leaf.jpg",
+      "caption": "Speckled Alder \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Alnus_incana_rugosa_leaves.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Alnus_incana_rugosa_leaves.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/speckled_alder/fruit.jpg",
+      "caption": "Speckled Alder \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%28ms%29_Alnus_incana_1.jpg/960px-%28ms%29_Alnus_incana_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:(ms)_Alnus_incana_1.jpg"
+    }
+  },
+  "red_osier_dogwood": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/red_osier_dogwood/tree.jpg",
+      "caption": "Red Osier Dogwood",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Red_Osier_Dogwood.jpg/960px-Red_Osier_Dogwood.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Cornus_sericea"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/red_osier_dogwood/leaf.jpg",
+      "caption": "Red Osier Dogwood \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Cornus_sericea_leaf.jpg/960px-Cornus_sericea_leaf.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Cornus_sericea_leaf.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/red_osier_dogwood/fruit.jpg",
+      "caption": "Red Osier Dogwood \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/20170717Cornus_sericea1.jpg/960px-20170717Cornus_sericea1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:20170717Cornus_sericea1.jpg"
+    },
+    "flower": {
+      "url": "data/regions/pocono-plateau/photos/red_osier_dogwood/flower.jpg",
+      "caption": "Red Osier Dogwood \u2014 flower",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Cornus_sericea_flower.jpg/960px-Cornus_sericea_flower.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Cornus_sericea_flower.jpg"
+    }
+  },
+  "black_willow": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/black_willow/tree.jpg",
+      "caption": "Black Willow",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Salix_nigra_Morton_180-88-3.jpg/960px-Salix_nigra_Morton_180-88-3.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Salix_nigra"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/black_willow/fruit.jpg",
+      "caption": "Black Willow \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Salix_nigra_catkins_8001.JPG/960px-Salix_nigra_catkins_8001.JPG",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Salix_nigra_catkins_8001.JPG"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/black_willow/leaf.jpg",
+      "caption": "Black Willow \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2020-04-29_10_52_26_New_leaves_in_spring_on_a_Black_Willow_along_Stone_Heather_Drive_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-04-29_10_52_26_New_leaves_in_spring_on_a_Black_Willow_along_Stone_Heather_Drive_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2020-04-29_10_52_26_New_leaves_in_spring_on_a_Black_Willow_along_Stone_Heather_Drive_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg"
+    }
+  },
+  "swamp_azalea": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/swamp_azalea/tree.jpg",
+      "caption": "Swamp Azalea",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Swamp_Azalea_Blooming.jpg/960px-Swamp_Azalea_Blooming.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Rhododendron_viscosum"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/swamp_azalea/leaf.jpg",
+      "caption": "Swamp Azalea \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cyclopedia_of_American_horticulture%2C_comprising_suggestions_for_cultivation_of_horticultural_plants%2C_descriptions_of_the_species_of_fruits%2C_vegetables%2C_flowers_and_ornamental_plants_sold_in_the_United_%2814780136664%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Cyclopedia_of_American_horticulture,_comprising_suggestions_for_cultivation_of_horticultural_plants,_descriptions_of_the_species_of_fruits,_vegetables,_flowers_and_ornamental_plants_sold_in_the_United_(14780136664).jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/swamp_azalea/fruit.jpg",
+      "caption": "Swamp Azalea \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rhododendron_oblongifolium_0zz.jpg/960px-Rhododendron_oblongifolium_0zz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Rhododendron_oblongifolium_0zz.jpg"
+    }
+  },
+  "sourwood": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/sourwood/tree.jpg",
+      "caption": "Sourwood",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Oxydendrum_arboreum.jpg/960px-Oxydendrum_arboreum.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Oxydendrum"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/sourwood/leaf.jpg",
+      "caption": "Sourwood \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Sourwood_leaves_and_flowers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Sourwood_leaves_and_flowers.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/sourwood/fruit.jpg",
+      "caption": "Sourwood \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/2022-07-04_11_57_36_Sourwood_tree_along_Twining_Lane_at_Seven_Oaks_Lane_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/960px-2022-07-04_11_57_36_Sourwood_tree_along_Twining_Lane_at_Seven_Oaks_Lane_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2022-07-04_11_57_36_Sourwood_tree_along_Twining_Lane_at_Seven_Oaks_Lane_in_the_Mountainview_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg"
+    }
+  },
+  "shortleaf_pine": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/shortleaf_pine/tree.jpg",
+      "caption": "Shortleaf Pine",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shortleaf_pine.jpg/960px-Shortleaf_pine.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Pinus_echinata"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/shortleaf_pine/leaf.jpg",
+      "caption": "Shortleaf Pine \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pinus_echinata_conelet_and_leaves.jpg/960px-Pinus_echinata_conelet_and_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Pinus_echinata_conelet_and_leaves.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/shortleaf_pine/fruit.jpg",
+      "caption": "Shortleaf Pine \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Shortleaf_cone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Shortleaf_cone.jpg"
+    }
+  },
+  "sweetfern": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/sweetfern/tree.jpg",
+      "caption": "Sweetfern",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sweet-fern_%28Huron_Shores%29.JPG/960px-Sweet-fern_%28Huron_Shores%29.JPG",
+      "file_page_url": "https://en.wikipedia.org/wiki/Comptonia_peregrina"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/sweetfern/leaf.jpg",
+      "caption": "Sweetfern \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2025-08-15_14_50_32_A_Sweet_Fern_along_the_Broad_Mountain_Loop_Trail-Nine_Mile_Loop_Trail_within_State_Game_Lands_141_in_Lehigh_Township%2C_Carbon_County%2C_Pennsylvania.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2025-08-15_14_50_32_A_Sweet_Fern_along_the_Broad_Mountain_Loop_Trail-Nine_Mile_Loop_Trail_within_State_Game_Lands_141_in_Lehigh_Township,_Carbon_County,_Pennsylvania.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/sweetfern/fruit.jpg",
+      "caption": "Sweetfern \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Comptonia_peregrina_0984.JPG/960px-Comptonia_peregrina_0984.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Comptonia_peregrina_0984.JPG"
+    }
+  },
+  "sheep_laurel": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/sheep_laurel/tree.jpg",
+      "caption": "Sheep Laurel",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Kalmia_angustifolia_Rubra.jpg/960px-Kalmia_angustifolia_Rubra.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Kalmia_angustifolia"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/sheep_laurel/leaf.jpg",
+      "caption": "Sheep Laurel \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/2017-07-26_08_17_40_Sheep_Laurel_blooming_at_about_2%2C100_feet_above_sea_level_along_the_Helon_Taylor_Trail_on_Mount_Katahdin_in_Baxter_State_Park%2C_Piscataquis_County%2C_Maine.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2017-07-26_08_17_40_Sheep_Laurel_blooming_at_about_2,100_feet_above_sea_level_along_the_Helon_Taylor_Trail_on_Mount_Katahdin_in_Baxter_State_Park,_Piscataquis_County,_Maine.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/sheep_laurel/fruit.jpg",
+      "caption": "Sheep Laurel \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/2017-07-26_08_19_34_Sheep_Laurel_blooming_at_about_2%2C100_feet_above_sea_level_along_the_Helon_Taylor_Trail_on_Mount_Katahdin_in_Baxter_State_Park%2C_Piscataquis_County%2C_Maine.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2017-07-26_08_19_34_Sheep_Laurel_blooming_at_about_2,100_feet_above_sea_level_along_the_Helon_Taylor_Trail_on_Mount_Katahdin_in_Baxter_State_Park,_Piscataquis_County,_Maine.jpg"
+    }
+  },
+  "round_leaved_dogwood": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/round_leaved_dogwood/tree.jpg",
+      "caption": "Round Leaved Dogwood",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cornus_rugosa_5474509.jpg/960px-Cornus_rugosa_5474509.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Cornus_rugosa"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/round_leaved_dogwood/leaf.jpg",
+      "caption": "Round Leaved Dogwood \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cornus_rugosa_1-eheep_%285098073658%29.jpg/960px-Cornus_rugosa_1-eheep_%285098073658%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Cornus_rugosa_1-eheep_(5098073658).jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/round_leaved_dogwood/fruit.jpg",
+      "caption": "Round Leaved Dogwood \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cornus_rugosa_15-p.bot-cornus.rugo-01.jpg/960px-Cornus_rugosa_15-p.bot-cornus.rugo-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:Cornus_rugosa_15-p.bot-cornus.rugo-01.jpg"
+    }
+  },
+  "great_rhododendron": {
+    "tree": {
+      "url": "data/regions/pocono-plateau/photos/great_rhododendron/tree.jpg",
+      "caption": "Great Rhododendron",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/American_Rhododendron.jpg/960px-American_Rhododendron.jpg",
+      "file_page_url": "https://en.wikipedia.org/wiki/Rhododendron_maximum"
+    },
+    "leaf": {
+      "url": "data/regions/pocono-plateau/photos/great_rhododendron/leaf.jpg",
+      "caption": "Great Rhododendron \u2014 leaf",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/American_Rhododendron_Leaves.jpg/960px-American_Rhododendron_Leaves.jpg",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:American_Rhododendron_Leaves.jpg"
+    },
+    "fruit": {
+      "url": "data/regions/pocono-plateau/photos/great_rhododendron/fruit.jpg",
+      "caption": "Great Rhododendron \u2014 fruit",
+      "credit": "Wikimedia Commons contributors",
+      "license": "CC BY-SA",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/2023-08-29_10_52_45_Immature_fruit_on_a_Rosebay_Rhododendron_along_Aquetong_Lane_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/960px-2023-08-29_10_52_45_Immature_fruit_on_a_Rosebay_Rhododendron_along_Aquetong_Lane_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "file_page_url": "https://commons.wikimedia.org/wiki/File:2023-08-29_10_52_45_Immature_fruit_on_a_Rosebay_Rhododendron_along_Aquetong_Lane_in_the_Mountainview_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg"
     }
   }
 }

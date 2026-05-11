@@ -32,5 +32,6 @@
       "tulip_poplar",
       "basswood"
     ]
-  }
+  },
+  "tier": "tier1"
 }

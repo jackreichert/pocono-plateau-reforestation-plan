@@ -1,0 +1,46 @@
+{
+  "key": "speckled_alder",
+  "name": "Speckled Alder",
+  "latin": "Alnus incana ssp. rugosa",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The northern alder \u2014 better cold-and-elevation match for Pocono Plateau than smooth alder. Multi-stem thicket-forming shrub of cool streamsides, beaver-meadow edges, and saturated seeps. Nitrogen-fixing pioneer that builds soil on degraded ground.",
+  "notes": "Alnus hosts 188+ Lepidoptera species including Baileya doubledayi (an alder specialist). Catkins provide critical early-spring pollen for emerging native bees. Nitrogen-fixing via Frankia bacteria symbiosis \u2014 improves soil chemistry over time. Reaches south into PA at higher elevations \u2014 Pocono Plateau is textbook habitat. Suckers aggressively (a feature for riparian restoration).",
+  "refs": [
+    {
+      "label": "USDA Plant Guide \u2014 Alnus incana",
+      "url": "https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/pg_alinr.pdf"
+    },
+    {
+      "label": "Go Botany",
+      "url": "https://gobotany.nativeplanttrust.org/species/alnus/incana/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "6\u201312",
+    "aspect": "Cool streamside; seeps; saturated wet hollows",
+    "light": "Full sun to partial shade",
+    "moisture": "Wet to saturated",
+    "soil": "Acidic to neutral; tolerates poor drainage and disturbed soils",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Plant on cool wet sites at the 2,000 ft elevation \u2014 speckled alder outperforms smooth alder here. No deer protection needed. Excellent stabilizer for eroding stream banks. Pair with black willow for fast riparian cover.",
+    "cluster_with": [
+      "black_willow",
+      "red_osier_dogwood",
+      "winterberry",
+      "tamarack"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/speckled_alder/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Alnus_incana_rugosa_leaves.jpg/960px-Alnus_incana_rugosa_leaves.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Alnus_incana"
+  }
+}

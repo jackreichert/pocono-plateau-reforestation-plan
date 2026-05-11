@@ -33,5 +33,6 @@
       "white_oak",
       "serviceberry"
     ]
-  }
+  },
+  "tier": "tier1"
 }

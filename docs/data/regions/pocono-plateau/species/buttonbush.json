@@ -1,0 +1,46 @@
+{
+  "key": "buttonbush",
+  "name": "Buttonbush",
+  "latin": "Cephalanthus occidentalis",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "A pollinator-magnet wetland shrub of pond margins and swale bottoms. White spherical flower heads in June\u2013July draw native bees, honey bees, butterflies, sphinx moths, and hummingbirds in numbers rarely seen on any other PA native.",
+  "notes": "Native throughout PA in permanently wet sites. Tolerates up to 3 feet of standing water. Nutlets feed 25+ species of waterfowl and songbirds (wood ducks especially). Larval host for Hydrangea Sphinx and Titan Sphinx moths. Will not survive upland \u2014 it needs wet feet.",
+  "refs": [
+    {
+      "label": "PSU Extension \u2014 Native Shrubs for Pollinators",
+      "url": "https://extension.psu.edu/native-shrubs-for-pollinators"
+    },
+    {
+      "label": "Wildflower.org",
+      "url": "https://www.wildflower.org/plants/result.php?id_plant=ceoc2"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "6\u201310",
+    "aspect": "Pond edges; swale bottoms; permanent wet hollows",
+    "light": "Full sun to partial shade",
+    "moisture": "Wet to inundated; tolerates 3 ft standing water",
+    "soil": "Any wet soil; tolerates clay",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Permanently wet site only \u2014 will not survive upland. No deer protection needed; deer largely ignore it. Plant in clusters of 3\u20135 for visual mass and reliable pollination. Tolerates flooding for extended periods.",
+    "cluster_with": [
+      "winterberry",
+      "black_willow",
+      "red_osier_dogwood",
+      "swamp_azalea"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/buttonbush/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cephalanthus_occidentalis_occidentalis1.jpg/960px-Cephalanthus_occidentalis_occidentalis1.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Cephalanthus_occidentalis"
+  }
+}

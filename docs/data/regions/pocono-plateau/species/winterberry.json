@@ -1,0 +1,46 @@
+{
+  "key": "winterberry",
+  "name": "Winterberry Holly",
+  "latin": "Ilex verticillata",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Deciduous wetland holly whose brilliant red berries persist from November through March \u2014 feeding cedar waxwings, robins, bluebirds, grosbeaks, and orioles when other winter food is gone. The shrub that sets the December woodland on fire.",
+  "notes": "Native throughout PA wet hollows, vernal pool edges, and stream banks. Tolerates spring standing water. Larval host for Henry's Elfin. Dioecious \u2014 plant one male per ~5 females; named cultivars or open-pollinated bare-root work. Pollinator nectar in late spring. The single highest-impact wetland addition for a property with any wet hollow.",
+  "refs": [
+    {
+      "label": "PA Flora",
+      "url": "https://www.paenflowered.org/apgii/aquifoliales/aquifoliaceae/ilex/ilex-verticillata"
+    },
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/ilex-verticillata/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "5\u20138",
+    "aspect": "Wet hollows; stream edges; vernal pool margins",
+    "light": "Partial shade to full sun",
+    "moisture": "Wet to moist; tolerates seasonal standing water",
+    "soil": "Acidic; organic-rich",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Site with wet feet \u2014 vernal pool edges, swale bottoms, stream margins. Dioecious; mix male and female plants. Wire cage for the first 3 years. Plant in clusters of 5+ to ensure cross-pollination.",
+    "cluster_with": [
+      "american_hornbeam",
+      "buttonbush",
+      "sweet_pepperbush",
+      "red_osier_dogwood"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/winterberry/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ilex_verticillata_fruits_and_foliage_1.JPG/960px-Ilex_verticillata_fruits_and_foliage_1.JPG",
+    "file_page_url": "https://en.wikipedia.org/wiki/Ilex_verticillata"
+  }
+}

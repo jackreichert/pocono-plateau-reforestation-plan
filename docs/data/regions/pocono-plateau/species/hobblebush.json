@@ -1,0 +1,47 @@
+{
+  "key": "hobblebush",
+  "name": "Hobblebush",
+  "latin": "Viburnum lantanoides",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C"
+  ],
+  "summary": "The single most diagnostic shrub of the Northern Hardwood Forest reference community \u2014 explicitly named in PA DCNR / PNHP community descriptions but missing from most restoration plantings. Sprawling, layering shrub of cool moist understory under sugar maple and yellow birch.",
+  "notes": "Distinctive low-arching branches that root where they touch the ground (the 'hobble' habit). Pre-leaf white flower clusters in May; red berries ripen to purple-black in August for thrushes. Viburnum genus supports ~101 Lepidoptera species (Spring Azure, Cecropia, Hummingbird Clearwing, Henry's Elfin). Plant on north-facing slopes, in cool moist coves, under existing yellow birch or hemlock canopy.",
+  "refs": [
+    {
+      "label": "PNHP Northern Hardwood Forest community",
+      "url": "https://www.naturalheritage.state.pa.us/Community.aspx?id=16058"
+    },
+    {
+      "label": "Go Botany \u2014 Viburnum lantanoides",
+      "url": "https://gobotany.nativeplanttrust.org/species/viburnum/lantanoides/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "6\u201310",
+    "aspect": "North-facing or sheltered moist coves",
+    "light": "Partial to deep shade",
+    "moisture": "Moist, cool",
+    "soil": "Rich, moist, acidic to neutral; deep duff layer",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant under existing canopy on north-facing slopes or in cool coves \u2014 will not thrive in open sun or dry sites. The layering habit means a single plant becomes a thicket over time. Wire cage essential; heavily browsed by deer.",
+    "cluster_with": [
+      "yellow_birch",
+      "sugar_maple",
+      "eastern_hemlock",
+      "striped_maple"
+    ]
+  },
+  "tier": "tier1",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/hobblebush/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/ON_-_Algonquin_Provincial_Park_-_Bl%C3%BCte.jpg/960px-ON_-_Algonquin_Provincial_Park_-_Bl%C3%BCte.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Viburnum_lantanoides"
+  }
+}

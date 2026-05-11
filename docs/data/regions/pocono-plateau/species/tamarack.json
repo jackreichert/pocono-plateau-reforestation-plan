@@ -1,0 +1,46 @@
+{
+  "key": "tamarack",
+  "name": "Tamarack",
+  "latin": "Larix laricina",
+  "layer": "conifer",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The deciduous conifer \u2014 soft pale-green needles in spring, fluorescent gold in October, bare in winter. Native to Pocono Plateau bog edges and cool wet hollows. Adds a structural element no other tree provides.",
+  "notes": "Documented in PA Natural Heritage palustrine communities alongside red spruce, hemlock, and white pine. Seeds feed crossbills, siskins, and redpolls. Hosts ~75 Lepidoptera species. Long-lived (100+ years). Larch sawfly and casebearer cause occasional damage but rarely fatal. Use wire cage \u2014 needles aren't deer-favored but tender saplings are.",
+  "refs": [
+    {
+      "label": "USFS FEIS \u2014 Larix laricina",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/larlar"
+    },
+    {
+      "label": "PNHP Palustrine Communities (Fike 1999)",
+      "url": "https://www.naturalheritage.state.pa.us/fikebook/10Chapter2.pdf"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "10\u201315",
+    "aspect": "Bog edges; cool wet hollows; north-facing wet slopes",
+    "light": "Full sun preferred; tolerates partial shade",
+    "moisture": "Wet to saturated; tolerates flooding",
+    "soil": "Acidic; peat or mineral; tolerates poor drainage",
+    "hole_depth_in": "12\u201318",
+    "site_notes": "Must have wet OR cool moist site \u2014 will not survive dry uplands. Source from Musser Forests, conservation district sales, or Cold Stream Farm. Pair with black spruce on actual bog edges. Wire cage protects against deer browse on young terminal leaders.",
+    "cluster_with": [
+      "red_spruce",
+      "balsam_fir",
+      "winterberry",
+      "american_hornbeam"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/tamarack/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/2024-10-17_12_32_32_American_Larches-Tamaracks_changing_color_in_autumn_in_a_bog_near_Rensselaer_County_Route_42_%28Taborton_Road%29_in_Sand_Lake%2C_Rensselaer_County%2C_New_York.jpg/960px-thumbnail.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Larix_laricina"
+  }
+}

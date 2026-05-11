@@ -21,6 +21,7 @@ let state = {
   acres: null,
   groupOverrides: {},  // groupId → custom pct (null = use default)
   speciesOverrides: {}, // "groupId:speciesIdx" → value (null = auto)
+  showOptional: false, // whether site-conditional optional groups are visible
 };
 
 // ── Main render ───────────────────────────────────────────────────────────
@@ -78,10 +79,16 @@ function getSpeciesActual(group, speciesIdx) {
   const ov = state.speciesOverrides[key];
   if (ov !== undefined && ov !== null && ov !== '') return Math.max(0, parseInt(ov) || 0);
 
-  // Flex species absorbs remainder to eliminate rounding error
+  // Flex species absorbs remainder to eliminate rounding error.
+  // When multiple flex species exist in a group, only the FIRST flex (by index)
+  // absorbs; later flex species return 0. Otherwise the recursive sum would
+  // be infinite (flex A asks flex B which asks flex A …).
   if (sp.flex) {
-    const otherSum = group.species.reduce((sum, _, i) => {
+    const firstFlexIdx = group.species.findIndex(s => s.flex);
+    if (firstFlexIdx !== speciesIdx) return 0;
+    const otherSum = group.species.reduce((sum, s, i) => {
       if (i === speciesIdx) return sum;
+      if (s.flex) return sum; // skip other flex species (they will be 0)
       return sum + getSpeciesActual(group, i);
     }, 0);
     return Math.max(0, groupTotal - otherSum);
@@ -116,10 +123,14 @@ function getShrubActual(idx) {
   const ov = state.speciesOverrides[key];
   if (ov !== undefined && ov !== null && ov !== '') return Math.max(0, parseInt(ov) || 0);
 
-  // Flex shrub absorbs remainder to eliminate rounding error
+  // Flex shrub absorbs remainder. Only the first flex shrub absorbs;
+  // later flex shrubs return 0 (prevents infinite recursion).
   if (sh.flex) {
-    const otherSum = SHRUBS.reduce((sum, _, i) => {
+    const firstFlexIdx = SHRUBS.findIndex(s => s.flex);
+    if (firstFlexIdx !== idx) return 0;
+    const otherSum = SHRUBS.reduce((sum, s, i) => {
       if (i === idx) return sum;
+      if (s.flex) return sum;
       return sum + getShrubActual(i);
     }, 0);
     return Math.max(0, state.shrubTotal - otherSum);
@@ -167,9 +178,9 @@ function renderPlanner() {
     if (diff === 0) {
       statusEl.innerHTML = `<span style="color:var(--green-700)">✓ On target — ${total} trees</span>`;
     } else if (diff > 0) {
-      statusEl.innerHTML = `<span style="color:#D97706">▲ ${total} trees planned — ${diff} over target</span>`;
+      statusEl.innerHTML = `<span style="color:var(--rust)">▲ ${total} trees planned — ${diff} over target</span>`;
     } else {
-      statusEl.innerHTML = `<span style="color:#9CA3AF">▼ ${total} trees planned — ${Math.abs(diff)} under target</span>`;
+      statusEl.innerHTML = `<span style="color:var(--ink-light)">▼ ${total} trees planned — ${Math.abs(diff)} under target</span>`;
     }
   }
 
@@ -181,7 +192,11 @@ function renderPlanner() {
 
   container.innerHTML = '';
 
-  GROUPS.forEach(group => {
+  // Split groups into main (always shown) and optional (toggled)
+  const mainGroups = GROUPS.filter(g => !g.optional);
+  const optionalGroups = GROUPS.filter(g => g.optional);
+
+  const renderGroupInto = (group, parentContainer) => {
     const pct = getPct(group);
     const grpTotal = getGroupTotal(group);
     const isZero = pct === 0;
@@ -206,7 +221,7 @@ function renderPlanner() {
     // Plan D note for zero groups
     if (isZero && group.mfNote) {
       const noteDiv = document.createElement('div');
-      noteDiv.style.cssText = 'padding:.6rem 1.25rem;background:#F8FAFC;font-size:.8rem;color:#64748B;border-bottom:1px solid var(--border)';
+      noteDiv.style.cssText = 'padding:.6rem 1.25rem;background:var(--paper-soft);font-size:.8rem;color:var(--ink-light);border-bottom:1px solid var(--border)';
       noteDiv.textContent = group.mfNote;
       div.appendChild(noteDiv);
     }
@@ -234,9 +249,9 @@ function renderPlanner() {
 
       row.innerHTML = `
         <div>
-          <div class="planner-species-name">${sp.key ? `<a href="species.html#${sp.key}" target="species-guide" class="planner-sp-link">${sp.name}</a>` : sp.name}${sp.flex ? ' <span class="tag" style="font-size:.65rem">flex</span>' : ''}${sp.caution ? ' <span class="tag" style="background:#FEE2E2;color:#991B1B;font-size:.65rem">⚠</span>' : ''}</div>
+          <div class="planner-species-name">${sp.key ? `<a href="species.html#${sp.key}" target="species-guide" class="planner-sp-link">${sp.name}</a>` : sp.name}${sp.flex ? ' <span class="tag" style="font-size:.65rem">flex</span>' : ''}${sp.caution ? ' <span class="tag" style="background:#F3D9CC;color:var(--rust);font-size:.65rem">⚠</span>' : ''}</div>
           <div class="planner-species-note">${sp.note}</div>
-          ${autoZero ? '<div class="planner-species-note" style="color:#10B981">✓ Arrives naturally with deer management</div>' : ''}
+          ${autoZero ? '<div class="planner-species-note" style="color:var(--fern)">✓ Arrives naturally with deer management</div>' : ''}
         </div>
         <div class="planner-default">${dfltVal}</div>
         <div>
@@ -251,8 +266,40 @@ function renderPlanner() {
       div.appendChild(row);
     });
 
-    container.appendChild(div);
-  });
+    parentContainer.appendChild(div);
+  };
+
+  mainGroups.forEach(group => renderGroupInto(group, container));
+
+  // Optional groups — only render if toggled visible
+  const optContainer = document.getElementById('optional-groups');
+  if (optContainer) {
+    optContainer.innerHTML = '';
+    if (state.showOptional) {
+      // Header
+      const optHdr = document.createElement('div');
+      optHdr.style.cssText = 'padding:.9rem 1.25rem;margin-bottom:.5rem;background:#DDE2D6;border-left:4px solid var(--moss);border-radius:0';
+      optHdr.innerHTML = '<div style="font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--moss);font-weight:600">Site-conditional groups</div><div style="font-size:.85rem;color:var(--text-mid);margin-top:.25rem;font-style:italic">These groups default to 0%. Enable by entering an override count for species you want to plant. They do not contribute to the main planting target unless explicitly allocated.</div>';
+      optContainer.appendChild(optHdr);
+      optionalGroups.forEach(group => {
+        const opt = group.optionalNote;
+        renderGroupInto(group, optContainer);
+        if (opt) {
+          const lastGroup = optContainer.lastElementChild;
+          const note = document.createElement('div');
+          note.style.cssText = 'padding:.5rem 1.25rem;background:#DDE2D6;font-size:.78rem;color:var(--moss);font-style:italic;border-top:1px solid var(--rule-soft)';
+          note.textContent = opt;
+          lastGroup.insertBefore(note, lastGroup.children[1]); // after header
+        }
+      });
+    }
+  }
+
+  // Toggle button label
+  const toggleLabel = document.getElementById('optional-toggle-label');
+  const toggleIcon = document.getElementById('optional-toggle-icon');
+  if (toggleLabel) toggleLabel.textContent = state.showOptional ? 'Hide site-conditional groups' : 'Show site-conditional groups';
+  if (toggleIcon) toggleIcon.textContent = state.showOptional ? '▾' : '▸';
 
   // Shrubs
   renderShrubs();
@@ -333,7 +380,7 @@ function renderLayoutGuide() {
 
     const treesPerAcreNum = trees / acres;
     if (treesPerAcreNum < 20 && acres > 1 && clustersRec < acres) {
-      acreageHtml = `<div style="margin-top:.75rem;padding:.75rem 1rem;background:#FEF3C7;border-radius:8px;font-size:.875rem;border-left:3px solid #D97706">
+      acreageHtml = `<div style="margin-top:.75rem;padding:.75rem 1rem;background:var(--amber-100);border-radius:8px;font-size:.875rem;border-left:3px solid var(--ochre)">
         <strong>Concentrate first.</strong> At ${perAcre} trees/acre across ${acres} acres, spreading evenly would leave thin scatter with no nucleation effect. Focus into ${clustersRec} tight cluster${clustersRec > 1 ? 's' : ''} in your best gaps &mdash; establish those fully, then expand. Corbin 2016 achieved 59% forest cover on a 14.8-acre site by planting clusters on less than 3% of the land; the birds did the rest.
       </div>`;
     } else if (coveragePct <= 5) {
@@ -546,6 +593,19 @@ function initPlanner() {
     });
   }
 
+  // Optional groups toggle
+  const showOptBtn = document.getElementById('show-optional-btn');
+  if (showOptBtn) {
+    showOptBtn.addEventListener('click', () => {
+      state.showOptional = !state.showOptional;
+      const optContainer = document.getElementById('optional-groups');
+      if (optContainer) {
+        optContainer.style.display = state.showOptional ? 'block' : 'none';
+      }
+      renderPlanner();
+    });
+  }
+
   // CSV export
   const csvBtn = document.getElementById('planner-export');
   if (csvBtn) {
@@ -585,5 +645,46 @@ window.regionReady.then(config => {
 }).catch(err => {
   console.error('Forest Planner: failed to load region data', err);
   const el = document.getElementById('planner-groups');
-  if (el) el.innerHTML = '<p style="color:#DC2626;padding:2rem">Failed to load planner data. Please refresh the page.</p>';
+  if (el) el.innerHTML = '<p style="color:var(--rust);padding:2rem">Failed to load planner data. Please refresh the page.</p>';
 });
+
+// ── Test hooks ────────────────────────────────────────────────────────────
+// Exposed for browser-based unit tests (docs/tests.html). The hooks bypass
+// the regionReady promise so tests can inject fixtures directly. They do not
+// affect production code paths.
+if (typeof window !== 'undefined') {
+  window.__plannerTest = {
+    setData(groups, shrubs, planDefaults) {
+      GROUPS        = groups;
+      SHRUBS        = shrubs || [];
+      PLAN_DEFAULTS = planDefaults || { FM: 60, MF: 150 };
+      _groupTotalsCache    = null;
+      _groupTotalsCacheKey = '';
+    },
+    setState(partial) {
+      Object.assign(state, partial);
+      _groupTotalsCache    = null;
+      _groupTotalsCacheKey = '';
+    },
+    resetState() {
+      state = {
+        totalTrees: 60,
+        shrubTotal: 39,
+        plan: 'FM',
+        acres: null,
+        groupOverrides: {},
+        speciesOverrides: {},
+        showOptional: false,
+      };
+      _groupTotalsCache    = null;
+      _groupTotalsCacheKey = '';
+    },
+    getState: () => state,
+    fns: {
+      getPct, getGroupTotal, getGroupTotals,
+      getSpeciesActual, getShrubActual,
+      getTotalActual, getTotalShrubsActual,
+      isAutoZero,
+    },
+  };
+}

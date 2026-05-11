@@ -1,0 +1,46 @@
+{
+  "key": "black_huckleberry",
+  "name": "Black Huckleberry",
+  "latin": "Gaylussacia baccata",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The signature low shrub of the Pocono Plateau acid heath layer \u2014 co-dominant with highbush blueberry beneath chestnut oak, pitch pine, and bear oak. Forms clonal patches via root suckering. Glossy black berries in August feed grouse, towhees, thrushes, and bear.",
+  "notes": "Hosts Brown Elfin, Henry's Elfin, and Huckleberry Sphinx larvae. Pollinated by specialist bee Colletes productus and bumblebees. Brilliant red-orange fall color. Ericaceous: pH 4.5\u20135.5 is its sweet spot. Slow from container but tough and long-lived once established.",
+  "refs": [
+    {
+      "label": "USFS FEIS \u2014 Gaylussacia baccata",
+      "url": "https://www.fs.usda.gov/database/feis/plants/shrub/gaybac/all.html"
+    },
+    {
+      "label": "Mt. Cuba Center",
+      "url": "https://mtcubacenter.org/plants/black-huckleberry/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "3\u20135",
+    "aspect": "Open or partly shaded acidic uplands",
+    "light": "Partial shade to full sun",
+    "moisture": "Dry to mesic",
+    "soil": "Strongly acidic; sandy/rocky; well-drained",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "Plant in patches of 8\u201315 to allow clonal spread. No deer protection needed \u2014 deer largely avoid ericaceous foliage. Will not thrive in neutral or wet soil. Perfect partner under chestnut oak and pitch pine on dry ridges.",
+    "cluster_with": [
+      "chestnut_oak",
+      "pitch_pine",
+      "highbush_blueberry",
+      "scarlet_oak"
+    ]
+  },
+  "tier": "tier1",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/black_huckleberry/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Black-huckleberry-Acadia.jpg/960px-Black-huckleberry-Acadia.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Gaylussacia_baccata"
+  }
+}

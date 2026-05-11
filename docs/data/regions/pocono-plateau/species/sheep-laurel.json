@@ -1,0 +1,45 @@
+{
+  "key": "sheep_laurel",
+  "name": "Sheep Laurel",
+  "latin": "Kalmia angustifolia",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "C"
+  ],
+  "summary": "Low-stature (2\u20133 ft) evergreen ericaceous shrub for acid openings, regenerating clearcuts, and rocky barrens. Native to the eastern third of PA \u2014 the Pocono region is core habitat. Toxic to deer (a feature \u2014 establishes where almost nothing else can).",
+  "notes": "Mid-June bloom (deep pink saucer flowers) provides bumblebee and azalea-specialist bee forage. Smaller and less light-blocking than mountain laurel \u2014 doesn't dominate the understory. Evergreen winter structure. Honest acid-soil match. Source from Tripple Brook Farm or other specialty Northeast natives.",
+  "refs": [
+    {
+      "label": "Go Botany",
+      "url": "https://gobotany.nativeplanttrust.org/species/kalmia/angustifolia/"
+    },
+    {
+      "label": "Tripple Brook Farm",
+      "url": "https://tripplebrookfarm.com/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "3\u20135",
+    "aspect": "Acid openings; rocky barrens; regenerating clearcuts",
+    "light": "Full sun to partial shade",
+    "moisture": "Dry to moist; tolerates wet edges",
+    "soil": "Strongly acidic (pH 4.0\u20135.5); sandy or rocky",
+    "hole_depth_in": "6\u20138",
+    "site_notes": "No deer protection needed \u2014 sheep laurel is toxic to deer, which avoid it. Plant in colonies of 5\u201310. Excellent successor in areas where mountain laurel hasn't established. Will not thrive on neutral or calcareous soils.",
+    "cluster_with": [
+      "black_huckleberry",
+      "highbush_blueberry",
+      "pitch_pine",
+      "scarlet_oak"
+    ]
+  },
+  "tier": "tier4",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/sheep_laurel/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Kalmia_angustifolia_Rubra.jpg/960px-Kalmia_angustifolia_Rubra.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Kalmia_angustifolia"
+  }
+}

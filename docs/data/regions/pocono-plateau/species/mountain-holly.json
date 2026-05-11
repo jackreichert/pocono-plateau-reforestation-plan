@@ -1,0 +1,46 @@
+{
+  "key": "mountain_holly",
+  "name": "Mountain Holly",
+  "latin": "Ilex montana",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The upland deciduous holly named in PA DCNR Northern Hardwood Forest community descriptions \u2014 not to be confused with Ilex mucronata (a wetland obligate species in a different community). Mid-layer shrub or small tree, 10\u201320 ft.",
+  "notes": "Inconspicuous spring flowers; bright orange-red berries in fall consumed by thrushes, grouse, and small mammals. Smooth gray bark; serrated elliptical leaves. Dioecious \u2014 plant at least one male per several females for fruiting. A canonical reference-community species long absent from most restoration plantings.",
+  "refs": [
+    {
+      "label": "PNHP Northern Hardwood Forest",
+      "url": "https://www.naturalheritage.state.pa.us/Community.aspx?id=16058"
+    },
+    {
+      "label": "Go Botany \u2014 Ilex montana",
+      "url": "https://gobotany.nativeplanttrust.org/species/ilex/montana/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "8\u201312",
+    "aspect": "Cool slopes; rocky uplands",
+    "light": "Partial shade",
+    "moisture": "Mesic; well-drained",
+    "soil": "Acidic; rocky to loamy",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Dioecious \u2014 buy named male and female stock for reliable fruiting. Often confused with Ilex mucronata (Nemopanthus) which is a wetland obligate of sphagnum bog communities, NOT this upland species. Wire cage; some deer browse on new growth.",
+    "cluster_with": [
+      "yellow_birch",
+      "striped_maple",
+      "witch_hazel",
+      "hop_hornbeam"
+    ]
+  },
+  "tier": "tier1",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/mountain_holly/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ilex_montana_563949373.jpg/960px-Ilex_montana_563949373.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Ilex_montana"
+  }
+}

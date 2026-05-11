@@ -1,0 +1,47 @@
+{
+  "key": "pinxter_azalea",
+  "name": "Pinxter Azalea",
+  "latin": "Rhododendron periclymenoides",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "A",
+    "B",
+    "C"
+  ],
+  "summary": "Native deciduous azalea of PA acidic mesic hardwoods \u2014 the eastern wild rose of the spring forest. Fragrant pink-white tubular flowers open before the leaves in April\u2013May, drawing emerging bumblebee queens, hummingbirds, and swallowtail butterflies.",
+  "notes": "Hosts ~52 Lepidoptera species. Recently documented to depend on swallowtail butterflies as a primary pollinator (not just bees). Unlike rhododendrons, doesn't form light-blocking thickets \u2014 stays a graceful 4\u20136 ft loose shrub. Honest fit for Pocono acid soils. A native that finally returns spring color to the understory.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/rhododendron-periclymenoides/"
+    },
+    {
+      "label": "Mt. Cuba Center",
+      "url": "https://mtcubacenter.org/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "5\u20138",
+    "aspect": "Any; partial shade preferred",
+    "light": "Partial shade to dappled sun",
+    "moisture": "Mesic; well-drained",
+    "soil": "Acidic (pH 4.5\u20136.0); organic-rich",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant at gap edges and openings beneath oaks. The pH 4.5\u20136.0 sweet spot exactly matches Pocono Plateau acid soils. Wire cage \u2014 deer browse moderately. Pairs with pagoda dogwood for staggered spring bloom.",
+    "cluster_with": [
+      "northern_red_oak",
+      "chestnut_oak",
+      "pagoda_dogwood",
+      "highbush_blueberry"
+    ]
+  },
+  "tier": "tier1",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/pinxter_azalea/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rhododendron_periclymenoides%2C_Kentucky.jpg/960px-Rhododendron_periclymenoides%2C_Kentucky.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Rhododendron_periclymenoides"
+  }
+}

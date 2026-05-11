@@ -1,0 +1,45 @@
+{
+  "key": "shortleaf_pine",
+  "name": "Shortleaf Pine",
+  "latin": "Pinus echinata",
+  "layer": "conifer",
+  "protection": "tube",
+  "plans": [
+    "C"
+  ],
+  "summary": "Near-extirpated PA native pine \u2014 listed by PA Natural Heritage Program as 'critically imperiled' in the state, with historical populations in south-central PA. A USFS Climate Change Tree Atlas projected winner. Restoring a missing structural element to the landscape.",
+  "notes": "The northernmost extent of any major southern pine. Fire-adapted with the ability to sprout from the root collar after damage. Hardy Zone 6. Source seed from northernmost provenances (south-central PA, NJ Pine Barrens edge) for cold-hardiness. Susceptible to littleleaf disease on poorly-drained sites \u2014 site selection matters. Pair with pitch pine on dry ridges as a structural complement.",
+  "refs": [
+    {
+      "label": "PA Natural Heritage \u2014 Shortleaf Pine factsheet",
+      "url": "https://www.naturalheritage.state.pa.us/factsheets/14930.pdf"
+    },
+    {
+      "label": "USFS FEIS \u2014 Pinus echinata",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/pinech"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "12\u201318",
+    "aspect": "Well-drained dry slopes; rocky uplands; ridge tops",
+    "light": "Full sun",
+    "moisture": "Dry to mesic; well-drained essential",
+    "soil": "Acidic; sandy or rocky; well-drained sandstone-derived",
+    "hole_depth_in": "12\u201316",
+    "site_notes": "Climate-trial planting \u2014 plant 50\u2013100 trees in a single well-drained ridge or slope location to test site suitability. Avoid wet flats (littleleaf disease risk). Tube protection. Source from PA Department of Forestry or northern-edge provenance nurseries.",
+    "cluster_with": [
+      "pitch_pine",
+      "chestnut_oak",
+      "black_oak",
+      "scarlet_oak"
+    ]
+  },
+  "tier": "tier3",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/shortleaf_pine/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shortleaf_pine.jpg/960px-Shortleaf_pine.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Pinus_echinata"
+  }
+}

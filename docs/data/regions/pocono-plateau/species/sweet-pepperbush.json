@@ -1,0 +1,46 @@
+{
+  "key": "sweet_pepperbush",
+  "name": "Sweet Pepperbush",
+  "latin": "Clethra alnifolia",
+  "layer": "shrub",
+  "protection": "cage",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Fragrant white flower spikes in July\u2013August fill the high-summer nectar gap when little else is blooming. Also called summersweet \u2014 a name that names itself the moment you walk past one in bloom. Acid wet woods and stream edges.",
+  "notes": "Heavy bumblebee, butterfly, and hummingbird use during the late-summer dearth. pH 4.5\u20136.0 \u2014 ideal for Pocono Plateau acid soils. Suckers to form colonies; excellent for stabilizing wet edges. Yellow fall color. Range-edge in Wayne County but well within hardiness.",
+  "refs": [
+    {
+      "label": "PSU Extension \u2014 Native Shrubs for Pollinators",
+      "url": "https://extension.psu.edu/native-shrubs-for-pollinators"
+    },
+    {
+      "label": "Mt. Cuba Center",
+      "url": "https://mtcubacenter.org/plants/sweet-pepperbush/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "5\u20138",
+    "aspect": "Stream edges; wet hollows; partly shaded acid wet woods",
+    "light": "Partial shade to full sun",
+    "moisture": "Moist to wet",
+    "soil": "Acidic; organic-rich; tolerates seasonally wet",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Plant in colonies of 5+ for visual mass and pollinator value. Wire cage helpful; moderate deer browse. Pairs with winterberry for late-summer + winter wildlife value in the same wet site.",
+    "cluster_with": [
+      "winterberry",
+      "red_osier_dogwood",
+      "swamp_azalea",
+      "american_hornbeam"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/sweet_pepperbush/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Clethra-alnifolia-flowers.JPG/960px-Clethra-alnifolia-flowers.JPG",
+    "file_page_url": "https://en.wikipedia.org/wiki/Clethra_alnifolia"
+  }
+}

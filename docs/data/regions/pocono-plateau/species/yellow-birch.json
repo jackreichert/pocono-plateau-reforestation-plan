@@ -35,5 +35,6 @@
       "balsam_fir",
       "serviceberry"
     ]
-  }
+  },
+  "tier": "tier1"
 }

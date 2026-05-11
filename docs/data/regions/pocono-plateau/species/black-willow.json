@@ -1,0 +1,46 @@
+{
+  "key": "black_willow",
+  "name": "Black Willow",
+  "latin": "Salix nigra",
+  "layer": "understory",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "The fastest riparian pioneer for active stream banks and saturated soils. Salix is Tallamy keystone genus #3 \u2014 ~450 Lepidoptera species including Mourning Cloak, Viceroy, and Eastern Tiger Swallowtail. Earliest-blooming nectar of the year for emerging native bees.",
+  "notes": "Native throughout PA. Brittle wood (don't plant near structures or driveways). Short-lived for a tree (60\u201380 years) but reproduces vegetatively and from seed continuously. Trivially propagates from live stakes \u2014 cut dormant 1-inch stems, push into wet ground in late winter, walk away. Free from any donor stand.",
+  "refs": [
+    {
+      "label": "USFS Silvics",
+      "url": "https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/salix/nigra.htm"
+    },
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/salix-nigra/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "12\u201320",
+    "aspect": "Active stream banks; saturated wet hollows; eroding edges",
+    "light": "Full sun",
+    "moisture": "Wet to inundated",
+    "soil": "Any wet soil; tolerates clay and organic; pH adaptable",
+    "hole_depth_in": "12\u201318",
+    "site_notes": "Plant from live stakes \u2014 cut 18\u201324 inch sections of 1-inch-thick dormant wood in late winter, push 12 inches into wet ground, water once. No nursery purchase needed. Don't plant near structures (brittle). No deer protection needed.",
+    "cluster_with": [
+      "speckled_alder",
+      "red_osier_dogwood",
+      "buttonbush",
+      "american_hornbeam"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/black_willow/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Salix_nigra_Morton_180-88-3.jpg/960px-Salix_nigra_Morton_180-88-3.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Salix_nigra"
+  }
+}

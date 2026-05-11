@@ -1,0 +1,45 @@
+{
+  "key": "sourwood",
+  "name": "Sourwood",
+  "latin": "Oxydendrum arboreum",
+  "layer": "understory",
+  "protection": "cage",
+  "plans": [
+    "C"
+  ],
+  "summary": "Acid-soil specialist (pH 4.0\u20136.0) \u2014 pairs perfectly with Pocono Plateau soils. Drooping clusters of small white bell flowers in July\u2013August yield the famed 'sourwood honey' and fill the late-summer pollinator dearth. Brilliant scarlet fall color.",
+  "notes": "Northern range edge currently at southern PA; Zone 5\u20139 hardy with Zone 6a at the cusp. A textbook climate-winner expected to expand northward. Slow-growing, single-trunked small tree (20\u201340 ft). Source seed or stock from northern-edge provenances (NJ Highlands, southeastern PA) for cold-hardiness.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/oxydendrum-arboreum/"
+    },
+    {
+      "label": "Morton Arboretum",
+      "url": "https://mortonarb.org/plant-and-protect/trees-and-plants/sourwood/"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "12\u201320",
+    "aspect": "Sheltered openings; gap edges; partial-shade sites",
+    "light": "Partial shade to full sun",
+    "moisture": "Well-drained mesic; not for wet sites",
+    "soil": "Strongly acidic (pH 4.0\u20136.0); organic-rich",
+    "hole_depth_in": "10\u201314",
+    "site_notes": "Climate-trial planting \u2014 start with 3\u20135 trees in a sheltered location and observe survival before scaling. Source northern-provenance stock if possible. Wire cage; moderate deer browse on young saplings.",
+    "cluster_with": [
+      "chestnut_oak",
+      "black_gum",
+      "pinxter_azalea",
+      "highbush_blueberry"
+    ]
+  },
+  "tier": "tier3",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/sourwood/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Oxydendrum_arboreum.jpg/960px-Oxydendrum_arboreum.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Oxydendrum"
+  }
+}

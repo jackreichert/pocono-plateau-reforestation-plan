@@ -34,5 +34,6 @@
       "serviceberry",
       "bigtooth_aspen"
     ]
-  }
+  },
+  "tier": "tier1"
 }

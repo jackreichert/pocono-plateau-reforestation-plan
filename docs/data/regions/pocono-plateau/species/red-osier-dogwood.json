@@ -1,0 +1,46 @@
+{
+  "key": "red_osier_dogwood",
+  "name": "Red-osier Dogwood",
+  "latin": "Cornus sericea",
+  "layer": "shrub",
+  "protection": "none",
+  "plans": [
+    "B",
+    "C"
+  ],
+  "summary": "Brilliant red winter stems \u2014 visible across the brown winter landscape from a quarter mile away. Wet meadows, swale margins, and stream banks. Hosts 120+ Lepidoptera species including Spring Azure.",
+  "notes": "White flower clusters in May\u2013June; white berries in August feed 30+ bird species. Forms thickets \u2014 excellent bank stabilizer. Trivially propagates from live stakes cut in late winter and pushed into wet ground. Functional fill for wetter sites than gray dogwood already on the list.",
+  "refs": [
+    {
+      "label": "NC State Extension",
+      "url": "https://plants.ces.ncsu.edu/plants/cornus-sericea/"
+    },
+    {
+      "label": "USDA Plant Guide",
+      "url": "https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/cs_cose16.pdf"
+    }
+  ],
+  "planting": {
+    "spacing_ft": "5\u20138",
+    "aspect": "Wet meadows; stream banks; swale margins",
+    "light": "Full sun to partial shade",
+    "moisture": "Wet to moist",
+    "soil": "Tolerates clay, sand, organic; pH adaptable",
+    "hole_depth_in": "8\u201312",
+    "site_notes": "Propagate cheaply from live stakes \u2014 cut 12\u201318 inch sections of dormant 1-year wood in late winter, push into wet ground, water once. No deer protection needed; light browse only. Plant in colonies of 5+ for thicket effect and winter color mass.",
+    "cluster_with": [
+      "black_willow",
+      "speckled_alder",
+      "winterberry",
+      "buttonbush"
+    ]
+  },
+  "tier": "tier2",
+  "photo": {
+    "url": "data/regions/pocono-plateau/photos/red_osier_dogwood/tree.jpg",
+    "credit": "Wikimedia Commons contributors",
+    "license": "CC BY-SA",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Red_Osier_Dogwood.jpg/960px-Red_Osier_Dogwood.jpg",
+    "file_page_url": "https://en.wikipedia.org/wiki/Cornus_sericea"
+  }
+}

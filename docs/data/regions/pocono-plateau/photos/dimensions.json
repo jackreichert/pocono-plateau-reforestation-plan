@@ -1,0 +1,894 @@
+{
+  "american_chestnut/flower": {
+    "h": 653,
+    "w": 960
+  },
+  "american_chestnut/fruit": {
+    "h": 673,
+    "w": 960
+  },
+  "american_chestnut/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "american_chestnut/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "american_elderberry/flower": {
+    "h": 600,
+    "w": 761
+  },
+  "american_elderberry/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "american_elderberry/leaf": {
+    "h": 600,
+    "w": 719
+  },
+  "american_elderberry/tree": {
+    "h": 1333,
+    "w": 960
+  },
+  "american_hazelnut/flower": {
+    "h": 1440,
+    "w": 960
+  },
+  "american_hazelnut/fruit": {
+    "h": 709,
+    "w": 960
+  },
+  "american_hazelnut/tree": {
+    "h": 715,
+    "w": 960
+  },
+  "american_hornbeam/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "american_hornbeam/leaf": {
+    "h": 400,
+    "w": 600
+  },
+  "american_hornbeam/tree": {
+    "h": 600,
+    "w": 800
+  },
+  "american_persimmon/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "american_persimmon/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "american_persimmon/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "american_plum/flower": {
+    "h": 803,
+    "w": 960
+  },
+  "american_plum/fruit": {
+    "h": 458,
+    "w": 800
+  },
+  "american_plum/leaf": {
+    "h": 644,
+    "w": 960
+  },
+  "american_plum/tree": {
+    "h": 640,
+    "w": 960
+  },
+  "arrowwood_viburnum/flower": {
+    "h": 1414,
+    "w": 960
+  },
+  "arrowwood_viburnum/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "arrowwood_viburnum/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "balsam_fir/fruit": {
+    "h": 1013,
+    "w": 960
+  },
+  "balsam_fir/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "balsam_fir/tree": {
+    "h": 1200,
+    "w": 960
+  },
+  "basswood/flower": {
+    "h": 1201,
+    "w": 960
+  },
+  "basswood/leaf": {
+    "h": 636,
+    "w": 960
+  },
+  "basswood/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "beaked_hazelnut/flower": {
+    "h": 720,
+    "w": 960
+  },
+  "beaked_hazelnut/fruit": {
+    "h": 642,
+    "w": 960
+  },
+  "beaked_hazelnut/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "beaked_hazelnut/tree": {
+    "h": 1067,
+    "w": 960
+  },
+  "bigtooth_aspen/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "bigtooth_aspen/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "black_cherry/flower": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_cherry/fruit": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_cherry/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "black_cherry/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_gum/fruit": {
+    "h": 357,
+    "w": 576
+  },
+  "black_gum/leaf": {
+    "h": 640,
+    "w": 960
+  },
+  "black_gum/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_huckleberry/fruit": {
+    "h": 1855,
+    "w": 960
+  },
+  "black_huckleberry/leaf": {
+    "h": 640,
+    "w": 960
+  },
+  "black_huckleberry/tree": {
+    "h": 1306,
+    "w": 960
+  },
+  "black_oak/fruit": {
+    "h": 638,
+    "w": 960
+  },
+  "black_oak/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_oak/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_walnut/fruit": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_walnut/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "black_walnut/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "black_willow/fruit": {
+    "h": 640,
+    "w": 960
+  },
+  "black_willow/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "black_willow/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "buttonbush/fruit": {
+    "h": 584,
+    "w": 768
+  },
+  "buttonbush/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "buttonbush/tree": {
+    "h": 675,
+    "w": 960
+  },
+  "chestnut_oak/fruit": {
+    "h": 638,
+    "w": 960
+  },
+  "chestnut_oak/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "chestnut_oak/tree": {
+    "h": 1442,
+    "w": 960
+  },
+  "cucumber_magnolia/fruit": {
+    "h": 934,
+    "w": 960
+  },
+  "cucumber_magnolia/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "cucumber_magnolia/tree": {
+    "h": 699,
+    "w": 960
+  },
+  "eastern_hemlock/fruit": {
+    "h": 643,
+    "w": 960
+  },
+  "eastern_hemlock/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "eastern_hemlock/tree": {
+    "h": 800,
+    "w": 439
+  },
+  "eastern_white_pine/fruit": {
+    "h": 1238,
+    "w": 960
+  },
+  "eastern_white_pine/leaf": {
+    "h": 1021,
+    "w": 960
+  },
+  "eastern_white_pine/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "fire_resistant_pear/flower": {
+    "h": 699,
+    "w": 960
+  },
+  "fire_resistant_pear/fruit": {
+    "h": 975,
+    "w": 640
+  },
+  "fire_resistant_pear/tree": {
+    "h": 1249,
+    "w": 960
+  },
+  "gray_birch/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "gray_birch/tree": {
+    "h": 960,
+    "w": 717
+  },
+  "gray_dogwood/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "gray_dogwood/leaf": {
+    "h": 825,
+    "w": 471
+  },
+  "gray_dogwood/tree": {
+    "h": 1440,
+    "w": 960
+  },
+  "great_rhododendron/fruit": {
+    "h": 1280,
+    "w": 960
+  },
+  "great_rhododendron/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "great_rhododendron/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "highbush_blueberry/flower": {
+    "h": 896,
+    "w": 800
+  },
+  "highbush_blueberry/fruit": {
+    "h": 875,
+    "w": 960
+  },
+  "highbush_blueberry/leaf": {
+    "h": 638,
+    "w": 960
+  },
+  "highbush_blueberry/tree": {
+    "h": 1444,
+    "w": 960
+  },
+  "hobblebush/flower": {
+    "h": 659,
+    "w": 960
+  },
+  "hobblebush/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "hobblebush/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "hobblebush/tree": {
+    "h": 657,
+    "w": 960
+  },
+  "hop_hornbeam/flower": {
+    "h": 640,
+    "w": 960
+  },
+  "hop_hornbeam/fruit": {
+    "h": 1441,
+    "w": 960
+  },
+  "hop_hornbeam/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "hop_hornbeam/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "maple_leaved_viburnum/fruit": {
+    "h": 1444,
+    "w": 960
+  },
+  "maple_leaved_viburnum/leaf": {
+    "h": 540,
+    "w": 650
+  },
+  "maple_leaved_viburnum/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "mockernut_hickory/flower": {
+    "h": 791,
+    "w": 960
+  },
+  "mockernut_hickory/fruit": {
+    "h": 638,
+    "w": 960
+  },
+  "mockernut_hickory/leaf": {
+    "h": 1252,
+    "w": 960
+  },
+  "mockernut_hickory/tree": {
+    "h": 640,
+    "w": 960
+  },
+  "mountain_ash/fruit": {
+    "h": 579,
+    "w": 960
+  },
+  "mountain_ash/tree": {
+    "h": 600,
+    "w": 800
+  },
+  "mountain_holly/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "mountain_holly/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "mountain_holly/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "nannyberry/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "nannyberry/leaf": {
+    "h": 640,
+    "w": 960
+  },
+  "nannyberry/tree": {
+    "h": 640,
+    "w": 960
+  },
+  "native_crabapple/flower": {
+    "h": 640,
+    "w": 960
+  },
+  "native_crabapple/fruit": {
+    "h": 640,
+    "w": 480
+  },
+  "native_crabapple/leaf": {
+    "h": 640,
+    "w": 960
+  },
+  "native_crabapple/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "ninebark/flower": {
+    "h": 540,
+    "w": 960
+  },
+  "ninebark/leaf": {
+    "h": 724,
+    "w": 960
+  },
+  "ninebark/tree": {
+    "h": 267,
+    "w": 400
+  },
+  "northern_red_oak/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "northern_red_oak/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "northern_red_oak/tree": {
+    "h": 1125,
+    "w": 960
+  },
+  "pagoda_dogwood/flower": {
+    "h": 922,
+    "w": 960
+  },
+  "pagoda_dogwood/fruit": {
+    "h": 640,
+    "w": 960
+  },
+  "pagoda_dogwood/tree": {
+    "h": 511,
+    "w": 444
+  },
+  "pawpaw/flower": {
+    "h": 960,
+    "w": 960
+  },
+  "pawpaw/fruit": {
+    "h": 554,
+    "w": 960
+  },
+  "pawpaw/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "pawpaw/tree": {
+    "h": 631,
+    "w": 960
+  },
+  "pennsylvania_hawthorn/flower": {
+    "h": 953,
+    "w": 960
+  },
+  "pennsylvania_hawthorn/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "pennsylvania_hawthorn/leaf": {
+    "h": 823,
+    "w": 960
+  },
+  "pennsylvania_hawthorn/tree": {
+    "h": 686,
+    "w": 960
+  },
+  "pignut_hickory/flower": {
+    "h": 640,
+    "w": 960
+  },
+  "pignut_hickory/fruit": {
+    "h": 1306,
+    "w": 960
+  },
+  "pignut_hickory/leaf": {
+    "h": 1560,
+    "w": 960
+  },
+  "pignut_hickory/tree": {
+    "h": 900,
+    "w": 600
+  },
+  "pinxter_azalea/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "pinxter_azalea/leaf": {
+    "h": 894,
+    "w": 960
+  },
+  "pinxter_azalea/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "pitch_pine/fruit": {
+    "h": 955,
+    "w": 960
+  },
+  "pitch_pine/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "pitch_pine/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "red_elderberry/flower": {
+    "h": 720,
+    "w": 960
+  },
+  "red_elderberry/fruit": {
+    "h": 700,
+    "w": 800
+  },
+  "red_elderberry/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "red_elderberry/tree": {
+    "h": 1440,
+    "w": 960
+  },
+  "red_osier_dogwood/flower": {
+    "h": 647,
+    "w": 960
+  },
+  "red_osier_dogwood/fruit": {
+    "h": 1280,
+    "w": 960
+  },
+  "red_osier_dogwood/leaf": {
+    "h": 756,
+    "w": 960
+  },
+  "red_osier_dogwood/tree": {
+    "h": 640,
+    "w": 960
+  },
+  "red_spruce/fruit": {
+    "h": 1440,
+    "w": 960
+  },
+  "red_spruce/leaf": {
+    "h": 635,
+    "w": 960
+  },
+  "red_spruce/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "round_leaved_dogwood/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "round_leaved_dogwood/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "round_leaved_dogwood/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "sassafras/fruit": {
+    "h": 1280,
+    "w": 960
+  },
+  "sassafras/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "sassafras/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "scarlet_oak/flower": {
+    "h": 720,
+    "w": 960
+  },
+  "scarlet_oak/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "scarlet_oak/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "serviceberry/flower": {
+    "h": 540,
+    "w": 960
+  },
+  "serviceberry/leaf": {
+    "h": 1466,
+    "w": 960
+  },
+  "serviceberry/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "shagbark_hickory/flower": {
+    "h": 821,
+    "w": 960
+  },
+  "shagbark_hickory/fruit": {
+    "h": 600,
+    "w": 800
+  },
+  "shagbark_hickory/leaf": {
+    "h": 825,
+    "w": 960
+  },
+  "shagbark_hickory/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "sheep_laurel/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "sheep_laurel/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "sheep_laurel/tree": {
+    "h": 714,
+    "w": 960
+  },
+  "shortleaf_pine/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "shortleaf_pine/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "shortleaf_pine/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "sourwood/fruit": {
+    "h": 1280,
+    "w": 960
+  },
+  "sourwood/leaf": {
+    "h": 608,
+    "w": 500
+  },
+  "sourwood/tree": {
+    "h": 605,
+    "w": 960
+  },
+  "speckled_alder/fruit": {
+    "h": 889,
+    "w": 960
+  },
+  "speckled_alder/leaf": {
+    "h": 428,
+    "w": 650
+  },
+  "speckled_alder/tree": {
+    "h": 632,
+    "w": 960
+  },
+  "spicebush/flower": {
+    "h": 763,
+    "w": 960
+  },
+  "spicebush/leaf": {
+    "h": 581,
+    "w": 960
+  },
+  "spicebush/tree": {
+    "h": 1224,
+    "w": 816
+  },
+  "striped_maple/flower": {
+    "h": 640,
+    "w": 960
+  },
+  "striped_maple/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "striped_maple/tree": {
+    "h": 1440,
+    "w": 960
+  },
+  "sugar_maple/flower": {
+    "h": 720,
+    "w": 960
+  },
+  "sugar_maple/fruit": {
+    "h": 638,
+    "w": 960
+  },
+  "sugar_maple/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "sugar_maple/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "swamp_azalea/fruit": {
+    "h": 640,
+    "w": 960
+  },
+  "swamp_azalea/leaf": {
+    "h": 1290,
+    "w": 960
+  },
+  "swamp_azalea/tree": {
+    "h": 662,
+    "w": 960
+  },
+  "swamp_white_oak/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "swamp_white_oak/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "swamp_white_oak/tree": {
+    "h": 1174,
+    "w": 960
+  },
+  "sweet_birch/leaf": {
+    "h": 640,
+    "w": 960
+  },
+  "sweet_birch/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "sweet_pepperbush/flower": {
+    "h": 612,
+    "w": 960
+  },
+  "sweet_pepperbush/fruit": {
+    "h": 1399,
+    "w": 960
+  },
+  "sweet_pepperbush/leaf": {
+    "h": 787,
+    "w": 960
+  },
+  "sweet_pepperbush/tree": {
+    "h": 612,
+    "w": 960
+  },
+  "sweetfern/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "sweetfern/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "sweetfern/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "tamarack/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "tamarack/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "tamarack/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "tulip_poplar/flower": {
+    "h": 960,
+    "w": 960
+  },
+  "tulip_poplar/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "tulip_poplar/leaf": {
+    "h": 1280,
+    "w": 960
+  },
+  "tulip_poplar/tree": {
+    "h": 1440,
+    "w": 960
+  },
+  "white_oak/fruit": {
+    "h": 655,
+    "w": 960
+  },
+  "white_oak/leaf": {
+    "h": 613,
+    "w": 960
+  },
+  "white_oak/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "winterberry/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "winterberry/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "winterberry/tree": {
+    "h": 720,
+    "w": 960
+  },
+  "witch_hazel/flower": {
+    "h": 1280,
+    "w": 960
+  },
+  "witch_hazel/fruit": {
+    "h": 720,
+    "w": 960
+  },
+  "witch_hazel/leaf": {
+    "h": 1344,
+    "w": 960
+  },
+  "witch_hazel/tree": {
+    "h": 1280,
+    "w": 960
+  },
+  "yellow_birch/flower": {
+    "h": 957,
+    "w": 906
+  },
+  "yellow_birch/leaf": {
+    "h": 720,
+    "w": 960
+  },
+  "yellow_birch/tree": {
+    "h": 576,
+    "w": 768
+  }
+}

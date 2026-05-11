@@ -140,7 +140,11 @@
       <!-- PHOTOS panel -->
       <div class="tab-panel active modal-panel-photos" data-panel="photos">
         <div class="modal-image-area">
-          <img id="modal-featured" class="modal-featured" src="" alt="" style="display:none">
+          <picture id="modal-featured-picture">
+            <source id="modal-featured-avif" type="image/avif">
+            <source id="modal-featured-webp" type="image/webp">
+            <img id="modal-featured" class="modal-featured" src="" alt="" style="display:none" decoding="async">
+          </picture>
           <div id="modal-img-placeholder" class="modal-img-placeholder" style="display:none"></div>
         </div>
         <div id="modal-caption-bar" class="modal-caption-bar" style="display:none">
@@ -238,6 +242,37 @@ const DO_NOT_PLANT = [
   { layers:['all','canopy'],     name:'Paper Birch',                      reason:'Bronze Birch Borer increasing at lower elevations — use yellow or black birch instead' },
   { layers:['all','understory'], name:'Flowering Dogwood (straight species)', reason:"Severe dogwood anthracnose in shaded forest at this elevation — use 'Appalachian Spring' or Stellar hybrid instead" },
 ];
+
+// Picture helpers ----------------------------------------------------
+// Photos live at data/regions/.../photos/{species_key}/{category}.jpg, and
+// scripts/optimize-images.py writes .webp + .avif siblings + dimensions.json
+// (mirrored to window.PHOTO_DIMENSIONS by region-loader). These helpers
+// derive sibling format URLs and intrinsic dimensions from a JPG URL so
+// templates can emit <picture> with width/height for zero-CLS, modern-format
+// delivery and a graceful JPG fallback.
+function pictureSourcesForJpg(jpgUrl) {
+  const swap = ext => jpgUrl.replace(/\.jpe?g$/i, ext);
+  return { avif: swap('.avif'), webp: swap('.webp'), jpg: jpgUrl };
+}
+function dimsForUrl(jpgUrl) {
+  const m = jpgUrl.match(/photos\/([^/]+)\/([^./]+)\.jpe?g$/i);
+  if (!m) return null;
+  const dims = (window.PHOTO_DIMENSIONS || {})[`${m[1]}/${m[2]}`];
+  return dims || null;
+}
+function pictureHtml({ url, alt, klass, loading = 'lazy', extraAttrs = '' }) {
+  const { avif, webp, jpg } = pictureSourcesForJpg(url);
+  const d = dimsForUrl(url);
+  const dimAttrs = d ? ` width="${d.w}" height="${d.h}"` : '';
+  return (
+    `<picture>` +
+      `<source srcset="${avif}" type="image/avif">` +
+      `<source srcset="${webp}" type="image/webp">` +
+      `<img class="${klass}" src="${jpg}" alt="${alt}"${dimAttrs} ` +
+      `loading="${loading}" decoding="async" ${extraAttrs}>` +
+    `</picture>`
+  );
+}
 
 // State -------------------------------------------------------------
 let currentFilter = 'all';      // layer filter
@@ -397,7 +432,12 @@ function buildGrid() {
     const galleryTreeUrl = gallery && (gallery.tree?.url || gallery.leaf?.url);
     const photoUrl = galleryTreeUrl || (sp.photo && sp.photo.url);
     const imgHtml = photoUrl
-      ? `<img class="species-card-img" src="${photoUrl}" alt="${sp.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+      ? pictureHtml({
+          url: photoUrl,
+          alt: sp.name,
+          klass: 'species-card-img',
+          extraAttrs: `onerror="this.style.display='none';this.closest('.species-card').querySelector('.species-card-img-placeholder').style.display='flex'"`,
+        })
       : '';
     const phHtml = `<div class="species-card-img-placeholder" style="display:${photoUrl?'none':'flex'}">${(sp.latin || '').split(' ')[0]}</div>`;
     const tier = sp.tier || 'tier1';
@@ -488,15 +528,21 @@ function openSpecies(key) {
   pb.textContent = PROT_LABEL[sp.protection]||sp.protection;
 
   // Images: prefer multi-image gallery, fall back to single legacy photo
-  const featuredEl  = document.getElementById('modal-featured');
-  const phEl        = document.getElementById('modal-img-placeholder');
-  const captionBar  = document.getElementById('modal-caption-bar');
-  const categoryEl  = document.getElementById('modal-category');
-  const creditEl    = document.getElementById('modal-credit-inline');
-  const thumbsEl    = document.getElementById('modal-thumbs');
+  const featuredEl     = document.getElementById('modal-featured');
+  const featuredAvifEl = document.getElementById('modal-featured-avif');
+  const featuredWebpEl = document.getElementById('modal-featured-webp');
+  const phEl           = document.getElementById('modal-img-placeholder');
+  const captionBar     = document.getElementById('modal-caption-bar');
+  const categoryEl     = document.getElementById('modal-category');
+  const creditEl       = document.getElementById('modal-credit-inline');
+  const thumbsEl       = document.getElementById('modal-thumbs');
 
-  // Reset
-  featuredEl.removeAttribute('src');     // clear so previous species' image doesn't flash
+  // Reset (also clear picture sources so previous species' AVIF/WebP don't flash)
+  featuredEl.removeAttribute('src');
+  featuredEl.removeAttribute('width');
+  featuredEl.removeAttribute('height');
+  featuredAvifEl.removeAttribute('srcset');
+  featuredWebpEl.removeAttribute('srcset');
   featuredEl.style.display = 'none';
   featuredEl.classList.remove('swapping');
   phEl.style.display = 'none';
@@ -524,18 +570,32 @@ function openSpecies(key) {
     return;
   }
 
+  function applyFeaturedSources(item) {
+    const sources = pictureSourcesForJpg(item.url);
+    featuredAvifEl.srcset = sources.avif;
+    featuredWebpEl.srcset = sources.webp;
+    featuredEl.src = sources.jpg;
+    featuredEl.alt = `${sp.name} — ${item.category}`;
+    const d = dimsForUrl(item.url);
+    if (d) {
+      featuredEl.width = d.w;
+      featuredEl.height = d.h;
+    } else {
+      featuredEl.removeAttribute('width');
+      featuredEl.removeAttribute('height');
+    }
+  }
+
   function showItem(idx) {
     const item = galleryItems[idx];
     // Only fade for subsequent swaps, not the initial render
     const isFirstRender = !featuredEl.src;
     if (isFirstRender) {
-      featuredEl.src = item.url;
-      featuredEl.alt = `${sp.name} — ${item.category}`;
+      applyFeaturedSources(item);
     } else {
       featuredEl.classList.add('swapping');
       setTimeout(() => {
-        featuredEl.src = item.url;
-        featuredEl.alt = `${sp.name} — ${item.category}`;
+        applyFeaturedSources(item);
         featuredEl.classList.remove('swapping');
       }, 120);
     }
@@ -568,15 +628,12 @@ function openSpecies(key) {
   // Render thumbnails if more than one image
   if (galleryItems.length > 1) {
     thumbsEl.style.display = 'flex';
-    thumbsEl.innerHTML = galleryItems.map((item, i) => `
-      <img class="modal-thumb${i === 0 ? ' active' : ''}"
-           src="${item.url}"
-           alt="${item.category}"
-           data-idx="${i}"
-           loading="lazy"
-           title="${item.category}"
-           onerror="this.style.display='none'">
-    `).join('');
+    thumbsEl.innerHTML = galleryItems.map((item, i) => pictureHtml({
+      url: item.url,
+      alt: item.category,
+      klass: `modal-thumb${i === 0 ? ' active' : ''}`,
+      extraAttrs: `data-idx="${i}" title="${item.category}" onerror="this.style.display='none'"`,
+    })).join('');
     thumbsEl.querySelectorAll('.modal-thumb').forEach((thumb, i) => {
       thumb.addEventListener('click', () => showItem(i));
     });

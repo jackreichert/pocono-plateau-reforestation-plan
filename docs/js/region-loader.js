@@ -44,13 +44,21 @@
     .then(r => r.ok ? r.json() : {})
     .catch(() => ({}));
 
-  window.regionReady = Promise.all([speciesReady, plannerReady, galleryReady])
-    .then(([speciesArr, plannerData, galleryData]) => {
-      window.SPECIES_DATA    = speciesArr;
-      window.SPECIES_PHOTOS  = Object.fromEntries(
+  // Intrinsic dimensions, written by scripts/optimize-images.py.
+  // Used to set width/height on <img> tags so the browser can reserve layout
+  // space before pixels arrive (eliminates CLS on photo grids).
+  const dimensionsReady = fetch(`${base}/photos/dimensions.json`)
+    .then(r => r.ok ? r.json() : {})
+    .catch(() => ({}));
+
+  window.regionReady = Promise.all([speciesReady, plannerReady, galleryReady, dimensionsReady])
+    .then(([speciesArr, plannerData, galleryData, dimensionsData]) => {
+      window.SPECIES_DATA     = speciesArr;
+      window.SPECIES_PHOTOS   = Object.fromEntries(
         speciesArr.filter(s => s.photo).map(s => [s.key, s.photo])
       );
-      window.SPECIES_GALLERY = galleryData || {};
+      window.SPECIES_GALLERY  = galleryData || {};
+      window.PHOTO_DIMENSIONS = dimensionsData || {};
       window.REGION_CONFIG   = {
         id:           REGION_ID,
         groups:       plannerData.groups,

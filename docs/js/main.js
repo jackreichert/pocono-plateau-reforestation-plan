@@ -82,3 +82,198 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// ── Lightbox (click-to-expand any photo) ──────────────────────────────────
+// Usage:
+//   window.openLightbox([{url, caption?, credit?, license?, file_page_url?, category?}], startIdx?)
+// State is held on the lightbox element itself so the helper stays stateless.
+(function lightboxModule() {
+  let lb = null;
+
+  function ensure() {
+    if (lb) return lb;
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.className = 'lightbox';
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.setAttribute('aria-hidden', 'true');
+    lb.innerHTML = `
+      <div class="lightbox-counter" aria-live="polite"></div>
+      <button class="lightbox-close" aria-label="Close"></button>
+      <button class="lightbox-prev" aria-label="Previous image"></button>
+      <button class="lightbox-next" aria-label="Next image"></button>
+      <img class="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption"></div>
+    `;
+    document.body.appendChild(lb);
+
+    lb.querySelector('.lightbox-close').addEventListener('click', close);
+    lb.querySelector('.lightbox-prev').addEventListener('click', (e) => { e.stopPropagation(); step(-1); });
+    lb.querySelector('.lightbox-next').addEventListener('click', (e) => { e.stopPropagation(); step(1); });
+    lb.querySelector('.lightbox-img').addEventListener('click', (e) => { e.stopPropagation(); step(1); });
+    // Click backdrop to close (but not image/buttons)
+    lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowRight') step(1);
+      else if (e.key === 'ArrowLeft') step(-1);
+    });
+
+    return lb;
+  }
+
+  function render() {
+    const images = lb._images || [];
+    const idx = lb._idx || 0;
+    const item = images[idx] || {};
+    const img = lb.querySelector('.lightbox-img');
+    // Fade for the swap
+    img.style.opacity = '0';
+    setTimeout(() => {
+      img.src = item.url || '';
+      img.alt = item.caption || item.category || '';
+      img.style.opacity = '1';
+    }, 120);
+
+    const captionEl = lb.querySelector('.lightbox-caption');
+    const parts = [];
+    if (item.category) parts.push(`<em>${item.category}</em>`);
+    if (item.caption && item.caption !== item.category) parts.push(item.caption);
+    if (item.credit) parts.push(`Photo: ${item.credit}`);
+    if (item.license) parts.push(item.license);
+    if (item.file_page_url) parts.push(`<a href="${item.file_page_url}" target="_blank" rel="noopener">view source ↗</a>`);
+    captionEl.innerHTML = parts.join(' · ') || '';
+    captionEl.style.display = parts.length ? '' : 'none';
+
+    const showNav = images.length > 1;
+    lb.querySelector('.lightbox-prev').style.display = showNav ? '' : 'none';
+    lb.querySelector('.lightbox-next').style.display = showNav ? '' : 'none';
+
+    const counterEl = lb.querySelector('.lightbox-counter');
+    if (showNav) {
+      counterEl.textContent = `${idx + 1} / ${images.length}`;
+      counterEl.style.display = '';
+    } else {
+      counterEl.style.display = 'none';
+    }
+  }
+
+  function step(delta) {
+    const images = lb._images || [];
+    if (images.length < 2) return;
+    lb._idx = (lb._idx + delta + images.length) % images.length;
+    render();
+  }
+
+  function open(images, startIdx = 0) {
+    if (!images || !images.length) return;
+    ensure();
+    lb._images = images;
+    lb._idx = Math.max(0, Math.min(startIdx, images.length - 1));
+    render();
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    if (!lb) return;
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  window.openLightbox  = open;
+  window.closeLightbox = close;
+})();
+
+// Auto-attach lightbox to any <img data-lightbox> or [data-lightbox] container.
+// Single-image case: data-lightbox="single" with src on the img itself.
+// Multi-image case: lightbox is triggered programmatically by feature code.
+document.addEventListener('click', (e) => {
+  const trigger = e.target.closest('[data-lightbox="single"]');
+  if (!trigger) return;
+  e.preventDefault();
+  const img = trigger.tagName === 'IMG' ? trigger : trigger.querySelector('img');
+  if (!img) return;
+  window.openLightbox([{
+    url:           img.dataset.lightboxFull || img.src,
+    caption:       img.alt || '',
+    credit:        img.dataset.credit || '',
+    license:       img.dataset.license || '',
+    file_page_url: img.dataset.sourceUrl || '',
+    category:      img.dataset.category || '',
+  }]);
+});
+
+// ── Species strip renderer ────────────────────────────────────────────────
+// Markup pattern:
+//   <div class="species-strip" data-species="northern_red_oak,shagbark_hickory,..."></div>
+// Each card uses gallery 'tree' image (falls back to leaf, then fruit).
+(async function renderSpeciesStrips() {
+  const strips = document.querySelectorAll('.species-strip[data-species]');
+  if (!strips.length) return;
+
+  // Photos: prefer window.SPECIES_GALLERY (if region-loader already populated it)
+  // — otherwise fetch the gallery JSON directly.
+  let gallery = window.SPECIES_GALLERY;
+  let speciesIndex = {};
+  if (!gallery) {
+    try {
+      const res = await fetch('data/regions/pocono-plateau/photos-gallery.json');
+      if (res.ok) gallery = await res.json();
+    } catch (_) { /* graceful: leave gallery undefined */ }
+  }
+  // Also fetch the species index so we can resolve key → display name.
+  // Fallback: derive display name from the key itself.
+  try {
+    const idxRes = await fetch('data/regions/pocono-plateau/species/index.json');
+    if (idxRes.ok) {
+      const keys = await idxRes.json();
+      // Lightweight name lookup — fetch each species' name only if needed for a strip.
+      const stripKeys = new Set();
+      strips.forEach(el => el.dataset.species.split(',').map(s => s.trim()).forEach(k => stripKeys.add(k)));
+      const needed = keys.filter(k => stripKeys.has(k));
+      const speciesArr = await Promise.all(needed.map(k =>
+        fetch(`data/regions/pocono-plateau/species/${k.replace(/_/g, '-')}.json`).then(r => r.ok ? r.json() : null)
+      ));
+      speciesArr.filter(Boolean).forEach(s => { speciesIndex[s.key] = s; });
+    }
+  } catch (_) {}
+
+  // If region-loader already populated SPECIES_DATA, use it
+  if (window.SPECIES_DATA) {
+    window.SPECIES_DATA.forEach(s => { speciesIndex[s.key] = s; });
+  }
+
+  function prettyName(key) {
+    return key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  function cardHtml(key) {
+    const sp = speciesIndex[key];
+    const photo = (gallery || {})[key];
+    const url = photo && (photo.tree?.url || photo.leaf?.url || photo.fruit?.url || photo.flower?.url);
+    const name = sp ? sp.name : prettyName(key);
+    const latin = sp ? sp.latin : '';
+    const imgHtml = url
+      ? `<img class="species-strip-img" src="${url}" alt="${name}" loading="lazy" onerror="this.style.display='none'">`
+      : `<div class="species-strip-img" style="display:flex;align-items:center;justify-content:center;font-family:var(--display);font-style:italic;font-size:1.6rem;color:var(--lichen)">${(latin||name).split(' ')[0]}</div>`;
+    return `
+      <a href="species.html#${key}" class="species-strip-card">
+        ${imgHtml}
+        <div class="species-strip-body">
+          ${latin ? `<div class="species-strip-binom">${latin}</div>` : ''}
+          <div class="species-strip-name">${name}</div>
+        </div>
+      </a>`;
+  }
+
+  strips.forEach(strip => {
+    const keys = strip.dataset.species.split(',').map(s => s.trim()).filter(Boolean);
+    strip.innerHTML = keys.map(cardHtml).join('');
+  });
+})();

@@ -3,265 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Species Guide — Appalachian Forest Restoration</title>
-<meta name="description" content="Every native tree and shrub recommended for forest restoration on the Pocono Plateau at ~2,000ft elevation, with photos and ecological notes.">
+<title>Species Guide — Pocono Forest Restoration</title>
+<meta name="description" content="Every native tree and shrub for restoring northern hardwood forest on the Pocono Plateau at 2,000ft — with images, ecological notes, and planting instructions.">
 <link rel="canonical" href="https://poconoforest.org/species.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pocono Forest Restoration">
-<meta property="og:title" content="Species Guide — Appalachian Forest Restoration">
-<meta property="og:description" content="Every native tree and shrub recommended for forest restoration on the Pocono Plateau at ~2,000ft elevation, with photos and ecological notes.">
-<meta property="og:url" content="https://poconoforest.org/species.html">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Species Guide — Appalachian Forest Restoration">
-<meta name="twitter:description" content="Every native tree and shrub recommended for forest restoration on the Pocono Plateau at ~2,000ft elevation, with photos and ecological notes.">
+<meta property="og:title" content="Species Guide — Pocono Forest Restoration">
+<meta property="og:description" content="Every native tree and shrub for restoring northern hardwood forest on the Pocono Plateau.">
 <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-<nav class="nav">
-  <div class="container">
-    <a href="index.html" class="nav-brand">🌳 <span>Pocono Forest</span> Restoration</a>
-    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-    <ul class="nav-links">
-      <li><a href="plans.html">The Plans</a></li>
-      <li><a href="species.html" class="active">Species Guide</a></li>
-      <li><a href="planner.html">Planner</a></li>
-      <li><a href="management.html">Before You Plant</a></li>
-      <li><a href="planting.html">Planting Guide</a></li>
-      <li><a href="research.html">Resources</a></li>
-    </ul>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="masthead-edition">Edition I · Spring 2026</div>
+    <div class="masthead-brand"><a href="index.html" style="color:inherit;text-decoration:none">Pocono Forest <span>—</span> <em>A Field Journal</em></a></div>
+    <div class="masthead-meta">Zone 6a · 2,000 ft</div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="wrap nav-inner">
+    <a href="plans.html">The Plans</a>
+    <a href="species.html" class="active">Species</a>
+    <a href="planner.html">Planner</a>
+    <a href="management.html">Before You Plant</a>
+    <a href="planting.html">Planting</a>
+    <a href="research.html">Resources</a>
   </div>
 </nav>
 
+<main id="main">
+
+<!-- HERO -->
 <section class="hero hero-sm">
-  <div class="hero-bg" style="background:linear-gradient(135deg,#0a2518,#2D6A4F)"></div>
-  <div class="container hero-content">
-    <p class="section-label" style="color:var(--green-200)">What to Plant</p>
-    <h1 style="font-size:clamp(1.75rem,3vw,2.5rem)">Species Guide</h1>
-    <p>Every species validated against PA Flora, USFS Silvics, and current disease research. All are ecologically native to Zone 6a at ~2,000ft on the Pocono Plateau.</p>
+  <div class="wrap hero-content">
+    <span class="eyebrow">Plate II · What to Plant</span>
+    <h1 style="font-style:italic;font-weight:350">Species Guide</h1>
+    <p class="hero-deck">
+      Every species in this journal is ecologically native to the Pocono Plateau at two thousand feet — validated against PA Flora, USFS Silvics, and current disease research.
+    </p>
   </div>
 </section>
 
-<!-- Layer filter bar -->
-<section class="section-sm" style="background:var(--green-50);border-bottom:1px solid var(--border)">
-  <div class="container">
-    <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
-      <span style="font-weight:600;font-size:.9rem">Filter:</span>
-      <button class="btn btn-ghost btn-sm filter-btn active" data-filter="all">All species</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="trees">🌲 Trees</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="shrub">🌱 Shrubs</button>
-      <span style="width:1px;background:var(--border);align-self:stretch;flex-shrink:0"></span>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="canopy">Canopy</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="understory">Understory</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="conifer">Conifers</button>
-      <button class="btn btn-ghost btn-sm filter-btn" data-filter="fruiting">Fruiting</button>
-      <span style="margin-left:auto;font-size:.875rem;color:var(--text-light)">Click any card for details</span>
+<!-- TOOLBAR: Search + Filter (sticky) -->
+<section class="species-toolbar no-print">
+  <div class="wrap species-toolbar-inner">
+    <div class="species-search-wrap">
+      <input type="search" id="species-search" class="species-search" placeholder="Search by name — oak, Carya, hemlock…" autocomplete="off" aria-label="Search species">
+    </div>
+    <div class="species-filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="trees">Trees</button>
+      <button class="filter-btn" data-filter="shrub">Shrubs</button>
+      <span class="filter-divider"></span>
+      <button class="filter-btn" data-filter="canopy">Canopy</button>
+      <button class="filter-btn" data-filter="understory">Understory</button>
+      <button class="filter-btn" data-filter="conifer">Conifer</button>
+      <button class="filter-btn" data-filter="fruiting">Fruiting</button>
+    </div>
+    <div class="species-count" id="species-count">— species</div>
+  </div>
+</section>
+
+<!-- LAYER NOTE (changes with filter) -->
+<section style="padding:2rem 0;border-bottom:1px solid var(--rule);background:var(--paper-soft)">
+  <div class="wrap">
+    <div id="layer-note" style="max-width:60ch;margin:0 auto;text-align:center">
+      <p class="eyebrow" id="layer-note-eyebrow" style="justify-content:center;margin-bottom:1rem">A Forest is Layers</p>
+      <p style="font-family:var(--body);font-style:italic;font-weight:300;font-size:1.15rem;line-height:1.55;color:var(--ink-soft)" id="layer-note-body">
+        A healthy northern hardwood forest at this elevation has five distinct layers, each with its own ecological role. Filter above to focus on a single layer; click any species card to see images, planting instructions, and references.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- Layer descriptions -->
-<div id="layer-descriptions">
-
-<div class="layer-desc" data-layer="all" style="background:var(--green-800);color:#fff;padding:2rem 0">
-  <div class="container">
-    <div class="grid-2" style="gap:3rem;align-items:center">
-      <div>
-        <h2 style="color:#fff;margin-bottom:.75rem">A forest is layers, not just trees</h2>
-        <p style="color:rgba(255,255,255,.85)">A healthy northern hardwood forest at this elevation has five distinct layers, each with its own ecological role. When you restore all of them, you rebuild the complete system — not just the part you can see from the road. Filter by layer below to learn what each one does and why it matters.</p>
-      </div>
-      <div style="display:grid;gap:.6rem">
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:.75rem 1rem;display:flex;gap:.75rem;align-items:center">
-          <span style="font-size:1.5rem">🌳</span><div><strong>Canopy</strong> — the roof, the mast, the backbone</div>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:.75rem 1rem;display:flex;gap:.75rem;align-items:center">
-          <span style="font-size:1.5rem">🌿</span><div><strong>Understory</strong> — flowers, berries, nesting cover</div>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:.75rem 1rem;display:flex;gap:.75rem;align-items:center">
-          <span style="font-size:1.5rem">🌲</span><div><strong>Conifers</strong> — year-round structure and winter shelter</div>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:.75rem 1rem;display:flex;gap:.75rem;align-items:center">
-          <span style="font-size:1.5rem">🌱</span><div><strong>Shrubs</strong> — the ground layer that amplifies everything above</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="layer-desc" data-layer="canopy" style="display:none;background:var(--green-800);color:#fff;padding:2rem 0">
-  <div class="container">
-    <div class="grid-2" style="gap:3rem;align-items:center">
-      <div>
-        <p style="color:var(--green-200);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem">🌳 The Canopy Layer · 40–100ft</p>
-        <h2 style="color:#fff;margin-bottom:.75rem">The roof of the forest — and its engine</h2>
-        <p style="color:rgba(255,255,255,.85)">Canopy trees are the structural backbone of the forest. They close the roof, regulate the microclimate below, and produce the mast — acorns, hickory nuts, berries — that feeds the entire food web from bears and turkeys to migratory songbirds and bats.</p>
-        <p style="color:rgba(255,255,255,.75)">The dominant species here should be <strong style="color:#fff">oaks and hickories</strong>. Pre-settlement forests on this plateau were oak-hickory co-dominant — not maple-dominated <a href="https://www.nrs.fs.usda.gov/pubs/jrnl/2008/nrs_2008_nowacki_001.pdf" target="_blank" rel="noopener" style="color:var(--green-300);font-size:.8rem">(Nowacki &amp; Abrams 2008 →)</a>. Oaks support more wildlife species (500+) than any other eastern tree genus <a href="https://doi.org/10.1111/j.1523-1739.2009.01202.x" target="_blank" rel="noopener" style="color:var(--green-300);font-size:.8rem">(Tallamy &amp; Shropshire 2009 →)</a>. Hickories provide irreplaceable bat roosting habitat and hard mast that no other species can replace.</p>
-      </div>
-      <div style="display:grid;gap:.75rem">
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Why so many oak species?</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Red oak for gaps (fast), white oak for longevity (centuries), chestnut oak for dry ridges, black oak as companion. Different niches, all native here.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Why hickories specifically?</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Shagbark hickory's peeling bark is the primary roosting habitat for Indiana bats. A shagbark takes 50–70 years to reach bat-roosting size — plant it now for the next generation.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Use tubes for oaks, wire cages for maples</strong><br>
-          <span style="color:rgba(255,255,255,.75)">PSU 2024: tube interiors reach 30°F above ambient. Oaks tolerate it. Sugar maple, yellow birch, and black birch don't — use open wire cages for those.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="layer-desc" data-layer="understory" style="display:none;background:var(--green-700);color:#fff;padding:2rem 0">
-  <div class="container">
-    <div class="grid-2" style="gap:3rem;align-items:center">
-      <div>
-        <p style="color:var(--green-200);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem">🌿 The Understory Layer · 15–40ft</p>
-        <h2 style="color:#fff;margin-bottom:.75rem">Where most of the daily wildlife action happens</h2>
-        <p style="color:rgba(255,255,255,.85)">The understory is the mid-story that grows beneath the canopy. These trees tolerate shade, provide the first spring bloom, summer berries for birds, and year-round nesting cover. For many forest birds, this is the layer they actually live in — not the tall canopy above.</p>
-        <p style="color:rgba(255,255,255,.75)">Good news: <strong style="color:#fff">some understory species spread naturally</strong> through bird dispersal and stump-sprouting. Serviceberry and hop-hornbeam often colonize within a few years — survey for them during your spring walk and protect what you find with wire cages. Focus your purchase budget on the ones that won’t arrive on their own.</p>
-      </div>
-      <div style="display:grid;gap:.75rem">
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">First to bloom</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Serviceberry blooms in late March — before anything else. Those early flowers are critical nectar for bees and early-emerging butterflies waking up from winter.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Last to bloom</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Witch hazel flowers in October and November — after all the leaves fall. The forest equivalent of a surprise. Seeds explode audibly up to 30 feet.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Why pagoda dogwood instead of flowering dogwood?</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Flowering dogwood suffers severe anthracnose disease in shaded, humid forest interiors at this elevation. Pagoda dogwood is disease-free and thrives in exactly these conditions.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="layer-desc" data-layer="conifer" style="display:none;background:var(--green-900);color:#fff;padding:2rem 0">
-  <div class="container">
-    <div class="grid-2" style="gap:3rem;align-items:center">
-      <div>
-        <p style="color:var(--green-200);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem">🌲 The Conifer Layer · 40–80ft</p>
-        <h2 style="color:#fff;margin-bottom:.75rem">Year-round structure — and you can't get it any other way</h2>
-        <p style="color:rgba(255,255,255,.85)">Conifers are the only layer that looks the same in February as in July. That year-round structure — dense branches even in winter — is critical thermal cover for deer, turkey, and songbirds when temperatures drop and food is scarce.</p>
-        <p style="color:rgba(255,255,255,.75)"><strong style="color:#fff">These must be planted.</strong> Red spruce and balsam fir have no natural seed source at 2,000ft on this plateau. Without active planting, this layer simply disappears from the forest. Once planted, they live for centuries and create a completely different microclimate in their shade.</p>
-      </div>
-      <div style="display:grid;gap:.75rem">
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Where to plant them</strong><br>
-          <span style="color:rgba(255,255,255,.75)">North-facing slopes and cool ravines for red spruce and balsam fir. Stream edges and shaded hollows for hemlock. Exposed dry ridges for pitch pine.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">The hemlock situation</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Hemlock Woolly Adelgid is confirmed in all PA counties. Hemlock must be treated every 4–6 years with a soil drench. It's worth it — nothing else creates the cool, dark stream-edge microhabitat hemlock provides.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Always wire cages for conifers</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Conifers are cool-adapted and harmed by tube heat. Use open wire cages for every conifer you plant.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="layer-desc" data-layer="shrub" style="display:none;background:var(--green-700);color:#fff;padding:2rem 0">
-  <div class="container">
-    <div class="grid-2" style="gap:3rem;align-items:center">
-      <div>
-        <p style="color:var(--green-200);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem">🌱 The Shrub Layer · 5–20ft</p>
-        <h2 style="color:#fff;margin-bottom:.75rem">The layer that multiplies everything above it</h2>
-        <p style="color:rgba(255,255,255,.85)">A 2025 study in <em>National Science Review</em> found that increasing shrub diversity from 2 to 8 species boosted <strong style="color:#fff">total tree biomass by 53.8%</strong> — nearly the same effect as adding more canopy tree species. Shrubs don't just fill space. They actively accelerate the growth of everything above them.</p>
-        <p style="color:rgba(255,255,255,.75)">Shrubs also provide the densest nesting cover, the most varied food resources (early spring nectar, summer berries, winter fruit), and the movement corridors that connect habitat patches across the landscape.</p>
-      </div>
-      <div style="display:grid;gap:.75rem">
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Target 6–8 shrub species</strong><br>
-          <span style="color:rgba(255,255,255,.75)">The research finding is specifically about diversity, not just quantity. Six to eight different shrub species triggers the full biomass boost. One or two shrub species don't get you there.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Plant them loosely, not as a hedge</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Scatter individual shrubs 6–8ft apart around the outer edges of your tree clusters. They're not a border — they're part of the understory fabric.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="layer-desc" data-layer="fruiting" style="display:none;background:var(--green-800);color:#fff;padding:2rem 0">
-  <div class="container">
-    <div class="grid-2" style="gap:3rem;align-items:center">
-      <div>
-        <p style="color:var(--green-200);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem">🍎 Fruiting &amp; Flowering Trees · 15–80ft</p>
-        <h2 style="color:#fff;margin-bottom:.75rem">The bonus layer — food and flowers</h2>
-        <p style="color:rgba(255,255,255,.85)">These trees were selected primarily for wildlife food value, seasonal flowers, or historical significance. They enrich the restoration without dominating it. The goal is to keep this layer at roughly <strong style="color:#fff">15% of your total</strong> — enough to add value, not enough to shift the ecological focus away from the oak-hickory backbone.</p>
-        <p style="color:rgba(255,255,255,.75)">The native sweet crabapple and American chestnut deserve special mention: the crabapple is one of the most fragrant and wildlife-productive spring trees available, and the chestnut represents one of the most important ecological restoration stories in North American conservation history.</p>
-      </div>
-      <div style="display:grid;gap:.75rem">
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">The American Chestnut story</strong><br>
-          <span style="color:rgba(255,255,255,.75)">A blight fungus arrived from Asia in 1904 and killed an estimated 4 billion trees within 50 years <a href="https://doi.org/10.1046/j.1365-2699.2002.00762.x" target="_blank" rel="noopener" style="color:var(--green-300);font-size:.8rem">(Paillet 2002 →)</a>. TACF backcross hybrids have intermediate resistance. Planting one is an act of ecological restoration and historical memory.</span>
-        </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:8px;padding:1rem;font-size:.9rem">
-          <strong style="color:var(--green-200)">Not Sargent crabapple</strong><br>
-          <span style="color:rgba(255,255,255,.75)">Malus coronaria is the native sweet crabapple — rose-scented, hosts 287 Lepidoptera species <a href="https://doi.org/10.1111/j.1523-1739.2009.01202.x" target="_blank" rel="noopener" style="color:var(--green-300);font-size:.8rem">(Tallamy &amp; Shropshire 2009 →)</a>, feeds birds through January. Sargent crabapple is a Japanese ornamental. They are not the same tree.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div><!-- end layer-descriptions -->
-
+<!-- SPECIES GRID -->
 <section class="section">
-  <div class="container">
-    <p class="text-sm text-mid mb-3" style="border-top:1px solid var(--border);padding-top:1rem">Lepidoptera species counts (moths &amp; butterflies supported by each host plant) are from Tallamy, D.W. &amp; Shropshire, K.J. (2009). "Ranking Lepidopteran Use of Native Versus Introduced Plants." <em>Conservation Biology</em> 23(4). <a href="https://doi.org/10.1111/j.1523-1739.2009.01202.x" target="_blank" rel="noopener">doi.org/10.1111/j.1523-1739.2009.01202.x →</a></p>
+  <div class="wrap">
     <div id="species-grid" class="grid-4"></div>
     <div id="do-not-plant"></div>
+    <p class="text-sm" style="border-top:1px solid var(--rule);padding-top:1rem;margin-top:3rem;color:var(--ink-light);font-style:italic">
+      Lepidoptera species counts (moths &amp; butterflies supported by each host plant) are from Tallamy, D.W. &amp; Shropshire, K.J. (2009). "Ranking Lepidopteran Use of Native Versus Introduced Plants." <em>Conservation Biology</em> 23(4). <a href="https://doi.org/10.1111/j.1523-1739.2009.01202.x" target="_blank" rel="noopener">doi.org/10.1111/j.1523-1739.2009.01202.x →</a>
+    </p>
   </div>
 </section>
 
-<!-- Modal -->
+</main>
+
+<!-- MODAL -->
 <div id="species-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
   <div class="modal modal-wrap">
     <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
-    <div id="modal-img-placeholder" class="modal-img-placeholder">🌳</div>
-    <img id="modal-img" class="modal-img" src="" alt="" style="display:none">
-    <div class="modal-body">
-      <div id="modal-attribution" class="mb-1"></div>
-      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+
+    <!-- HEADER — always visible -->
+    <div class="modal-header">
+      <h2 id="modal-name"></h2>
+      <p id="modal-latin"></p>
+      <div class="modal-badges">
         <span id="modal-layer-badge" class="species-badge"></span>
         <span id="modal-protection-badge" class="species-badge"></span>
       </div>
-      <h2 id="modal-name" style="margin-bottom:.25rem"></h2>
-      <p id="modal-latin" style="font-style:italic;color:var(--text-mid);margin-bottom:1rem;font-size:.9rem"></p>
-      <p id="modal-why" style="font-size:.95rem;margin-bottom:1rem"></p>
-      <p id="modal-notes" style="font-size:.875rem;color:var(--text-mid)"></p>
-      <div id="modal-planting" style="margin-top:1.25rem;display:none">
-        <h3 style="font-size:.95rem;margin-bottom:.75rem;color:var(--green-800)">🌱 Planting Instructions</h3>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem .75rem;font-size:.85rem">
-          <div><strong style="color:var(--text-mid)">Spacing</strong><div id="modal-spacing"></div></div>
-          <div><strong style="color:var(--text-mid)">Aspect</strong><div id="modal-aspect"></div></div>
-          <div><strong style="color:var(--text-mid)">Light</strong><div id="modal-light"></div></div>
-          <div><strong style="color:var(--text-mid)">Moisture</strong><div id="modal-moisture"></div></div>
-          <div><strong style="color:var(--text-mid)">Soil</strong><div id="modal-soil"></div></div>
-          <div><strong style="color:var(--text-mid)">Hole Depth</strong><div id="modal-hole-depth"></div></div>
-        </div>
-        <p id="modal-site-notes" style="margin-top:.75rem;font-size:.85rem;padding:.75rem;background:var(--green-50);border-radius:6px;border-left:3px solid var(--green-600)"></p>
-        <div id="modal-cluster" style="margin-top:.75rem;font-size:.8rem;color:var(--text-mid)"></div>
+    </div>
+
+    <!-- TABS + PANELS (each panel scrolls independently) -->
+    <div class="modal-tabs-wrapper" data-tabs>
+
+      <div class="tabs modal-tabs">
+        <button class="tab-btn active" data-tab="photos">Photos</button>
+        <button class="tab-btn" data-tab="about">About</button>
+        <button class="tab-btn" data-tab="planting" id="tab-btn-planting">Planting</button>
+        <button class="tab-btn" data-tab="refs" id="tab-btn-refs">References</button>
       </div>
-      <div id="modal-refs" style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap"></div>
+
+      <!-- PHOTOS panel -->
+      <div class="tab-panel active modal-panel-photos" data-panel="photos">
+        <div class="modal-image-area">
+          <img id="modal-featured" class="modal-featured" src="" alt="" style="display:none">
+          <div id="modal-img-placeholder" class="modal-img-placeholder" style="display:none"></div>
+        </div>
+        <div id="modal-caption-bar" class="modal-caption-bar" style="display:none">
+          <span class="modal-category" id="modal-category"></span>
+          <span class="modal-credit" id="modal-credit-inline"></span>
+        </div>
+        <div id="modal-thumbs" class="modal-thumbs" style="display:none"></div>
+      </div>
+
+      <!-- ABOUT panel -->
+      <div class="tab-panel modal-panel-about" data-panel="about">
+        <p id="modal-why"></p>
+        <p id="modal-notes"></p>
+      </div>
+
+      <!-- PLANTING panel -->
+      <div class="tab-panel modal-panel-planting" data-panel="planting">
+        <div id="modal-planting-empty" class="modal-empty" style="display:none">No specific planting instructions for this species.</div>
+        <div id="modal-planting-content">
+          <div class="modal-planting-grid">
+            <div><div class="label">Spacing</div><div id="modal-spacing"></div></div>
+            <div><div class="label">Aspect</div><div id="modal-aspect"></div></div>
+            <div><div class="label">Light</div><div id="modal-light"></div></div>
+            <div><div class="label">Moisture</div><div id="modal-moisture"></div></div>
+            <div><div class="label">Soil</div><div id="modal-soil"></div></div>
+            <div><div class="label">Hole Depth</div><div id="modal-hole-depth"></div></div>
+          </div>
+          <p id="modal-site-notes" class="modal-site-notes"></p>
+          <div id="modal-cluster" class="modal-cluster"></div>
+        </div>
+      </div>
+
+      <!-- REFERENCES panel -->
+      <div class="tab-panel modal-panel-refs" data-panel="refs">
+        <div id="modal-refs"></div>
+        <div id="modal-refs-empty" class="modal-empty" style="display:none">No external references for this species.</div>
+      </div>
+
     </div>
   </div>
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-bottom" style="justify-content:center;gap:2rem">
-      <a href="index.html">Home</a><a href="plans.html">Plans</a><a href="planner.html">Planner</a><a href="management.html">Before You Plant</a><a href="research.html">Resources</a>
+<!-- COLOPHON -->
+<footer class="colophon">
+  <div class="wrap">
+    <div class="colophon-mark">❦</div>
+    <div class="colophon-rule"></div>
+    <div class="colophon-title">Pocono Forest Restoration</div>
+    <div class="colophon-links">
+      <a href="index.html">Home</a>
+      <a href="plans.html">The Plans</a>
+      <a href="planner.html">Planner</a>
+      <a href="management.html">Management</a>
+      <a href="planting.html">Planting</a>
+      <a href="research.html">Resources</a>
+    </div>
+    <div class="colophon-meta">
+      Edition I · Spring 2026 · Zone 6a · Pocono Plateau
     </div>
   </div>
 </footer>
@@ -272,149 +192,340 @@
 const LAYER_LABELS = {canopy:'Canopy',understory:'Understory',conifer:'Conifer',shrub:'Shrub',fruiting:'Fruiting'};
 const LAYER_BADGE  = {canopy:'badge-canopy',understory:'badge-understory',conifer:'badge-conifer',shrub:'badge-shrub',fruiting:'badge-fruiting'};
 const PROT_BADGE   = {tube:'badge-tube',cage:'badge-cage',none:'badge-natural'};
-const PROT_LABEL   = {tube:'🪣 Tube',cage:'🔒 Wire cage',none:'Natural arrival'};
+const PROT_LABEL   = {tube:'Tube',cage:'Wire cage',none:'Natural arrival'};
+
+const LAYER_NOTES = {
+  all:        { eyebrow: 'A Forest is Layers',           body: 'A healthy northern hardwood forest at this elevation has five distinct layers, each with its own ecological role. Filter above to focus on a single layer; click any species card to see images, planting instructions, and references.' },
+  trees:      { eyebrow: 'The Tree Layers',              body: 'Trees — canopy, understory, and conifer — make up the structural frame of the forest. Shrubs (filter separately) form the dense layer that doubles total biomass.' },
+  canopy:     { eyebrow: 'The Canopy · 40–100 ft',       body: 'Canopy trees are the structural backbone and the engine of the food web. Oaks and hickories dominated pre-settlement forests on this plateau and supported more wildlife species than any other genus.' },
+  understory: { eyebrow: 'The Understory · 15–40 ft',    body: 'The mid-story where most daily wildlife activity happens. Tolerates shade, produces the first spring blooms, the summer berries, and year-round nesting cover.' },
+  conifer:    { eyebrow: 'The Conifer Layer · 40–80 ft', body: 'The only layer that looks the same in February as in July. Critical thermal cover for deer, turkey, and songbirds. Must be planted — no natural seed source at 2,000 ft.' },
+  shrub:      { eyebrow: 'The Shrub Layer · 5–20 ft',    body: 'A 2025 National Science Review study found that increasing shrub diversity from 2 to 8 species boosted total tree biomass by 53.8%. Target 6–8 species, scattered loosely.' },
+  fruiting:   { eyebrow: 'Fruiting & Flowering · 15–80 ft', body: 'The bonus layer — selected primarily for wildlife food value, seasonal flowers, or historical significance. Keep at ~15% of total — enough to add value, not enough to shift focus from the oak-hickory backbone.' },
+};
 
 const DO_NOT_PLANT = [
   { layers:['all','canopy'],     name:'American Beech',                   reason:'Beech Leaf Disease — no resistant stock available; infected trees die in 2–5 years' },
-  { layers:['all','canopy'],     name:'Any Ash (Fraxinus spp.)',           reason:'Emerald Ash Borer — functionally eliminated from PA' },
-  { layers:['all','canopy'],     name:'Norway Maple',                      reason:'Invasive' },
-  { layers:['all','canopy'],     name:'Tree of Heaven',                    reason:'Invasive and spotted lanternfly host' },
-  { layers:['all','canopy'],     name:'Paper Birch',                       reason:'Bronze Birch Borer increasing at lower elevations — use yellow or black birch instead' },
+  { layers:['all','canopy'],     name:'Any Ash (Fraxinus spp.)',          reason:'Emerald Ash Borer — functionally eliminated from PA' },
+  { layers:['all','canopy'],     name:'Norway Maple',                     reason:'Invasive' },
+  { layers:['all','canopy'],     name:'Tree of Heaven',                   reason:'Invasive and spotted lanternfly host' },
+  { layers:['all','canopy'],     name:'Paper Birch',                      reason:'Bronze Birch Borer increasing at lower elevations — use yellow or black birch instead' },
   { layers:['all','understory'], name:'Flowering Dogwood (straight species)', reason:"Severe dogwood anthracnose in shaded forest at this elevation — use 'Appalachian Spring' or Stellar hybrid instead" },
 ];
 
-function buildDoNotPlant(filter) {
+// State -------------------------------------------------------------
+let currentFilter = 'all';
+let currentSearch = '';
+
+function getFilteredSpecies() {
+  if (!window.SPECIES_DATA) return [];
+  let items = window.SPECIES_DATA;
+  // Layer filter
+  if (currentFilter === 'trees') {
+    items = items.filter(s => s.layer !== 'shrub');
+  } else if (currentFilter !== 'all') {
+    items = items.filter(s => s.layer === currentFilter);
+  }
+  // Search filter
+  if (currentSearch) {
+    const q = currentSearch.toLowerCase().trim();
+    items = items.filter(s =>
+      (s.name && s.name.toLowerCase().includes(q)) ||
+      (s.latin && s.latin.toLowerCase().includes(q)) ||
+      (s.summary && s.summary.toLowerCase().includes(q))
+    );
+  }
+  return items;
+}
+
+function buildGrid() {
+  const grid = document.getElementById('species-grid');
+  const items = getFilteredSpecies();
+  if (!items.length) {
+    grid.innerHTML = `<div class="species-empty">No species match — try a different search or filter.</div>`;
+    document.getElementById('species-count').textContent = '0 species';
+    return;
+  }
+  grid.innerHTML = items.map(sp => {
+    // Prefer gallery tree image, fall back to legacy single photo
+    const gallery = (window.SPECIES_GALLERY || {})[sp.key];
+    const galleryTreeUrl = gallery && (gallery.tree?.url || gallery.leaf?.url);
+    const photoUrl = galleryTreeUrl || (sp.photo && sp.photo.url);
+    const imgHtml = photoUrl
+      ? `<img class="species-card-img" src="${photoUrl}" alt="${sp.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+      : '';
+    const phHtml = `<div class="species-card-img-placeholder" style="display:${photoUrl?'none':'flex'}">${(sp.latin || '').split(' ')[0]}</div>`;
+    return `
+      <a class="species-card" href="#${sp.key}" data-key="${sp.key}" data-layer="${sp.layer}">
+        ${imgHtml}${phHtml}
+        <div class="species-card-body">
+          <div class="latin">${sp.latin || ''}</div>
+          <div class="common">${sp.name}</div>
+          <p class="summary">${(sp.summary || '').substring(0, 110)}${(sp.summary||'').length > 110 ? '…' : ''}</p>
+          <div class="meta">
+            <span>${LAYER_LABELS[sp.layer] || sp.layer}</span>
+            <span>${PROT_LABEL[sp.protection] || ''}</span>
+          </div>
+        </div>
+      </a>`;
+  }).join('');
+  document.getElementById('species-count').textContent = items.length + ' species';
+  // Re-attach click handlers (HTML was replaced)
+  grid.querySelectorAll('.species-card').forEach(card => {
+    card.addEventListener('click', e => {
+      e.preventDefault();
+      openSpecies(card.dataset.key);
+    });
+  });
+}
+
+function buildDoNotPlant() {
   const el = document.getElementById('do-not-plant');
-  const lookupFilter = filter === 'trees' ? 'all' : filter;
+  const lookupFilter = currentFilter === 'trees' ? 'all' : currentFilter;
   const items = DO_NOT_PLANT.filter(d => d.layers.includes(lookupFilter));
-  if (!items.length) { el.innerHTML = ''; return; }
+  if (!items.length || currentSearch) { el.innerHTML = ''; return; }
   el.innerHTML = `
-    <div class="callout callout-amber mt-4" style="display:flex;gap:1rem;align-items:flex-start">
-      <span style="font-size:1.5rem;flex-shrink:0">⚠️</span>
-      <div>
-        <div class="callout-title">Do Not Plant</div>
-        ${items.map(d => `<div style="margin-top:.4rem"><strong>${d.name}</strong> — ${d.reason}</div>`).join('')}
-      </div>
+    <div class="callout callout-amber mt-4" style="margin-top:2.5rem">
+      <div class="callout-title">Do Not Plant</div>
+      ${items.map(d => `<div style="margin-top:.4rem;font-family:var(--body)"><strong style="color:var(--ink);font-family:var(--display)">${d.name}</strong> — <span style="font-style:italic;color:var(--ink-soft)">${d.reason}</span></div>`).join('')}
     </div>`;
 }
 
-function buildGrid(filter) {
-  const grid = document.getElementById('species-grid');
-  const items = filter === 'all'   ? SPECIES_DATA
-    : filter === 'trees' ? SPECIES_DATA.filter(s => s.layer !== 'shrub')
-    : SPECIES_DATA.filter(s => s.layer === filter);
-  grid.innerHTML = items.map(sp => {
-    const photo = SPECIES_PHOTOS[sp.key];
-    const imgHtml = photo
-      ? `<img class="species-card-img" src="${photo.url}" alt="${sp.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
-      : '';
-    const phHtml = `<div class="species-card-img-placeholder" style="display:${photo?'none':'flex'}">🌳</div>`;
-    return `
-      <div class="card species-card" onclick='openSpecies(${JSON.stringify(sp.key)})'>
-        ${imgHtml}${phHtml}
-        <div class="card-body">
-          <span class="species-badge ${LAYER_BADGE[sp.layer]||''}">${LAYER_LABELS[sp.layer]||sp.layer}</span>
-          <h4 class="mt-1" style="font-size:1rem">${sp.name}</h4>
-          <p class="text-sm text-mid" style="margin-top:.4rem">${sp.summary.substring(0,100)}…</p>
-        </div>
-      </div>`;
-  }).join('');
+function updateLayerNote() {
+  const note = LAYER_NOTES[currentFilter] || LAYER_NOTES.all;
+  document.getElementById('layer-note-eyebrow').textContent = note.eyebrow;
+  document.getElementById('layer-note-body').textContent = note.body;
 }
 
 function openSpecies(key) {
-  const sp = SPECIES_DATA.find(s => s.key === key);
+  const sp = window.SPECIES_DATA && window.SPECIES_DATA.find(s => s.key === key);
   if (!sp) return;
-  const photo = SPECIES_PHOTOS[sp.key];
   const overlay = document.getElementById('species-modal-overlay');
+  const gallery = (window.SPECIES_GALLERY || {})[sp.key];
+
   document.getElementById('modal-name').textContent  = sp.name;
   document.getElementById('modal-latin').textContent = sp.latin;
-  document.getElementById('modal-why').textContent   = sp.summary;
+  document.getElementById('modal-why').textContent   = sp.summary || '';
   document.getElementById('modal-notes').textContent = sp.notes || '';
+
   const lb = document.getElementById('modal-layer-badge');
   lb.className = `species-badge ${LAYER_BADGE[sp.layer]||''}`;
   lb.textContent = LAYER_LABELS[sp.layer]||sp.layer;
   const pb = document.getElementById('modal-protection-badge');
   pb.className = `species-badge ${PROT_BADGE[sp.protection]||''}`;
   pb.textContent = PROT_LABEL[sp.protection]||sp.protection;
-  const refsEl = document.getElementById('modal-refs');
-  refsEl.innerHTML = (sp.refs||[]).map(r => `<a href="${r.url}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">${r.label} ↗</a>`).join('');
-  // Planting instructions
-  const plantingEl = document.getElementById('modal-planting');
+
+  // Images: prefer multi-image gallery, fall back to single legacy photo
+  const featuredEl  = document.getElementById('modal-featured');
+  const phEl        = document.getElementById('modal-img-placeholder');
+  const captionBar  = document.getElementById('modal-caption-bar');
+  const categoryEl  = document.getElementById('modal-category');
+  const creditEl    = document.getElementById('modal-credit-inline');
+  const thumbsEl    = document.getElementById('modal-thumbs');
+
+  // Reset
+  featuredEl.removeAttribute('src');     // clear so previous species' image doesn't flash
+  featuredEl.style.display = 'none';
+  featuredEl.classList.remove('swapping');
+  phEl.style.display = 'none';
+  captionBar.style.display = 'none';
+  thumbsEl.style.display = 'none';
+  thumbsEl.innerHTML = '';
+  featuredEl.onclick = null;
+
+  // Compose ordered list of available categories
+  const galleryItems = gallery
+    ? ['tree','bark','leaf','flower','cone','fruit']
+        .map(type => gallery[type] ? {category: type, ...gallery[type]} : null)
+        .filter(Boolean)
+    : [];
+
+  // Fall back: synthesize a single-item gallery from sp.photo if no gallery data
+  if (galleryItems.length === 0 && sp.photo && sp.photo.url) {
+    galleryItems.push({ category: 'photograph', ...sp.photo });
+  }
+
+  if (galleryItems.length === 0) {
+    // No photos at all — show placeholder
+    phEl.style.display = 'flex';
+    phEl.textContent = (sp.latin || '').split(' ')[0] || sp.name;
+    return;
+  }
+
+  function showItem(idx) {
+    const item = galleryItems[idx];
+    // Only fade for subsequent swaps, not the initial render
+    const isFirstRender = !featuredEl.src;
+    if (isFirstRender) {
+      featuredEl.src = item.url;
+      featuredEl.alt = `${sp.name} — ${item.category}`;
+    } else {
+      featuredEl.classList.add('swapping');
+      setTimeout(() => {
+        featuredEl.src = item.url;
+        featuredEl.alt = `${sp.name} — ${item.category}`;
+        featuredEl.classList.remove('swapping');
+      }, 120);
+    }
+
+    categoryEl.textContent = item.category;
+    const license = item.license ? ` · ${item.license}` : '';
+    const sourceLink = item.file_page_url
+      ? ` · <a href="${item.file_page_url}" target="_blank" rel="noopener">view source ↗</a>`
+      : '';
+    creditEl.innerHTML = item.credit
+      ? `Photo: ${item.credit}${license}${sourceLink}`
+      : '';
+
+    // Update active thumb
+    thumbsEl.querySelectorAll('.modal-thumb').forEach((t, i) => {
+      t.classList.toggle('active', i === idx);
+    });
+
+    // Wire up featured to open lightbox at this index
+    featuredEl.onclick = () => window.openLightbox(galleryItems, idx);
+
+    // Track current index for any external listeners
+    featuredEl.dataset.idx = idx;
+  }
+
+  // Show featured + caption bar
+  featuredEl.style.display = 'block';
+  captionBar.style.display = 'flex';
+
+  // Render thumbnails if more than one image
+  if (galleryItems.length > 1) {
+    thumbsEl.style.display = 'flex';
+    thumbsEl.innerHTML = galleryItems.map((item, i) => `
+      <img class="modal-thumb${i === 0 ? ' active' : ''}"
+           src="${item.url}"
+           alt="${item.category}"
+           data-idx="${i}"
+           loading="lazy"
+           title="${item.category}"
+           onerror="this.style.display='none'">
+    `).join('');
+    thumbsEl.querySelectorAll('.modal-thumb').forEach((thumb, i) => {
+      thumb.addEventListener('click', () => showItem(i));
+    });
+  }
+
+  showItem(0);
+
+  // PLANTING tab
+  const plantingContent = document.getElementById('modal-planting-content');
+  const plantingEmpty   = document.getElementById('modal-planting-empty');
+  const tabBtnPlanting  = document.getElementById('tab-btn-planting');
   if (sp.planting) {
-    plantingEl.style.display = '';
-    document.getElementById('modal-spacing').textContent = sp.planting.spacing_ft + ' ft';
-    document.getElementById('modal-aspect').textContent = sp.planting.aspect;
-    document.getElementById('modal-light').textContent = sp.planting.light;
-    document.getElementById('modal-moisture').textContent = sp.planting.moisture;
-    document.getElementById('modal-soil').textContent = sp.planting.soil;
-    document.getElementById('modal-hole-depth').textContent = sp.planting.hole_depth_in + '"';
-    document.getElementById('modal-site-notes').textContent = sp.planting.site_notes;
+    plantingContent.style.display = '';
+    plantingEmpty.style.display = 'none';
+    tabBtnPlanting.disabled = false;
+    document.getElementById('modal-spacing').textContent     = sp.planting.spacing_ft + ' ft';
+    document.getElementById('modal-aspect').textContent      = sp.planting.aspect;
+    document.getElementById('modal-light').textContent       = sp.planting.light;
+    document.getElementById('modal-moisture').textContent    = sp.planting.moisture;
+    document.getElementById('modal-soil').textContent        = sp.planting.soil;
+    document.getElementById('modal-hole-depth').textContent  = sp.planting.hole_depth_in + '"';
+    document.getElementById('modal-site-notes').textContent  = sp.planting.site_notes || '';
+    document.getElementById('modal-site-notes').style.display = sp.planting.site_notes ? '' : 'none';
     const clusterEl = document.getElementById('modal-cluster');
     if (sp.planting.cluster_with && sp.planting.cluster_with.length) {
       const names = sp.planting.cluster_with.map(k => {
-        const match = SPECIES_DATA.find(s => s.key === k);
-        return match ? match.name : k.replace(/_/g, ' ');
+        const m = window.SPECIES_DATA.find(s => s.key === k);
+        return m ? m.name : k.replace(/_/g, ' ');
       });
-      clusterEl.innerHTML = '<strong>Plant with:</strong> ' + names.join(', ');
+      clusterEl.innerHTML = '<strong>Plant with —</strong> <em>' + names.join(', ') + '</em>';
+      clusterEl.style.display = '';
     } else {
-      clusterEl.innerHTML = '';
+      clusterEl.style.display = 'none';
     }
   } else {
-    plantingEl.style.display = 'none';
+    plantingContent.style.display = 'none';
+    plantingEmpty.style.display = '';
+    tabBtnPlanting.disabled = false;  // still allow click — empty state is informative
   }
-  const imgEl = document.getElementById('modal-img');
-  const phEl  = document.getElementById('modal-img-placeholder');
-  if (photo) {
-    imgEl.src = photo.url; imgEl.alt = sp.name; imgEl.style.display = 'block';
-    phEl.style.display = 'none';
-    document.getElementById('modal-attribution').innerHTML =
-      `<small class="text-xs text-mid">Photo: ${photo.credit} · ${photo.license}</small>`;
+
+  // REFERENCES tab
+  const refsEl       = document.getElementById('modal-refs');
+  const refsEmpty    = document.getElementById('modal-refs-empty');
+  const tabBtnRefs   = document.getElementById('tab-btn-refs');
+  if (sp.refs && sp.refs.length) {
+    refsEl.style.display = '';
+    refsEmpty.style.display = 'none';
+    refsEl.innerHTML = sp.refs.map(r =>
+      `<a href="${r.url}" target="_blank" rel="noopener">${r.label}</a>`
+    ).join('');
+    tabBtnRefs.disabled = false;
   } else {
-    imgEl.style.display = 'none'; phEl.style.display = 'flex'; phEl.textContent = '🌳';
-    document.getElementById('modal-attribution').innerHTML = '';
+    refsEl.style.display = 'none';
+    refsEmpty.style.display = '';
+    tabBtnRefs.disabled = false;
   }
+
+  // Reset to Photos tab on every open
+  document.querySelectorAll('#species-modal-overlay .tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#species-modal-overlay .tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector('#species-modal-overlay .tab-btn[data-tab="photos"]').classList.add('active');
+  document.querySelector('#species-modal-overlay .tab-panel[data-panel="photos"]').classList.add('active');
+  // Reset scroll positions on all panels
+  document.querySelectorAll('#species-modal-overlay .tab-panel').forEach(p => p.scrollTop = 0);
+
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
-function showLayerDesc(filter) {
-  const descFilter = filter === 'trees' ? 'all' : filter;
-  document.querySelectorAll('.layer-desc').forEach(el => {
-    el.style.display = el.dataset.layer === descFilter ? '' : 'none';
-  });
+function closeModal() {
+  const overlay = document.getElementById('species-modal-overlay');
+  if (overlay) overlay.classList.remove('open');
+  document.body.style.overflow = '';
+  if (location.hash) {
+    history.pushState('', document.title, location.pathname);
+  }
 }
+window.closeModal = closeModal;
 
+// Filter buttons
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    const f = btn.dataset.filter;
-    buildGrid(f);
-    showLayerDesc(f);
-    buildDoNotPlant(f);
-    // Scroll smoothly to description
-    const desc = document.querySelector(`.layer-desc[data-layer="${f}"]`);
-    if (desc) desc.scrollIntoView({behavior:'smooth', block:'start'});
+    currentFilter = btn.dataset.filter;
+    updateLayerNote();
+    buildGrid();
+    buildDoNotPlant();
   });
 });
 
+// Search input (debounced)
+const searchInput = document.getElementById('species-search');
+let searchTimer;
+searchInput.addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    currentSearch = searchInput.value;
+    buildGrid();
+    buildDoNotPlant();
+  }, 120);
+});
+
+// Modal overlay close + Esc
 document.getElementById('species-modal-overlay').addEventListener('click', e => {
   if (e.target.id === 'species-modal-overlay') closeModal();
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-// Wait for region data before rendering — SPECIES_DATA is set by region-loader.js
+// Initial render after region data loads
 window.regionReady.then(() => {
-  buildGrid('all');
-  buildDoNotPlant('all');
+  updateLayerNote();
+  buildGrid();
+  buildDoNotPlant();
   openFromHash();
 });
 
-// Auto-open species modal from URL hash — e.g. species.html#shagbark_hickory
 function openFromHash() {
   const hashKey = window.location.hash.replace('#', '');
   if (!hashKey || !window.SPECIES_DATA) return;
-  const sp = SPECIES_DATA.find(s => s.key === hashKey);
+  const sp = window.SPECIES_DATA.find(s => s.key === hashKey);
   if (sp) openSpecies(sp.key);
 }
 window.addEventListener('hashchange', openFromHash);

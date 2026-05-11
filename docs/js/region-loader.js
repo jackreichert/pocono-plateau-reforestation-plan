@@ -39,14 +39,19 @@
     return r.json();
   });
 
-  window.regionReady = Promise.all([speciesReady, plannerReady])
-    .then(([speciesArr, plannerData]) => {
-      // Reconstruct the two globals species.html expects
-      window.SPECIES_DATA   = speciesArr;
-      window.SPECIES_PHOTOS = Object.fromEntries(
+  // Multi-image gallery — graceful fallback if file isn't present yet
+  const galleryReady = fetch(`${base}/photos-gallery.json`)
+    .then(r => r.ok ? r.json() : {})
+    .catch(() => ({}));
+
+  window.regionReady = Promise.all([speciesReady, plannerReady, galleryReady])
+    .then(([speciesArr, plannerData, galleryData]) => {
+      window.SPECIES_DATA    = speciesArr;
+      window.SPECIES_PHOTOS  = Object.fromEntries(
         speciesArr.filter(s => s.photo).map(s => [s.key, s.photo])
       );
-      window.REGION_CONFIG  = {
+      window.SPECIES_GALLERY = galleryData || {};
+      window.REGION_CONFIG   = {
         id:           REGION_ID,
         groups:       plannerData.groups,
         shrubs:       plannerData.shrubs,

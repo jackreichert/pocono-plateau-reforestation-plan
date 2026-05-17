@@ -20,9 +20,13 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const group = btn.closest('[data-tabs]');
     if (!group) return;
-    group.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    group.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
     group.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
     const target = group.querySelector(`[data-panel="${btn.dataset.tab}"]`);
     if (target) target.classList.add('active');
   });
@@ -30,17 +34,35 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
 // ── Species modal ─────────────────────────────────────────────────────────
 const overlay = document.getElementById('species-modal-overlay');
+let _modalTrigger = null;
+
 if (overlay) {
   overlay.addEventListener('click', e => {
     if (e.target === overlay) closeModal();
   });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+  });
+  // Focus trap: keep Tab cycling within the modal when open
+  overlay.addEventListener('keydown', e => {
+    if (!overlay.classList.contains('open') || e.key !== 'Tab') return;
+    const focusable = Array.from(overlay.querySelectorAll(
+      'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    )).filter(el => el.offsetParent !== null);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last  = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   });
 }
 
 function openModal(data) {
   if (!overlay) return;
+  _modalTrigger = document.activeElement;
   document.getElementById('modal-name').textContent   = data.name;
   document.getElementById('modal-latin').textContent  = data.latin || '';
   document.getElementById('modal-why').textContent    = data.why || '';
@@ -61,12 +83,15 @@ function openModal(data) {
     data.attribution ? `<small class="text-xs text-mid">Photo: ${data.attribution}</small>` : '';
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+  const closeBtn = overlay.querySelector('.modal-close');
+  if (closeBtn) closeBtn.focus();
 }
 
 function closeModal() {
   if (!overlay) return;
   overlay.classList.remove('open');
   document.body.style.overflow = '';
+  if (_modalTrigger) { _modalTrigger.focus(); _modalTrigger = null; }
 }
 
 window.openModal  = openModal;

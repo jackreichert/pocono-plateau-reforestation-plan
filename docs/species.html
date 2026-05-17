@@ -10,6 +10,8 @@
 <meta property="og:site_name" content="Pocono Forest Restoration">
 <meta property="og:title" content="Species Guide — Pocono Forest Restoration">
 <meta property="og:description" content="Every native tree and shrub for restoring northern hardwood forest on the Pocono Plateau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/main.css?v=20260511">
 </head>
 
@@ -57,31 +59,31 @@
       <input type="search" id="species-search" class="species-search" placeholder="Search by name — oak, Carya, hemlock…" autocomplete="off" aria-label="Search species">
     </div>
     <div class="species-filter-buttons">
-      <button class="filter-btn active" data-filter-type="layer" data-filter="all">All</button>
-      <button class="filter-btn" data-filter-type="layer" data-filter="trees">Trees</button>
-      <button class="filter-btn" data-filter-type="layer" data-filter="shrub">Shrubs</button>
+      <button class="filter-btn active" data-filter-type="layer" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="trees" aria-pressed="false">Trees</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="shrub" aria-pressed="false">Shrubs</button>
       <span class="filter-divider"></span>
-      <button class="filter-btn" data-filter-type="layer" data-filter="canopy">Canopy</button>
-      <button class="filter-btn" data-filter-type="layer" data-filter="understory">Understory</button>
-      <button class="filter-btn" data-filter-type="layer" data-filter="conifer">Conifer</button>
-      <button class="filter-btn" data-filter-type="layer" data-filter="fruiting">Fruiting</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="canopy" aria-pressed="false">Canopy</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="understory" aria-pressed="false">Understory</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="conifer" aria-pressed="false">Conifer</button>
+      <button class="filter-btn" data-filter-type="layer" data-filter="fruiting" aria-pressed="false">Fruiting</button>
     </div>
     <div class="species-count" id="species-count">— species</div>
   </div>
   <div class="wrap species-toolbar-inner" style="padding-top:0;padding-bottom:.8rem;border-top:1px dashed var(--rule-soft);margin-top:.4rem;padding-top:.8rem">
     <div class="species-filter-label" style="font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-light);align-self:center">By priority</div>
     <div class="species-filter-buttons">
-      <button class="filter-btn active" data-filter-type="tier" data-filter="all">All priorities</button>
-      <button class="filter-btn" data-filter-type="tier" data-filter="tier1">★ Plant first</button>
-      <button class="filter-btn" data-filter-type="tier" data-filter="tier2">Wetland sites</button>
-      <button class="filter-btn" data-filter-type="tier" data-filter="tier3">Climate trial</button>
-      <button class="filter-btn" data-filter-type="tier" data-filter="tier4">Niche / specialist</button>
+      <button class="filter-btn active" data-filter-type="tier" data-filter="all" aria-pressed="true">All priorities</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier1" aria-pressed="false">★ Plant first</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier2" aria-pressed="false">Wetland sites</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier3" aria-pressed="false">Climate trial</button>
+      <button class="filter-btn" data-filter-type="tier" data-filter="tier4" aria-pressed="false">Niche / specialist</button>
     </div>
   </div>
   <div class="wrap species-toolbar-inner" style="padding-top:0;padding-bottom:.8rem;border-top:1px dashed var(--rule-soft);margin-top:.4rem;padding-top:.8rem">
     <div class="species-filter-label" style="font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-light);align-self:center">By group</div>
     <div class="species-filter-buttons" id="group-filter-buttons">
-      <button class="filter-btn active" data-filter-type="group" data-filter="all">All groups</button>
+      <button class="filter-btn active" data-filter-type="group" data-filter="all" aria-pressed="true">All groups</button>
       <!-- Group buttons populated dynamically from planner.json -->
     </div>
   </div>
@@ -113,7 +115,7 @@
 </main>
 
 <!-- MODAL -->
-<div id="species-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
+<div id="species-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name">
   <div class="modal modal-wrap">
     <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
 
@@ -130,15 +132,15 @@
     <!-- TABS + PANELS (each panel scrolls independently) -->
     <div class="modal-tabs-wrapper" data-tabs>
 
-      <div class="tabs modal-tabs">
-        <button class="tab-btn active" data-tab="photos">Photos</button>
-        <button class="tab-btn" data-tab="about">About</button>
-        <button class="tab-btn" data-tab="planting" id="tab-btn-planting">Planting</button>
-        <button class="tab-btn" data-tab="refs" id="tab-btn-refs">References</button>
+      <div class="tabs modal-tabs" role="tablist" aria-label="Species information">
+        <button class="tab-btn active" data-tab="photos" role="tab" aria-selected="true" aria-controls="modal-panel-photos" id="modal-tab-photos">Photos</button>
+        <button class="tab-btn" data-tab="about" role="tab" aria-selected="false" aria-controls="modal-panel-about" id="modal-tab-about">About</button>
+        <button class="tab-btn" data-tab="planting" id="tab-btn-planting" role="tab" aria-selected="false" aria-controls="modal-panel-planting">Planting</button>
+        <button class="tab-btn" data-tab="refs" id="tab-btn-refs" role="tab" aria-selected="false" aria-controls="modal-panel-refs">References</button>
       </div>
 
       <!-- PHOTOS panel -->
-      <div class="tab-panel active modal-panel-photos" data-panel="photos">
+      <div class="tab-panel active modal-panel-photos" data-panel="photos" id="modal-panel-photos" role="tabpanel" aria-labelledby="modal-tab-photos" tabindex="0">
         <div class="modal-image-area">
           <picture id="modal-featured-picture">
             <source id="modal-featured-avif" type="image/avif">
@@ -155,13 +157,13 @@
       </div>
 
       <!-- ABOUT panel -->
-      <div class="tab-panel modal-panel-about" data-panel="about">
+      <div class="tab-panel modal-panel-about" data-panel="about" id="modal-panel-about" role="tabpanel" aria-labelledby="modal-tab-about" tabindex="0">
         <p id="modal-why"></p>
         <p id="modal-notes"></p>
       </div>
 
       <!-- PLANTING panel -->
-      <div class="tab-panel modal-panel-planting" data-panel="planting">
+      <div class="tab-panel modal-panel-planting" data-panel="planting" id="modal-panel-planting" role="tabpanel" aria-labelledby="tab-btn-planting" tabindex="0">
         <div id="modal-planting-empty" class="modal-empty" style="display:none">No specific planting instructions for this species.</div>
         <div id="modal-planting-content">
           <div class="modal-planting-grid">
@@ -178,7 +180,7 @@
       </div>
 
       <!-- REFERENCES panel -->
-      <div class="tab-panel modal-panel-refs" data-panel="refs">
+      <div class="tab-panel modal-panel-refs" data-panel="refs" id="modal-panel-refs" role="tabpanel" aria-labelledby="tab-btn-refs" tabindex="0">
         <div id="modal-refs"></div>
         <div id="modal-refs-empty" class="modal-empty" style="display:none">No external references for this species.</div>
       </div>
@@ -211,6 +213,31 @@
 <script src="js/region-loader.js?v=20260511"></script>
 <script src="js/main.js?v=20260511"></script>
 <script>
+let _speciesModalTrigger = null;
+
+// Focus trap for the species modal
+(function() {
+  const ov = document.getElementById('species-modal-overlay');
+  if (!ov) return;
+  ov.addEventListener('keydown', e => {
+    if (!ov.classList.contains('open') || e.key !== 'Tab') return;
+    const focusable = Array.from(ov.querySelectorAll(
+      'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    )).filter(el => el.offsetParent !== null);
+    if (!focusable.length) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  ov.addEventListener('click', e => { if (e.target === ov) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && ov.classList.contains('open')) closeModal();
+  });
+}());
+
 const LAYER_LABELS = {canopy:'Canopy',understory:'Understory',conifer:'Conifer',shrub:'Shrub',fruiting:'Fruiting'};
 const LAYER_BADGE  = {canopy:'badge-canopy',understory:'badge-understory',conifer:'badge-conifer',shrub:'badge-shrub',fruiting:'badge-fruiting'};
 const PROT_BADGE   = {tube:'badge-tube',cage:'badge-cage',none:'badge-natural'};
@@ -351,14 +378,19 @@ function buildGroupFilterButtons() {
     btn.className = 'filter-btn';
     btn.dataset.filterType = 'group';
     btn.dataset.filter = gid;
+    btn.setAttribute('aria-pressed', 'false');
     btn.textContent = shortNames[gid] || GROUP_INFO[gid].name;
     if (GROUP_INFO[gid].optional) {
       btn.style.fontStyle = 'italic';
       btn.title = 'Site-conditional group';
     }
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn[data-filter-type="group"]').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.filter-btn[data-filter-type="group"]').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       currentGroupFilter = gid;
       updateLayerNote();
       buildGrid();
@@ -370,8 +402,12 @@ function buildGroupFilterButtons() {
   const allBtn = container.querySelector('[data-filter="all"]');
   if (allBtn) {
     allBtn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn[data-filter-type="group"]').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.filter-btn[data-filter-type="group"]').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       allBtn.classList.add('active');
+      allBtn.setAttribute('aria-pressed', 'true');
       currentGroupFilter = 'all';
       updateLayerNote();
       buildGrid();
@@ -693,15 +729,22 @@ function openSpecies(key) {
   }
 
   // Reset to Photos tab on every open
-  document.querySelectorAll('#species-modal-overlay .tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#species-modal-overlay .tab-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
   document.querySelectorAll('#species-modal-overlay .tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelector('#species-modal-overlay .tab-btn[data-tab="photos"]').classList.add('active');
+  const photosBtn = document.querySelector('#species-modal-overlay .tab-btn[data-tab="photos"]');
+  if (photosBtn) { photosBtn.classList.add('active'); photosBtn.setAttribute('aria-selected', 'true'); }
   document.querySelector('#species-modal-overlay .tab-panel[data-panel="photos"]').classList.add('active');
   // Reset scroll positions on all panels
   document.querySelectorAll('#species-modal-overlay .tab-panel').forEach(p => p.scrollTop = 0);
 
+  _speciesModalTrigger = document.activeElement;
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+  const closeBtn = overlay.querySelector('.modal-close');
+  if (closeBtn) closeBtn.focus();
 }
 
 function closeModal() {
@@ -711,6 +754,7 @@ function closeModal() {
   if (location.hash) {
     history.pushState('', document.title, location.pathname);
   }
+  if (_speciesModalTrigger) { _speciesModalTrigger.focus(); _speciesModalTrigger = null; }
 }
 window.closeModal = closeModal;
 
@@ -718,9 +762,12 @@ window.closeModal = closeModal;
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const filterType = btn.dataset.filterType || 'layer';
-    // Deactivate only the buttons in the same filter group
-    document.querySelectorAll(`.filter-btn[data-filter-type="${filterType}"]`).forEach(b => b.classList.remove('active'));
+    document.querySelectorAll(`.filter-btn[data-filter-type="${filterType}"]`).forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
     if (filterType === 'tier') {
       currentTierFilter = btn.dataset.filter;
     } else {
